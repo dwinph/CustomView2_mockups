@@ -5,7 +5,7 @@ gem 'rails', '4.2.6'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-gem 'activerecord-session_store'
+#gem 'activerecord-session_store'
 
 # postgres
 # gem 'pg', group: [ :staging, :development ]
@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby, group: [ :staging, :production ]
 
-gem 'scout_apm'
+#gem 'scout_apm'
 
 # Use jquery as the JavaScript library
 # jquery COMMENTED OUT -- WILL USE BOWER/ANGLE for jquery
@@ -46,7 +46,7 @@ gem 'bootbox-rails', '~>0.4'
 
 
 #ActiveRecord extensions
-gem 'acts-as-taggable-on'
+#gem 'acts-as-taggable-on'
 
 gem 'delayed_job_active_record'
 gem 'daemons'
@@ -58,10 +58,10 @@ gem 'font-awesome-rails'
 
 gem 'respond-js-rails' # Note sure what we use this for? AP 11/29/16
 
-gem 'redis-namespace'
+#gem 'redis-namespace'
 
 #Authentication Frameworks
-gem 'devise'
+#gem 'devise'
 
 # App configuration (application.yml)
 gem 'figaro'
