@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require toastr/toastr.min.css
+ *= require font-awesome
+ *= require_self
+ */
+
+
+@import "variables";
+@import "shared/utilities";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "base";
+
+body {
+  background-color: #fff;
+  font-family: "Verdana";
+  font-size: 15px;
+  color: rgb(59,56,56);
+}
+
+p {
+  font-family: "Verdana";
+  font-size: 15px;
+  color: rgb(59,56,56);
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 21px;
+  color: rgb(65,45,122);
+  margin-top:0px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 15px;
+  color: rgb(141, 190, 63);
+}
+
+h3 {
+  font-size: 18px;
+  color: rgb(65,45,122);
+  font-weight: normal;
+  margin-top:5px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  /*color: rgb(141, 190, 63);*/
+  color: rgb(65,45,122);
+  font-weight: normal;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+hr {
+  height: 2px;
+  color: rgb(217,217,217);
+  background-color: rgb(217,217,217);
+  border: none;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+footer div {
+  margin: 20px;
+  font-size: 12px;
+}
+
+a {
+  color: rgb(65,45,122);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #fff;
+  background-color: rgb(50,129,168);
+  border-color: rgb(127, 127, 127);
+  font-family: "Verdana";
+  font-size: 12px;
+}
+
+
+
+.btn-progress .btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  color: rgb(59,56,56);
+  background-color: #fff;
+  border-color: rgb(59,56,56);
+  font-family: "Verdana";
+  font-size: 12px;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  color: rgb(59,56,56);
+  background-color: rgb(217,217,217);
+  border-color: rgb(127,127,127);
+  font-family: "Verdana";
+  font-size: 12px;
+}
+
+.page strong {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.question {
+  font-size: 14px;
+  color: rgb(79,79,79);
+}
+
+.question-number {
+  color: rgb(141, 190, 63);
+}
+
+.question .btn-default{
+  color: rgb(59,56,56);
+  background-color: #fff;
+  border-color: rgb(59,56,56);
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.question .btn-default:hover,
+.question .btn-default:focus,
+.question .btn-default:active,
+.question .btn-default.active {
+  color: #fff;
+  background-color: rgb(50,129,168);
+  border-color: rgb(127, 127, 127);
+}
+
+.oeq {
+  font-size: 15px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+.question-responses textarea {
+  font-size: 15px;
+}
+
+.btn-contra {
+  text-align:left;
+  white-space: normal;
+  font-size: 12px;
+  margin: 5px;
+  border: 1px solid red;
+  border-radius: 0px;
+}
+
+
+.red-text {
+  color: rgb(202,31,76);
+}
