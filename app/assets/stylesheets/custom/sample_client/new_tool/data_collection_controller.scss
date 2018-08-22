@@ -1,0 +1,34 @@
+// Place all the styles related to the Custom::SampleClient::NewTool::DataCollectionController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "variables";
+@import "shared/utilities";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "base";
+
+h2 {
+  font-size: 15px;
+  color: rgb(141, 190, 63);
+}
+
+h3 {
+  font-size: 18px;
+  color: rgb(65,45,122);
+  font-weight: normal;
+  margin-top:5px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  /*color: rgb(141, 190, 63);*/
+  color: rgb(65,45,122);
+  font-weight: normal;
+  margin-top:5px;
+  margin-bottom: 5px;
+}

@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+#highlight, #highlight:hover, #highlight:active, #highlight:focus {
+    color://any-color;
+    // more css
+}

@@ -10,7 +10,15 @@ Rails.application.routes.draw do
         get 'data_collection_controller/questionnaire'
         get 'data_collection_controller/thank_you'
       end
+      namespace :new_tool do
+        get 'data_collection_controller/index'
+        get 'data_collection_controller/introduction'
+        get 'data_collection_controller/questionnaire'
+        get 'data_collection_controller/thank_you'
+        get 'data_collection_controller/instructions'
+        get 'data_collection_controller/thank_you2'
+        get 'data_collection_controller/additional_comments'
+      end 
     end
   end
-
 end
