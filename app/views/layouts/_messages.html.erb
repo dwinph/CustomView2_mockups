@@ -1,0 +1,37 @@
+<%# Rails flash messages styled for Bootstrap 3.0 %>
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "progressBar": true,
+          "preventDuplicates": false,
+          "positionClass": "toast-top-full-width",
+          "onclick": null,
+          "showDuration": "400",
+          "hideDuration": "1000",
+          "timeOut": "4000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        };
+        <% if name == 'error' %>
+          toastr.error("<%= msg %>");
+        <% else %>
+          toastr.success("<%= msg %>");
+        <% end %>
+        /*new PNotify({
+          text: '<%= msg %>',
+          type: '<%= name.to_s == 'notice' ? 'success' : 'error' %>',
+          icon: false,
+          styling: 'fontawesome',
+          animation: 'fade'
+        });*/
+      });
+    </script>
+  <% end %>
+<% end %>

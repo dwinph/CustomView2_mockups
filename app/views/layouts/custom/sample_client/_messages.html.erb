@@ -1,0 +1,47 @@
+<%# Rails flash messages styled for Bootstrap 3.0 %>
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <%
+      # Set color based on flash type
+      case name
+        when 'error'
+          background_color = '#f2dede'
+          color = '#a74544'
+        else
+          background_color = '#dff0d9'
+          color = '#000000'
+      end
+    %>
+
+    <script type="text/javascript">
+      $('body').on('show.bs.modal', '.bootbox', function() {
+        $(this).css({
+          'top': '50%',
+          'margin-top': function() {
+            return -($(this).height() / 4);
+          },
+        });
+        $('.modal-body').css({
+          'background-color': '<%= background_color %>',
+          'color': '<%= color %>'
+        });
+      });
+      $(document).ready(function(){
+
+        // bootbox.alert({ size: 'small', message: "<%= msg %>"});
+        bootbox.dialog({ 
+          size: 'medium',
+          backdrop: true,
+          message: "<%= msg %>",
+          closeButton: true,
+          onEscape: true
+        });
+        
+        // Auto hide bootbox
+        setTimeout(function() { $('.modal').modal('hide'); }, 10000);
+
+        
+      });
+    </script>
+  <% end %>
+<% end %>
