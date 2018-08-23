@@ -7,7 +7,7 @@
       <p>
         Use the rating scale to indicate your response to each statement, from 1 = Almost Never, 2 = Not very Often, 3= Some Of The Time, 4 = Most Of The Time, 5 = Nearly Always
       </p>
-      <br>
+      
 
       <% (1..3).each do |question_number| %>
         <div class="question row margin-top-x2">
@@ -64,9 +64,12 @@
             <a disabled="disabled" class="btn btn-default btn-md" href="">&nbsp;</a>
           </div>
         </div>
-        <div class='col-md-3 text-right'>
-          <a href="/custom/sample_client/new_tool/data_collection_controller/introduction" type="button" class="btn btn-default">Back</a>
-          <a href="/custom/sample_client/new_tool/data_collection_controller/additional_comments" type="button" class="btn btn-primary">Next</a>
+          <div class='col-md-3 text-right'>
+
+              <%= link_to "Back", "/custom/sample_client/new_tool/data_collection_controller/introduction", class:'btn btn-primary' %>
+
+            <%= link_to "Next", "/custom/sample_client/new_tool/data_collection_controller/additional_intro", class:'btn btn-primary' %>
+
         </div>
       </div>
     </div>

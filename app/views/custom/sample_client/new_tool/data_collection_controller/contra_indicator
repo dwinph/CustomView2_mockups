@@ -1,0 +1,29 @@
+<div class='container page page-border Additional_Comments margin-top'>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+       <h1>Contra-Indicator</h1>
+        <hr>
+
+<div class="question margin-top-x2 margin-bottom-x2">
+  <div class="question-text">
+    <div class='row'>
+      <div class="col-md-9">
+        text
+      </div>
+
+        <div class="question margin-top-x2 margin-bottom-x2">
+          <div class="question-text">
+            <div class='row'>
+              <div class="col-md-9">
+                 Questions
+              </div>
+      
+
+      <div class='col-md-3 text-right'>
+        <% (1..2).each do |scale| %>
+        <%= radio_button %>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

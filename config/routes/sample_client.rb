@@ -18,6 +18,10 @@ Rails.application.routes.draw do
         get 'data_collection_controller/instructions'
         get 'data_collection_controller/thank_you2'
         get 'data_collection_controller/additional_comments'
+        get 'data_collection_controller/additional_intro'
+        get 'data_collection_controller/contra_indicator'
+        get 'data_collection_controller/contra_intro'
+        
       end 
     end
   end
