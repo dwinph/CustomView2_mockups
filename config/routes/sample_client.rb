@@ -4,12 +4,15 @@ Rails.application.routes.draw do
 
   namespace :custom do
     namespace :sample_client do
+
       namespace :sample_tool do
         get 'data_collection_controller/index'
         get 'data_collection_controller/introduction'
         get 'data_collection_controller/questionnaire'
         get 'data_collection_controller/thank_you'
+
       end
+
       namespace :new_tool do
         get 'data_collection_controller/index'
         get 'data_collection_controller/introduction'
@@ -21,8 +24,18 @@ Rails.application.routes.draw do
         get 'data_collection_controller/additional_intro'
         get 'data_collection_controller/contra_indicator'
         get 'data_collection_controller/contra_intro'
-        
-      end 
+
+      end
+
+      namespace :heidrick_example do
+        get 'data_collection_controller/demographic_question'
+        get 'data_collection_controller/questionnaire'
+        get 'data_collection_controller/index'
+        get 'data_collection_controller/free_response'
+        get 'data_collection_controller/thank_you'
+
+      end
+
     end
   end
 end

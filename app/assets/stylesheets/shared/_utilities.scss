@@ -252,11 +252,15 @@ dl.bordered {
 }
 
 .no-border {
+
   border: none !important;
 }
 
 .boxed-corner {
   @include border-radius(0!important);
+}
+.debug-border {
+  border: 1px solid black !important;
 }
 
 
