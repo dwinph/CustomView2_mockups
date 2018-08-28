@@ -10,4 +10,10 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
+# SCSS
 Rails.application.config.assets.precompile += %w( custom/sample_client/new_tool/style.css )
+Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view.css )
+
+
+# Javascripts
+Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view/data_collection.js )
