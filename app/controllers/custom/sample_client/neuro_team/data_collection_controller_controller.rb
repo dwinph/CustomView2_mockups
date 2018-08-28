@@ -1,6 +1,5 @@
 class Custom::SampleClient::NeuroTeam::DataCollectionControllerController < ApplicationController
   layout 'custom/sample_client/neuro_team'
-
   def index
   end
 

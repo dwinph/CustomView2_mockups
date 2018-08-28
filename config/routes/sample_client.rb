@@ -38,11 +38,12 @@ Rails.application.routes.draw do
       namespace :neuro_team do
         get 'data_collection_controller/index'
         get 'data_collection_controller/introduction'
-
+        get 'data_collection_controller/questionaire'
+        get 'data_collection_controller/thank_you'
         get 'data_collection_controller/welcome'
         get 'data_collection_controller/emo_intro'
         get 'data_collection_controller/emo_assess'
-        get 'data_collection_controller/index'
+
 
       end
 

@@ -10,6 +10,7 @@
         Please answer the following question, using the rating scale, where 1 = Extremely defensive, 2 = Defensive, 3 = In between, 4 = Responsive, 5 = Extremely responsive and 0 = Cannot say
       </p>
 
+
       <!-- Question Loop -->
 
       <% (1..1).each do |question_number| %>
@@ -33,13 +34,13 @@
                 <div class="btn-group" data-toggle="buttons" style='margin-left:13px;'>
                   <% (1..5).each do |scale_number| %>
                     <button id="highlight" type="button" class="btn btn-default">
-                    <input type="radio" name="question_<%= question_number %>_scale_1" id="question_<%= question_number %>_scale_1_<%= scale_number %>" value="<%= scale_number %>"><%= scale_number %>
+                      <input type="radio" name="question_<%= question_number %>_scale_1" id="question_<%= question_number %>_scale_1_<%= scale_number %>" value="<%= scale_number %>"><%= scale_number %>
                     </button>
 
                   <% end %>
 
                   <button style='margin-left:5px;' class="btn btn-default" >
-                  <input type="radio" name="" id="question" value="0"> 0
+                    <input type="radio" name="" id="question" value="0"> 0
                   </button>
 
                 </div>
