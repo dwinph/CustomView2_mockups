@@ -8,19 +8,46 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require animate/animate.css
  *= require toastr/toastr.min.css
+ *= require custom/envisia/style
  *= require font-awesome
+ *= require iCheck/custom.css
  *= require_self
  */
 
 
-@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700";
+.questionnaire {
+  h1 {
+    font-size: 24px;
+  }
+}
 
+.questionnaire-scale {
+	li {
+		//padding-left: 10px;
+		//padding-right: 10px;
+		padding-top: 5px;
+		//padding-bottom: 5px;
 
-@import "variables";
-@import "shared/utilities";
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+		}
+	}
+}
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+.btn-wrap-text {
+	white-space: normal;
+}
 
-@import "base";
+#toast-container > div {
+    opacity: 1 !important;
+}
+
+div.oeq_hr:last-child {
+  display: none;
+}
+
+label {
+  font-weight: normal;
+}

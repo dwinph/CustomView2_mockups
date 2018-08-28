@@ -1,7 +1,6 @@
 #Edits require server restart to take effect
 Rails.application.routes.draw do
 
-
   namespace :custom do
     namespace :sample_client do
 
@@ -33,6 +32,17 @@ Rails.application.routes.draw do
         get 'data_collection_controller/index'
         get 'data_collection_controller/free_response'
         get 'data_collection_controller/thank_you'
+
+      end
+
+      namespace :neuro_team do
+        get 'data_collection_controller/index'
+        get 'data_collection_controller/introduction'
+
+        get 'data_collection_controller/welcome'
+        get 'data_collection_controller/emo_intro'
+        get 'data_collection_controller/emo_assess'
+        get 'data_collection_controller/index'
 
       end
 

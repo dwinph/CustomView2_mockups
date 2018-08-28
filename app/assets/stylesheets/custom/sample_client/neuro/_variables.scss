@@ -1,16 +1,20 @@
 // BOOTSTRAP OVERRIDES
-$brand-primary: #7c4872;
+//$brand-primary: #2ba6dc;
+$brand-red:#AE0F0B;
+$brand-blue: #042338;
+$brand-primary: $brand-red;
 $font-family-sans-serif: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
 // END BOOTSTRAP OVERRIDES
 
 
 
-// Customize to cover all
+
 $scale-1-color: #ff2500;
 $scale-2-color: #ffca00;
 $scale-3-color: #fde200;
 $scale-4-color: #d2dc5a;
 $scale-5-color: #a1d562;
+$scale-6-color: #5cb85c;
 $scale-0-color: #e0e0e0;
 
 
