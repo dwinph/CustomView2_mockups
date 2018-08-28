@@ -1,4 +1,4 @@
-class Custom::SampleClient::SampleTool::DataCollectionControllerController < ApplicationController
+class Custom::SampleClient::SampleTool::DataCollectionController < ApplicationController
 	layout 'custom/sample_client/sample_tool'
   def index
   end

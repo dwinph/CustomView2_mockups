@@ -1,4 +1,4 @@
-class Custom::SampleClient::HeidrickExample::DataCollectionControllerController < ApplicationController
+class Custom::SampleClient::HeidrickExample::DataCollectionController < ApplicationController
   layout 'custom/sample_client/heidrick_example'
   def index
   end
