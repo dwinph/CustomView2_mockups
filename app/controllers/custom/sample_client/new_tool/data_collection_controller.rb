@@ -11,4 +11,5 @@ class Custom::SampleClient::NewTool::DataCollectionController < ApplicationContr
 
   def thank_you
   end
+
 end

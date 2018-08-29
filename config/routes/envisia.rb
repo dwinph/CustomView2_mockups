@@ -1,19 +1,13 @@
 #Edits require server restart to take effect
 Rails.application.routes.draw do
 
-  namespace :custom do
-    namespace :envisia do
-      namespace :team_trust_view do
-        get 'data_collection/introduction'
-        get 'data_collection/index'
-        get 'data_collection/emotional_awareness_introduction'
-        get 'data_collection/emotional_awareness_questionnaire'
-        get 'data_collection/team_survey_introduction'
-        get 'data_collection/team_survey_questionnaire'
-        get 'data_collection/open_ended_questions'
-        get 'data_collection/thank_you'
-      end
-    end
-  end
+  get 'envisia/team_trust_view/introduction' => "custom/envisia/team_trust_view/data_collection#introduction", as: :envisia_team_trust_view_introduction
+  get 'envisia/team_trust_view/emotional_awareness_introduction' => "custom/envisia/team_trust_view/data_collection#emotional_awareness_introduction", as: :envisia_team_trust_view_emotional_awareness_introduction
+  get 'envisia/team_trust_view/emotional_awareness_questionnaire' => "custom/envisia/team_trust_view/data_collection#emotional_awareness_questionnaire", as: :envisia_team_trust_view_emotional_awareness_questionnaire
+  get 'envisia/team_trust_view/index' => "custom/envisia/team_trust_view/data_collection#index", as: :envisia_team_trust_view_index
+  get 'envisia/team_trust_view/team_survey_introduction' => "custom/envisia/team_trust_view/data_collection#team_survey_introduction", as: :envisia_team_trust_view_team_survey_introduction
+  get 'envisia/team_trust_view/team_survey_questionnaire' => "custom/envisia/team_trust_view/data_collection#team_survey_questionnaire", as: :envisia_team_trust_view_team_survey_questionnaire
+  get 'envisia/team_trust_view/open_ended_questions' => "custom/envisia/team_trust_view/data_collection#open_ended_questions", as: :envisia_team_trust_view_open_ended_questions
+  get 'envisia/team_trust_view/thank_you' => "custom/envisia/team_trust_view/data_collection#open_ended_questions", as: :envisia_team_trust_view_thank_you
 
-end
+  end
