@@ -1,31 +1,17 @@
-<div class='container page page-border questionnaire margin-top'>
+<div class='container page page-border margin-top'>
   <div class='row'>
     <div class='col-md-10 col-md-offset-1'>
 
-      <!-- page title -->
-      <h1>
-        Thank You
-      </h1>
-
-      <p>You have reached the last page of this questionnaire.</p>
-
-      <p>Please now click on Submit to record your responses.</p>
-
-      <p>Should you wish to review any of your responses before submitting then please use the Previous button.</p>
-
-      <p>Thank you for completing the questionnaire.</p>
-    </div>
 
 
-    <!-- navigation buttons -->
-    <div class='col-md-4 col-md-offset-4 margin-top-x2 text-center'>
+      <h1>Survey Completed</h1>
+
+      <p>
+      Thank you for taking the survey!
+      </p>
 
 
-        <%= link_to @rater.t("data_collection.previous"), thrive_data_collections_path(params[:code]), class: 'btn btn-default' %>
-        &nbsp;
-        <%= link_to "Submit", team_trust_view_data_collection_confirm_path(code: params[:code]), method: :post, class: 'btn btn-md btn-primary' %>
-        <%# end -%>
-      <%# end -%>
+
     </div>
   </div>
 </div>

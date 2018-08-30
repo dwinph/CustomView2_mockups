@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Add in Alphabetical order
   draw :sample_client
   draw :envisia
-
+  draw :heidrick_and_struggles
 
   # You can have the root of your site routed with "root"
   #root 'welcome#index'

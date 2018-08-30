@@ -13,7 +13,9 @@ Rails.application.config.assets.version = '1.0'
 # SCSS
 Rails.application.config.assets.precompile += %w( custom/sample_client/new_tool/style.css )
 Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view.css )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/style.css )
 
 
 # Javascripts
 Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view/data_collection.js )
+
