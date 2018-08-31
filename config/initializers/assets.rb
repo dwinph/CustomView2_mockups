@@ -19,3 +19,4 @@ Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/
 # Javascripts
 Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view/data_collection.js )
 
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/taq_standard/style.css )

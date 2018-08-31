@@ -1,0 +1,167 @@
+<div class="container page  page-border questionnaire margin-top">
+   <div class='row'>
+    <div class='col-md-12'>
+
+
+
+      <!-- Top Images -->
+
+      <div class="row">
+        <div class="col-xs-6">
+          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "100%", width: "100%:" %>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="pull-right">
+            <%= image_tag "custom/heidrick_and_struggles/hs-logo.png", height:"100%", width:"100%" %>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Portal Links -->
+
+      <div class='row'>
+        <div class='col-md-12 text-right'>
+          <%= link_to "Portal", "/hs/taq/portal" %>
+          &nbsp;|&nbsp;
+          <%= link_to "Logout", "/users/sign_out" %>
+        </div>
+      </div>
+
+      <!-- Panel One -->
+
+      <div class="row margin-top-x2">
+
+        <div class="col-md-3 col-md-push-9">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                &nbsp;
+              </h2>
+
+            </div>
+            <!-- Panel body -->
+            <div class="panel-body text-center">
+              <div class="progress margin-bottom-half">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 25%;">
+                  25%
+                </div>
+              </div>
+
+              <div class="text-center">
+                Page 6 of 24
+              </div>
+
+              <div class='col-xs-12 text-justify margin-top'>
+                <small>
+                  <p><strong><i>Information</i></strong></p>
+                </small>
+                <p><small>To select your rating, use your mouse to click on the response which best refleects your evaluation of the team.</small></p>
+              </div>
+
+              <div class='col-xs-12 text-justify margin-top'>
+                <small>
+                  <ul class='text-left' style='padding-left:20px;list-style:none;display:block;'>
+                    <li>1 = Strongly disagree</li>
+                    <li>2 = Disagree</li>
+                    <li>3 = Neither agree nor disagree</li>
+                    <li>4 = Agree</li>
+                    <li>5 = Strongly agree</li>
+                    <li>CS = Cannot say</li>
+                  </ul>
+                </small>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Two -->
+
+        <div class="col-md-9 col-md-pull-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <!--panel body -->
+
+              <h2 class="panel-title">
+                Team Accelerator: Drive Factors
+              </h2>
+
+            </div>
+
+            <div class="panel-body">
+
+              <p>As a team, our strengths are:</p>
+
+
+              <table class="table-responsive">
+                <table class="table table-stripe table-grid table-hover">
+                  <thead>
+                    <tr>
+                      <th width="70%" colspan="2">
+                      </th>
+                        <th class='text-center' width="5%"'><span><strong>1</strong></span></th>
+                        <th class='text-center' width="5%"><span><strong>2</strong></span></th>
+                        <th class='text-center' width="5%"><span><strong>3</strong></span></th>
+                        <th class='text-center' width="5%"><span><strong>4</strong></span></th>
+                        <th class='text-center' width="5%"><span><strong>5</strong></span></th>
+                        <th class='text-center' width='5%'><span><strong>CS</strong></span></th>
+                      </tr>
+                    </thead>
+
+                    <% (1..10).each do |question_number| %>
+
+                      <tbody>
+                        <tr>
+                          <td width="70%" colspan="2"><%= question_number %> . &nbsp; Value for customers is at the center of everything we do</td>
+
+                          <td class="text-center col-scale-radio-button responsive">
+                            <input type="radio" name="scale_1" id="scale_1" value="1" checked="checked" />
+                          </td>
+
+                          <td class="text-center col-scale-radio-button">
+                            <input type="radio" name="scale_2" id="scale_2" value="2" />
+                          </td>
+
+                          <td class="text-center col-scale-radio-button">
+                            <input type="radio" name="scale_3" id="scale_3" value="3" />
+                          </td>
+
+                          <td class="text-center col-scale-radio-button">
+                            <input type="radio" name="scale_4" id="scale_4" value="4" />
+                          </td>
+
+                          <td class="text-center col-scale-radio-button">
+                            <input type="radio" name="scale_5" id="scale_5" value="5" />
+                          </td>
+
+                          <td class="text-center col-scale-radio-button">
+                            <input type="radio" name="scale_cs" id="scale_cs" value="6" />
+                          </td>
+
+                        </tr>
+                      </tbody>
+                    <% end %>
+                  </table>
+                </table>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-body text-center">
+
+              <%= link_to "Back", heidrick_and_struggles_taq_standard_drag_factors_introduction_path, class:"btn btn-default" %>
+
+              &nbsp;
+
+              <%= link_to "Next", heidrick_and_struggles_taq_standard_additional_comments_introduction_path, class:"btn btn-primary" %>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

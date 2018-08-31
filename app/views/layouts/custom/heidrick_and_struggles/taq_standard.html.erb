@@ -5,7 +5,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "Complete Your Assessment" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "CustomView2" %>">
 
-    <%= stylesheet_link_tag "custom/heidrick_and_struggles/style", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "custom/heidrick_and_struggles/taq_standard/style", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
 
@@ -41,7 +41,7 @@
     <footer>
       <div class="container">
         <div class="col-md-10 col-md-offset-1 text-center margin-bottom-x4">
-          <small>  Tel: +44 20 7075 4082 | <%= I18n.t("custom.heidrick_and_struggles.taq_top_teams.data_collection.email") %>: <%= mail_to 'TAQAdmin@heidrick.com' %> | &copy;<%= Date.today.year %> Heidrick &amp; Struggles</small>
+          <small>Tel: +44 20 7075 4082 |email: TAQAdmin@heidrick.com | 2018 Heidrick & Struggles</small>
         </div>
       </div>
     </footer>
