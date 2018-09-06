@@ -1,0 +1,69 @@
+<div class="page page-border questionnaire margin-top">
+  <div class="container">
+
+
+
+    <div class="col-md-6 text-left">
+      PHOTOBUG LEADERS
+    </div>
+
+
+    <%= image_tag "custom/cirrus/connected_leadership/main-bg.png", :class => "main360-1" %>
+    <!-- Content box -->
+
+    <div class='main360-1 col-md-12'>
+      <div class="content-box col-md-5 col-md-offset-1">
+        <div class="col-md-12">
+          <h1>Welcome to your Connected Leadership 360</h1>
+
+          <p>
+            You are participating in a 360 feedback, which is part of your development as a leader and will provide you with information to support your future growth. Completing this questionnaire will take approximately 15 minutes to finish.
+          </p>
+
+          <p>
+            Your own responses, along with those of your contributors, will help you to better understand the impact and effectiveness of your behaviour. They will also help you develop a plan for working more effectively as a leader
+          </p>
+
+          <p>
+            Answer the qustions accurately, ensuring you're honest with yourself using the full range of the scale
+          </p>
+
+          <p>
+            Thank you.
+          </p>
+
+          <h3>Our Privacy policy</h3>
+
+          <p>
+            <strong>The Cirrus Connect Privacy explains how information is colelcted and managed as part of the 360, see <%= link_to "here", "http://cirrus-connect.com/privacy-cookies-policy/", id:"privacy" %> for more details.
+            To accept our policy and proceed to the questionnaire please check the box below</strong>
+          </p>
+
+          <p>
+            <%= check_box_tag(value = "1", checked = false, options = {}) %> I agree for the information to be used in accordance with the Cirrus Connect Privacy Policy
+          </p>
+
+          <p>
+            If you do not wish to take part, please let us know.
+          </p>
+
+          <%= link_to "Start", cirrus_connected_leadership_scale_introduction_path, class:'btn btn-primary' %>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="row">
+      <div class="footer360-1 col-md-12"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
+<%= image_tag "custom/cirrus/connected_leadership/cirrus-w_o-bg.png", height:'100%', width:'100%' %>

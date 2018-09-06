@@ -1,0 +1,62 @@
+<div class="container">
+
+  PHOTOBUG LEADERS
+
+    <!-- Panel Start -->
+  <div class="margin-top main360-2 col-md-12">
+    <div class="row">
+
+      <!-- Progress bar -->
+
+      <div class='col-md-4 col-md-offset-8 text-center margin-bottom'>
+        <div class="row progressbar-row">
+          <div class="col-xs-8 progress-bar-left">
+            <div class="progress">
+              <div class="progress-bar" role="progress-bar" style="width: 16%">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4 progress-bar-right">
+            <b>16%</b> Complete
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Start -->
+
+      <div class="col-md-12">
+        <div class="factor-name">
+          <p>
+            What are the key strenths you should continue to build on?
+          </p>
+        </div>
+
+        <%= text_area(:post, :body, cols: 135, rows: 10) %>
+
+
+
+        <!-- Navigation -->
+
+
+        <div class='col-md-12'>
+          <div class='margin-top row'>
+
+            <div class='col-sm-2 text-left margin-top'>
+              <%= link_to "Back", cirrus_connected_leadership_scale_questions_path, class:'btn btn-primary btn-block' %>
+            </div>
+
+            <div class=" col-sm-2 col-md-offset-8 text-right margin-top">
+              <%= link_to "Next", "", class:'btn btn-block btn-primary' %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="margin-top-x4">
+  <%= image_tag "custom/cirrus/connected_leadership/footer-bg.png", width:"100%", height:"100%" %>
+</div>

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   draw :sample_client
   draw :envisia
   draw :heidrick_and_struggles
-
+  draw :cirrus
   # You can have the root of your site routed with "root"
   #root 'welcome#index'
 
