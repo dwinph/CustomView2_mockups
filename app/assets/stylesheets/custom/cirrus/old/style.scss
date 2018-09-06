@@ -26,8 +26,8 @@
 
 body {
   font-family: 'Lato',Helvetica,Arial,Lucida,sans;
-      font-size: 16px;
-          color: #666;
+  font-size: 16px;
+   color: #666;
 }
 #top {
   background: $brand-primary;
@@ -71,7 +71,7 @@ div.footer {
 }
 
 div.main360-1 {
-  background-image: url("<%= asset_path('custom/connected_leadership/main-bg.png') %>");
+  background: url("<%= asset_path('custom/connected_leadership/main-bg.png') %>") #ddd;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 480px;

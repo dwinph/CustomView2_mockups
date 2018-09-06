@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".td_radio").on("click",function(){$(this).find("input").prop("checked",!0)})});

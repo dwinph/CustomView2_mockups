@@ -64,14 +64,14 @@ div.header360-1 {
 }
 
 div.footer {
-  background-image: url(asset_path("custom/cirrus/connected_leadership360/footer-bg.png"));
+  background-image: image-url("custom/cirrus/connected_leadership360/footer-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   min-height:100px;
 }
 
 div.main360-1 {
-  background-image: url(asset_path("custom/cirrus/connected_leadership360/main-bg.png"));
+  background-image: image-url("custom/cirrus/connected_leadership/main-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 480px;
@@ -83,7 +83,7 @@ div.main360-1 {
     margin-top: 30px;
     margin-bottom: 30px;
     min-height: 400px;
-    
+
     h1 {
       font-weight: 50;
     }
@@ -96,7 +96,7 @@ div.main360-1 {
 }
 
 div.footer360-1 {
-  background-image: url(asset_path("custom/cirrus/connected_leadership360/cirrus-w_o-bg.png"));
+  background-image: image-url("custom/cirrus/connected_leadership360/cirrus-w_o-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 98px;
@@ -112,7 +112,7 @@ div.footer360-1 {
     background-color: darken($brand-primary,10%);
     border-color: $brand-primary;
   }
- 
+
 
 /* Second look no image background*/
 
@@ -132,7 +132,7 @@ div.main360-2 {
   .scale-head {
     background-color: #4a5155;
     color: #FFFFFF;
-    text-align: center;    
+    text-align: center;
     padding: 20px;
   }
   .scale-body {
@@ -144,7 +144,7 @@ div.main360-2 {
   .scale-head-last {
     background-color: #4a5155;
     color: #FFFFFF;
-    text-align: center;    
+    text-align: center;
     padding: 20px;
   }
   .scale-body-last {
@@ -155,7 +155,7 @@ div.main360-2 {
 
   .btn{
       white-space:normal !important;
-      word-wrap: break-word; 
+      word-wrap: break-word;
   }
 
   @media (min-width: 992px){
@@ -264,7 +264,7 @@ div.main360-2 {
       td {
         background-color: #4a5155;
         color: #FFFFFF;
-        
+
         text-align: center;
         padding: 20px;
       }
@@ -304,7 +304,7 @@ div.footer360-2 {
     padding-right: 0;
 
     textarea {
-      height: 240px; 
+      height: 240px;
     }
   }
   .btn {
@@ -321,13 +321,13 @@ div.footer360-2 {
     background-color: $brand-primary;
     border-color: $brand-primary;
   }
-  
+
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
     color: #ffffff;
     background-color: $brand-primary;
     border-color: $brand-primary;
   }
-  
+
   .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
     color: #fff;
     background-color: $brand-primary;
@@ -349,7 +349,7 @@ div.footer360-2 {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  
+
   .btn-group-vertical > .btn:last-child:not(:first-child) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
