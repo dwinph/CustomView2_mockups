@@ -6,7 +6,7 @@
 
       <div class="row">
         <div class="col-xs-6">
-          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "100%", width: "100%:" %>
+          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "75%", width: "75%" %>
         </div>
 
         <div class="col-xs-6">
@@ -50,25 +50,8 @@
               </div>
             </div>
 
-            <div class="text-center">
+            <div class="text-center margin-bottom">
               Page 6 of 24
-            </div>
-
-            <div class='col-xs-12 text-justify margin-top'>
-
-              <div class='col-xs-12 text-justify margin-top'>
-                <small>
-                  <ul class='text-left' style='padding-left:20px;list-style:none;display:block;'>
-                    <li>1 = Strongly disagree</li>
-                    <li>2 = Disagree</li>
-                    <li>3 = Neither agree nor disagree</li>
-                    <li>4 = Agree</li>
-                    <li>5 = Strongly agree</li>
-                    <li>CS = Cannot say</li>
-                  </ul>
-                </small>
-              </div>
-
             </div>
           </div>
         </div>
@@ -86,20 +69,34 @@
 
             </div>
 
+            <hr>
             <div class="panel-body">
 
-              <p>What is the team doing well?</p>
 
-              <div class="question margin-top-x2">
-                <div class="question-text">
-                  What should Robert Gibson start doing to improve his effectiveness?
+
+            <div class="question">
+              <div class="question-text">
+                <p>What is the team doing well?</p>
+              </div>
+              <div class="question-responses">
+                <%= text_area_tag "open_ended_question", "",
+                  class: 'form-control',
+                  style: 'height: 120px;' %>
+                <%= hidden_field_tag "open_ended_question", true %>
+
+
+
                 </div>
-                <div class="question-responses">
-                  <%= text_area_tag "open_ended_question", "",
-                    class: 'form-control',
-                    style: 'height: 120px;' %>
-                  <%= hidden_field_tag "open_ended_question", true %>
-                </div>
+              </div>
+
+              <div class="panel-body text-center">
+                <hr>
+
+                <%= link_to "Back", heidrick_and_struggles_taq_standard_additional_comments_introduction_path, class:"btn btn-default" %>
+
+                  &nbsp;
+
+                <%= link_to "Next", heidrick_and_struggles_taq_standard_thank_you_path, class:"btn btn-primary" %>
               </div>
             </div>
           </div>
@@ -107,14 +104,6 @@
 
 
 
-          <div class="panel-body text-center">
-
-            <%= link_to "Back", heidrick_and_struggles_taq_standard_organizational_context_introduction_path, class:"btn btn-default" %>
-
-            &nbsp;
-
-            <%= link_to "Next", heidrick_and_struggles_taq_standard_drag_factors_introduction_path, class:"btn btn-primary" %>
-          </div>
 
         </div>
       </div>

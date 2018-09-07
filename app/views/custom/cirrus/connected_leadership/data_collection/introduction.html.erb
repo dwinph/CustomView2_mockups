@@ -1,42 +1,42 @@
 <div class="page page-border questionnaire margin-top">
   <div class="container">
-
-
-
-    <div class="col-md-6 text-left">
+    <div class="col-md-6 text-left margin-top margin-bottom-x2">
       PHOTOBUG LEADERS
     </div>
+  </div>
 
+  <!-- Background -->
 
-    <%#= image_tag "custom/cirrus/connected_leadership/main-bg.png", :class => "main360-1" %>
-    <!-- Content box -->
+  <div class='main360-1 col-md-12'>
+    <div class="container">
 
-    <div class='main360-1 col-md-12'>
-      <div class="content-box col-md-5 col-md-offset-1">
+      <!-- Content box -->
+
+      <div class="content-box col-md-6">
         <div class="col-md-12">
+
+
           <h1>Welcome to your Connected Leadership 360</h1>
 
+
           <p>
-            You are participating in a 360 feedback, which is part of your development as a leader and will provide you with information to support your future growth. Completing this questionnaire will take approximately 15 minutes to finish.
+            Thank you for agreeing to provide 360 feedback and contributing to your colleague's leadership development. Your perspectives, and that of others, will help the individual understand better the impact and effectiveness of their behaviour against the Connected Leadership framework.
           </p>
 
           <p>
-            Your own responses, along with those of your contributors, will help you to better understand the impact and effectiveness of your behaviour. They will also help you develop a plan for working more effectively as a leader
+            Unless you are the individual's line manager, your responses will remain anonymous as this questionnaire has been sent to several other people in addition to yourself. Your responses will appear as an average score across your category. Please note the written comments will not be edited. For more information on the process please refer to this guide.
           </p>
 
           <p>
-            Answer the qustions accurately, ensuring you're honest with yourself using the full range of the scale
+            When answering the questions use the scale as a guide and ensure that you use the full range of the scale. For the purposes of security we recommend you answer all the questions in one sitting and ensure you press 'complete questionnaire' at the end to submit your responses. The questionnaire will take approximately 15 minutes.
           </p>
 
-          <p>
-            Thank you.
-          </p>
 
           <h3>Our Privacy policy</h3>
 
           <p>
-            <strong>The Cirrus Connect Privacy explains how information is colelcted and managed as part of the 360, see <%= link_to "here", "http://cirrus-connect.com/privacy-cookies-policy/", id:"privacy" %> for more details.
-            To accept our policy and proceed to the questionnaire please check the box below</strong>
+            The Cirrus Connect Privacy explains how information is colelcted and managed as part of the 360, see <%= link_to "here", "http://cirrus-connect.com/privacy-cookies-policy/", id:"privacy" %> for more details.
+            To accept our policy and proceed to the questionnaire please check the box below.
           </p>
 
           <p>
@@ -47,23 +47,24 @@
             If you do not wish to take part, please let us know.
           </p>
 
-          <%= link_to "Start", cirrus_connected_leadership_scale_introduction_path, class:'btn btn-primary' %>
+          <div class="margin-top col-md-3">
 
+            <%= link_to "Start", cirrus_connected_leadership_scale_introduction_path, class:'btn btn-primary btn-block' %>
+
+          </div>
         </div>
       </div>
+
     </div>
+  </div>
 
 
     <!-- Footer -->
 
-    <div class="row">
-      <div class="footer360-1 col-md-12"></div>
-      </div>
+  <div class="row">
+    <div class="footer360-1 col-md-12"></div>
     </div>
   </div>
 
-
-  </div>
 </div>
 
-<%= image_tag "custom/cirrus/connected_leadership/cirrus-w_o-bg.png", height:'100%', width:'100%' %>

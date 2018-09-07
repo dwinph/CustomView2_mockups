@@ -35,7 +35,7 @@
             </div>
 
             <div class="panel-body text-center">
-              <%= image_tag "custom/heidrick_and_struggles/report_right_panel_graphic.png", height:"100%", width:"100%" %>
+              <%= image_tag "custom/heidrick_and_struggles/report_right_panel_graphic.png", height:"75%", width:"75%" %>
             </div>
 
           </div>
@@ -48,44 +48,40 @@
             <div class="panel-heading">
 
               <h2 class="panel-title">
-                Background Information
+                Team Accelerator: Drag Factors
               </h2>
 
             </div>
 
             <div class="panel-body">
 
-              <h4>About You</h4>
+              <h4>
+                Instructions
+              </h4>
+
+              <p>
+                We would also ask for your feedback on any behaviors and attributes which have the potential to hold back the team’s effectiveness. This will be useful in focusing development priorities.
+              </p>
+
+              <p>
+                In this section you will be asked to evaluate which factors might be constraints for the team. There are 32 statements; for each, you are asked to make a rating, from 1 = Strongly Disagree to 5 = Strongly Agree.
+              </p>
+
+              <p>
+                If there is a question you cannot answer choose ‘Cannot say’, but please attempt to answer as many questions as you can.
+              </p>
+
+            </div>
 
 
-      <% (1..9).each do |question_number| %>
-
-        <div>
-          <div>
-
-            <hr>
-            <input type="hidden" name="demographic_question_15_asked" id="demographic_question_15_asked" value="true" />
-              <strong>Gender</strong><br>
-              <select name="demographic_question_15_demographic_question_response_id" id="demographic_question_15_demographic_question_response_id"><option value=""> -- Select One -- </option><option value="250">Very unlikely</option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-              </select>
-            </input>
-          </div>
-        </div>
-
-
-      <% end %>
-
-        <hr>
 
             <div class="panel-body text-center">
 
-              <%= link_to "Back", heidrick_and_struggles_taq_standard_introduction, class:"btn btn-default" %>
+              <%= link_to "Back", heidrick_and_struggles_taq_standard_background_information_path, class:"btn btn-default" %>
 
               &nbsp;
 
-              <%= link_to "Next", heidrick_and_struggles_taq_standard_table_questionnaire_path, class:"btn btn-primary" %>
+              <%= link_to "Next", heidrick_and_struggles_taq_standard_drive_factors_questionnaire_path, class:"btn btn-primary" %>
             </div>
 
           </div>
