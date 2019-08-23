@@ -19,3 +19,8 @@ Rails.application.config.assets.precompile += %w( custom/cirrus/connected_leader
 # Javascripts
 Rails.application.config.assets.precompile += %w( custom/envisia/team_trust_view/data_collection.js )
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/taq_standard/style.css )
+Rails.application.config.assets.precompile += %w( custom/sample_client/new_tool/style.css )
+
+
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/style.css )
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/app.js )

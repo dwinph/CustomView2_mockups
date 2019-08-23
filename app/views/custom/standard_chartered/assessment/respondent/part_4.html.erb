@@ -1,0 +1,54 @@
+<div class="container-fluid">      
+  <%= render :partial => "partials/custom/standard_chartered/assessment/respondent/step_wizard", locals: {active: 4} %>
+  <form role="form" action="" method="post">
+    <div class="row setup-content" id="step-4">
+        <div class="container">
+                <h1><span class="h1-bold">Part Four:</span>   Open comments </h1>
+
+                <div>
+                    <div class="wrapper-head">
+                            <h4>Enablers</h4>
+                    </div>
+                    <div class="wrapper">
+                        <p class="bold-p">What strengths do they already demonstrate that will support them on their journey to becoming an exceptional trusted advisor
+                                to their business stakeholders?</p><p> Eu occaecat pariatur consectetur qui nostrud proident cillum deserunt enim. 
+                                In nisi ad adipisicing quis sint reprehenderit magna magna quis tempor. Tempor elit eiusmod esse duis sit aute sint.</p>
+                        <div class="div-textarea">
+                            <textarea rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ribbon">
+                    <div class="ribbon-text">
+                        <lead>
+                                An exceptional trusted advisor
+                        </lead>
+                    </div>
+                  
+                    <%= image_tag 'custom/standard_chartered/assessment/survey/ribbon.png', 'class':'img-responsive' %>
+                    
+                </div>
+
+                <div class="wrap">
+                    <div class="wrapper-head">
+                            <h4>Growth areas</h4>
+                    </div>
+                    <div class="wrapper">
+                        <p class="bold-p">What personal behaviours, beliefs or qualities, if not addressed, will hinder them from being a fully effective trusted advisor to
+                                their business stakeholders? </p><p> Eu occaecat pariatur consectetur qui nostrud proident cillum deserunt enim. 
+                                In nisi ad adipisicing quis sint reprehenderit magna magna quis tempor. Tempor elit eiusmod esse duis sit aute sint.</p>
+                        <div class="div-textarea">
+                            <textarea rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn next-btn btn-lg pull-right" type="button" >
+                    <p class="btn-text">Complete</p>
+                    <%= image_tag 'custom/standard_chartered/assessment/survey/button-arrow.png', 'class':'arrow' %></button>
+            </div>
+        </div>
+    </div>
+  </form>
+</div>
