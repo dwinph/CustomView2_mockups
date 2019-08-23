@@ -1,0 +1,64 @@
+<style>
+	.idx {
+		margin: 20px auto;
+		padding: 20px 60px;
+		width: 90%;
+		border: 1px solid #ccc;
+	}
+	li{
+		margin: 20px 0;
+		list-style: none;
+	}
+</style>
+
+<div class="idx">
+
+<h1>Respondents</h1>
+
+<ul>
+	<li>
+		<%= link_to "Landing Page", standard_chartered_assessment_respondent_landing_path, target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 1", standard_chartered_assessment_survey_respondent_part_path(page: 1), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 2", standard_chartered_assessment_survey_respondent_part_path(page: 2), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 3", standard_chartered_assessment_survey_respondent_part_path(page: 3), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 4", standard_chartered_assessment_survey_respondent_part_path(page: 4), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Confirmation", standard_chartered_assessment_respondent_confirmation_path, target:'blank' %>
+	</li>
+</ul>
+
+<h1>Participants</h1>
+
+<ul>
+	<li>
+		<%= link_to "Landing Page", standard_chartered_assessment_participant_landing_path, target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 1", standard_chartered_assessment_survey_participant_part_path(page: 1), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 2", standard_chartered_assessment_survey_participant_part_path(page: 2), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 3", standard_chartered_assessment_survey_participant_part_path(page: 3), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 4", standard_chartered_assessment_survey_participant_part_path(page: 4), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Part 5", standard_chartered_assessment_survey_participant_part_path(page: 5), target:'blank' %>
+	</li>
+	<li>
+		<%= link_to "Confirmation", standard_chartered_assessment_participant_confirmation_path, target:'blank' %>
+	</li>
+</ul>
+</div>

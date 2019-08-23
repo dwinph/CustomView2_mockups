@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # NOTE: Editing the corresponding route files requires server restart to take effect
   # Add in Alphabetical order
   draw :sample_client
+  draw :standard_chartered
 
 
   # You can have the root of your site routed with "root"

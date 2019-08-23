@@ -1,0 +1,28 @@
+<div class="container-fluid">      
+    <%= render :partial => "partials/custom/standard_chartered/assessment/participant/step_wizard", locals: {active: 3} %>
+
+    <form role="form" action="" method="post">
+        <div class="container-fluid">
+            <div class="row setup-content" id="step-2">
+                <div class="container">
+                    <h1><span class="h1-bold">Part Three:</span>  Trusted advisor outlook </h1>
+                    <p class="bold-p">The outlook or mindset brought to the role of a trusted advisor is very important. </p>
+                    <p>It drives behaviour and often shows up in the way they think, feel or act. The following questions aim to help you reflect on how the participant’s outlook is
+                        experienced by you and others.</p>
+                </div>
+                
+                <%= render :partial => "partials/custom/standard_chartered/assessment/legend" %>
+
+                <div class="container">
+                        <%= render :partial => "partials/custom/standard_chartered/assessment/participant/part_3" %>
+                            <button class="btn next-btn btn-lg pull-right" type="button" >
+                                <p class="btn-text">Part four</p>
+                                <%= image_tag 'custom/standard_chartered/assessment/survey/button-arrow.png', 'class':'arrow' %></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </form>
+
+</div>

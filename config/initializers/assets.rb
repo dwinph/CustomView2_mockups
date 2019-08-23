@@ -11,3 +11,6 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 Rails.application.config.assets.precompile += %w( custom/sample_client/new_tool/style.css )
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/style.css )
+
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/app.js )
