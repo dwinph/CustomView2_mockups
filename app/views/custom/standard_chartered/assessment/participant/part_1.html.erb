@@ -2,7 +2,72 @@
   <%= render :partial => "partials/custom/standard_chartered/assessment/participant/step_wizard", locals: {active: 1} %>        
   <form role="form" action="" method="post">
     <div class="container">
-      <h1><span class="h1-bold">Part one:</span> Your journey to becoming an exceptional trusted advisor</h1>
+      <div class="row setup-content" id="step-1">
+        <div class="col-12">
+          <h1><span class="h1-bold">Part one:</span> Your journey to becoming an exceptional trusted advisor</h1>
+          
+          <div class="behaviors">
+              <p class="bold-p">1. How clear are you on what is expected of you as a trusted advisor?</p>
+              <p>Click on the word that is most relevant for you.</p>
+              
+              <div class="btn-group btn-group-toggle clear-toggle row" data-toggle="buttons">
+                <div class="col-xs-6 col-sm-3">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Not at all clear
+                  </label>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Somewhat clear
+                  </label>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Clear
+                  </label>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option4" autocomplete="off"> Very clear
+                  </label>
+                </div>
+              </div>
+
+          </div>
+          <hr />
+          <div class="behaviors">
+              <p class="bold-p">2. What does being a trusted advisor mean to you in your current role?</p>
+              <p>Please write a short summary here.</p>
+              <div class="div-textarea">
+                  <textarea rows="10"></textarea>
+              </div>
+          </div>
+          <hr />
+          <div class="behaviors">
+              <p class="bold-p">Where do you think you are in your development journey to becoming fully effective as a trusted advisor?</p>
+              <p>If you think you still have a lot of development to do, slide the circle towards ‘just starting.’ If you think you are already performing as a fully effective trusted advisor, slide your circle towards ‘already fully effective’. If you think you are somewhere in between these points, slide your circle on the line to show how close or far away you think you are to being fully effective.</p>    
+                <div class="container slide-p1">
+                  <div class="col-md-3 left-opt">Just Starting</div>
+                  
+                  <div class="form-group col-md-6 mid-opt">
+                    <div class="rangeSlider no-irs-single no-irs-min no-irs-max no-irs-max hide-step hide-text">
+                      <input type="text" id="range" value="" name="range" />
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3 right-opt">Already fully effective</div>
+                  
+					      </div>
+          </div>
+          
+          
+            <button class="btn next-btn btn-lg pull-right" type="button" >
+              <p class="btn-text">Part two</p>
+              <%= image_tag 'custom/standard_chartered/assessment/survey/button-arrow.png', 'class':'arrow' %>
+            </button>
+          
+        </div>
+      </div>
     </div>
   </form>
 </div>

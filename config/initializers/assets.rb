@@ -12,5 +12,8 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( custom/sample_client/new_tool/style.css )
 Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/style.css )
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/ion.rangeSlider.skinHTML5.css )
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/ion.rangeSlider.css )
 
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/ion.rangeSlider.js)
 Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/app.js )

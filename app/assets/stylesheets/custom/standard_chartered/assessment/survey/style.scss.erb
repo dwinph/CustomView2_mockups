@@ -3,6 +3,7 @@ $secondary: #062047;
 $tertiary: #0094d5;
 $success: #27a135;
 $disabled: #364655;
+$highlight: #70BA65;
 $bg-dark: #d2d2d2;
 $bg-light: #edeeee;
 
@@ -247,6 +248,39 @@ h3{
 	}
 }
 
+//			RANGE SLIDER
+span.irs-min, span.irs-max{
+	display: none !important;
+}
+span.irs-single{
+	display: none !important;
+}
+span.irs-bar, span.irs-bar-edge, span.irs-line-mid, span.irs-line-left, span.irs-line-right, span.irs-line{
+	background:$bg-dark;
+	border: none;
+	height:3px;
+	border-radius: 0;
+}
+.irs-slider.single{
+	background:$success;
+	height: 18px;
+	width: 18px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 0px 0px 10px rgba(112,186,101,0.3);  
+	margin-top:3px;
+}
+.slide-p1{
+	height: 60px;
+	margin-top:40px;
+	div.col-md-3{
+		text-align: center;
+		padding-top:15px;
+		height: 60px;
+		border: 3px solid $bg-dark;
+	}
+}
+
 //			STEPWIZARD
 .step{
 	padding:30px 15px;
@@ -323,6 +357,7 @@ h3{
 }
 
 //			PART ONE
+
 .behaviors, .choices{
 	padding: 20px 0;
 }
@@ -348,6 +383,27 @@ h3{
 .choices{
 	.input-group{
 		width: 100%
+	}
+}
+
+.clear-toggle{
+	width: 100%;
+	margin: 0 auto;
+	div{
+		padding:2px;
+	}
+	label{
+		border:1px solid $bg-light;
+		border-radius: 0;
+		width: 100%;
+		padding: 1em;
+		input[type="radio"]{
+			display: none;
+		}
+	}
+	label.active{
+		background:$highlight;
+		color: #ffffff;
 	}
 }
 
@@ -645,6 +701,25 @@ input[type="radio"]{
 		}
 	}
 }
+@media (max-width: 990px) {
+	div.left-opt, div.right-opt{
+		width: 20%;
+		float: left;
+		font-size: 0.8em;
+		line-height:1.2em;
+	}
+	span.left-opt{
+		padding-top: 30px !important;
+	}
+	span.right-opt{
+		float: right;
+		padding-top: 10px !important;
+	}
+	.mid-opt{
+		width: 60%;
+		float: left;
+	}
+}
 
 @media (min-width: 576px){
 	.option{ text-align: center !important}
@@ -670,6 +745,7 @@ input[type="radio"]{
 			}
 		}
 	}
+	
 }
 
 /* Medium devices (desktops, 992px and up) */
