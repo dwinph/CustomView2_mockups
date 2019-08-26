@@ -17,6 +17,7 @@ $bg-light: #edeeee;
 	-ms-transform: rotate(-90deg);
 	/* Opera */
 	-o-transform: rotate(-90deg);
+	
 }
 
 body{
@@ -93,9 +94,9 @@ padding:30px 0;
 }
 .border{
 	border-bottom: 10px solid transparent;
-	-webkit-border-image: url(../images/border.jpg) 30 round; /* Safari 3.1-5 */
-	-o-border-image: url(../images/border.jpg) 30 round; /* Opera 11-12.1 */
-	border-image: url(../images/border.jpg) 30 round;
+	-webkit-border-image: url(../survey/border.jpg) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../survey/border.jpg) 30 round; /* Opera 11-12.1 */
+	border-image: url(../survey/border.jpg) 30 round;
 }
 
 //			LANDING
@@ -105,7 +106,7 @@ padding:30px 0;
 	display: flex;
 	align-items: center;
 	position: relative;
-	background: $tertiary url(../images/globe.png) no-repeat bottom right;
+	background: $tertiary url(../survey/globe.png) no-repeat bottom right;
 
 	.info{
 		background: #ffffff;
@@ -278,6 +279,10 @@ span.irs-bar, span.irs-bar-edge, span.irs-line-mid, span.irs-line-left, span.irs
 		padding-top:15px;
 		height: 60px;
 		border: 3px solid $bg-dark;
+	}
+	.mid-opt{
+		padding-left:0;
+		padding-right:0;
 	}
 }
 
@@ -589,7 +594,8 @@ input[type="radio"]{
 				background: $bg-light;
 				border: 1px solid $bg-dark;
 				font-weight: bold;
-				color: $secondary
+				color: $secondary;
+				transform: rotate(180deg);
 			}
 		}
 	}
@@ -787,5 +793,54 @@ input[type="radio"]{
 			bottom: 0;
 			right: 0;
 		}
+	}
+}
+
+/* IE 11 f*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	input[type="radio"]{
+		height: auto;
+		width: auto;
+	}
+	.next-btn{
+		.btn-text{
+			max-height: 1em;
+		}
+	}
+	.ribbon{
+		.ribbon-text{
+				width: 100%;
+				left: 0;
+				overflow: hidden; 
+			lead{
+				margin: 0 auto;
+				width: 30%;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+	.parts-content{
+		.pc {
+			&:before{
+				top: -40px;	
+			}
+			&:after{
+				top: 110px;	
+			}
+		}
+	}
+	.question-options{
+			&>div{				
+				writing-mode: tb-rl;
+			}
+		}
+		.inquiry-options{
+			.input-group{
+				padding:14px 25px !important;
+			}
+		}
+		.f-child{
+			width: 77.3% !important;			
 	}
 }
