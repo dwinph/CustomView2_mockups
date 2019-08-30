@@ -17,3 +17,5 @@ Rails.application.config.assets.precompile += %w( custom/standard_chartered/asse
 
 Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/ion.rangeSlider.js)
 Rails.application.config.assets.precompile += %w( custom/standard_chartered/assessment/survey/app.js )
+
+Rails.application.config.assets.precompile += %w( custom/standard_chartered/portal/retail_leader/style.css )

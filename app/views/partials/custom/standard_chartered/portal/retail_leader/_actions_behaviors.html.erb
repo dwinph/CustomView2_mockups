@@ -1,0 +1,57 @@
+<div class="row"><%= form_tag(url: "/search", method: "get") do %>
+	<div class="container-fluid">
+		<div class="pad1">
+			<div class="column-fluid">
+				<h1>Sally’s actions and behaviours</h1><%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 63} %>
+			</div>
+		<h2>Tell us how effective they are in the following activities</h2>
+        <div class="form-group radio-group">
+            <label class="txt-highlight">Scanning the horizon, seeing future possibilities and challenges to develop priorities and strategy</label>
+            <div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Not Effective</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Partially Effective</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1" checked>
+                            <div class="card">Effective</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1" checked>
+                            <div class="card">Very Effective</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+      
+      	<h2>
+          Tell us more about their actions and behaviours as a leader
+      	</h2>
+      	
+      	<div class="form-group txt-group">
+				  <label for="comment">What are their key strengths to continue to build on?</label>
+					  <textarea class="form-control" rows="10" id="comment"></textarea>
+				</div>
+				<div class="form-group txt-group">
+				  <label for="comment">What do they need to do to develop in their leadership role?</label>
+					  <textarea class="form-control" rows="10" id="comment"></textarea>
+				</div>
+        
+
+        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %><%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right" %>
+        </div>
+        
+		</div>
+	</div><% end %>
+</div>

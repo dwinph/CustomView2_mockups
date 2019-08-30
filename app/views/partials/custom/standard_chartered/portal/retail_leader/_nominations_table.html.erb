@@ -1,0 +1,81 @@
+<div class="row">
+	<%= form_tag(url: "/search", method: "get") do %>
+	  <div class="container-fluid">
+	    <div class="pad1">
+	    	<h1>Your nominations</h1>
+	    	
+	    	<%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 90} %>
+				
+				<table class="tbl-listed">
+          <tr class="headers">
+            <th>Manager</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+          <tr class="tcont">
+            <td>50%</td>
+            <td>Sally</td>
+            <td>Sample</td>
+            <td>sallysample@sample.com</td>
+          </tr>
+        </table>
+
+        <table class="tbl-listed">
+          <tr class="headers">
+            <th>Peers</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+          <tr class="tcont">
+            <td rowspan="2">50%</td>
+            <td>Sally</td>
+            <td>Sample</td>
+            <td>sallysample@sample.com</td>
+          </tr>
+          <tr class="tcont">
+
+            <td>Sally</td>
+            <td>Sample</td>
+            <td>sallysample@sample.com</td>
+          </tr>
+        </table>
+
+        <table class="tbl-listed">
+          <tr class="headers">
+            <th>Direct Reports</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+          <tr class="tcont">
+            <td rowspan="2">50%</td>
+            <td>Sally</td>
+            <td>Sample</td>
+            <td>sallysample@sample.com</td>
+          </tr>
+          <tr class="tcont">
+            <td>Sally</td>
+            <td>Sample</td>
+            <td>sallysample@sample.com</td>
+          </tr>
+        </table>
+							
+      	<p class="p-highlight">
+      		Please check the email addresses are correct before pressing ‘send invitations’.
+      	</p>
+   
+	    </div>
+	    
+	    <div class="row dir-btns">
+					<%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %>
+					<div class="pull-right">
+						<%= link_to "Add/Remove", "", target:'blank', class:'btn btn-directional' %>
+						<%= submit_tag "Save", data: { confirm: "Send Invitation" }, class: "btn btn-directional btn-right" %>
+					</div>
+			</div>
+	    
+	  </div>  
+	<% end %>
+</div>

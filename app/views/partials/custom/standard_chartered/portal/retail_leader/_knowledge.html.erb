@@ -1,0 +1,45 @@
+<div class="row"><%= form_tag(url: "/search", method: "get") do %>
+	<div class="container-fluid">
+		<div class="pad1">
+			<div class="column-fluid">
+				<h1>Sally's knowledge</h1><%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 63} %>
+			</div>
+		<h2>Indicate the extent of Sally’s knowledge by answering the questions below</h2>
+        <div class="form-group radio-group">
+            <label class="txt-highlight">Knowledge of market trends impacting my area/the organisation and using that insight to develop priorities and strategy.
+            </label>
+            <div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Limited</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Foundation</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1" checked>
+                            <div class="card">Advanced</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1" checked>
+                            <div class="card">Expert</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %><%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right" %>
+        </div>
+        
+		</div>
+	</div><% end %>
+</div>
