@@ -3,7 +3,7 @@
 	  <div class="container-fluid">
 	    <div class="pad1">
 	    	<div class="column-fluid">
-	    		<h1>Sally's experience and knowledge</h1>
+					<h1>Sally's experience and knowledge</h1>
 		    	<%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 63} %>
 				</div>
 				
@@ -24,7 +24,7 @@
 	    
 	    <div class="row dir-btns">
 					<%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %>
-					<%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right" %>
+					<%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right", "data-disable-with": "Next" %>
 			</div>
 	    
 	  </div>  

@@ -6,12 +6,10 @@
     
     <div class="dir-btns">
 	    <div class="row pull-left">
-				  <a href="index.php" class="btn btn-directional">< Back</a>
+          <a href="index.php" class="btn btn-directional">< Back</a>
+          <%= button_tag "Review", data: { confirm: "Send" }, class: "btn btn-neutral" %>
+          <%= submit_tag "Complete", data: { confirm: "Send" }, class: "btn btn-neutral", "data-disable-with": "Complete" %>
 			</div>
-			<div class="row pull-right">
-			  	<a href="step2.php" class="btn btn-neutral">Review ></a>
-			  	<a href="step2.php" class="btn btn-neutral">Complete ></a>
-			</div>    
 		</div>
 		
   </div>

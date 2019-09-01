@@ -106,6 +106,7 @@ strong {
   color: $highlight-2 !important;
 }
 a{
+	cursor: pointer;
 	color: $highlight-2;
 	&.btn{
 		color: white;
@@ -219,8 +220,7 @@ a.btn {
 .pad1 {
 	padding: 70px 30px;
   text-align: left;
-  margin-bottom: 20px;
-
+	margin-bottom: 20px;
   
   &.hr-left {
   	padding: 0 30px;
@@ -302,6 +302,17 @@ form {
 
 
 /* Media Queries */
+@media (max-width: 4000px) {
+	.pad1 {
+			.column-fluid {
+				&:first-child{
+					h1	{
+						width: 70% !important;
+					}
+				}
+			}		
+		}
+}
 @media (max-width: 800px) {
 	.container {
   	&.div-header{
@@ -312,10 +323,6 @@ form {
   
   .start-msg {
   	width: 100%;
-  }
-  
-  .start-img {
-  	display: none;
   }
   
   .pad1 {
@@ -340,6 +347,7 @@ form {
 		}
   
 	.footer {
+		
 		.container-fluid {
 			div{
 				float: left;
@@ -392,9 +400,7 @@ form {
 	&.trans {
 		background: none;
 		border: 1px solid $color-regular;
-		.popup{
-			bottom: -20% !important;
-		}
+
 	}
 	
 	input[type=checkbox]{
@@ -410,19 +416,6 @@ form {
 	}
 }
 
-.popup {
-	background: $highlight-4;
-	position: absolute;
-	bottom: -40%;
-	left: -5%;
-	padding: 30px;
-	width: 110%;
-	z-index: 99;
-	p {
-		text-align: center;
-		color: white;
-	}
-}
 
 .div-opaque-grid {
 	margin-bottom: 30px;
@@ -487,6 +480,29 @@ form {
 }
 
 .div-grid-3 {
+	.main-row{
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display:	flex;
+			flex-wrap: wrap;
+
+			.col-xs-6{
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 0 !important;
+			}
+			.row{
+				&:first-child{
+					height: 100%;
+				}
+			.btn {
+					padding-left: 8px;
+					padding-right: 8px;	
+				}	
+			}
+		}
+
 	.col-xs-6 {
 		padding: 25px 25px 0 25px;
 		&:last-child{
@@ -495,7 +511,8 @@ form {
 		.row {
 			background: white;
 			padding: 15px 15% 15px 20px;
-			min-height: 50vh;
+
+
 			.btn-full-right {
 				left: 88%;
 				top:0;
@@ -675,9 +692,16 @@ form {
 	  	}
 	  }
 	}
-	.tbl-listed {
-		font-size: 0.7em
+	.pad1 {
+		.column-fluid {
+			&:first-child{
+				h1	{
+					width: 100% !important;
+				}
+			}
+		}		
 	}
+	
 	.dir-btns {
 		div{
 			&.pull-right{
@@ -783,13 +807,19 @@ form {
 }
 
 @media (max-width: 1360px) {
-	.div-grid-3 {
-		.col-xs-6 {
-			.row {
-				min-height: 40vh;
+	.div-opaque-grid {
+	.col-md-4 {
+		width: 90%;
+		.container {
+			width: 100%;
 			}
 		}
 	}
+	.start-img {
+		display: flex;
+		flex-direction: column;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -800,16 +830,14 @@ form {
 		}
 	}
 	
-	.div-grid-3 {
-		.col-xs-6 {
-			.row {
-				 min-height: 50vh;
-			}
-		}
-	}
+	
 }
 
 @media (max-width: 1000px) and (orientation : landscape) {
+	.start-img {
+		display: flex;
+		flex-direction: column;
+	}
 	.custom-checkbox {
 		font-size: 0.8rem;
 		.card {
@@ -837,32 +865,36 @@ form {
 	  }
 	}
 	
-	.div-grid-3 {
-		.col-xs-6 {
-			width: 30vw;
-			.row {
-				 min-height: 55vh;
-			}
-		}
-	}
+
 }
 
 @media (max-width: 850px) {
+	.start-img {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pad1 {
+		.column-fluid {
+			&:first-child{
+				h1	{
+					width: 70%;
+				}
+			}
+		}		
+	}
 	
+	.tbl-listed {
+		font-size: 0.7em
+	}
+
 	.custom-checkbox {
 		font-size: 0.7rem;
 		.card {
 			padding:10px;
 		}
 	}
-	.div-grid-3 {
-		.col-xs-6 {
-			width: 35vw;
-			.row {
-				 min-height: 45vh;
-			}
-		}
-	}
+	
 }
 @media (max-width: 850px) and (orientation : landscape) {
 	.actions{
@@ -873,15 +905,21 @@ form {
 			margin: 0;
     }
 	}
-	.div-grid-3 {
-		.col-xs-6 {
-			.row {
-				 min-height: 80vh;
-			}
-		}
-	}
+	
 }
-
+@media (max-width: 760px) {
+	.start-img {
+			display: none;
+		}
+		.div-opaque-grid {
+			.col-md-4 {
+				width: 80%;
+				.container {
+					width: 70%;
+					}
+				}
+			}
+}
 @media (max-width: 700px) {
 	.effective-range{
 		margin-left: -25px;
@@ -890,22 +928,14 @@ form {
 				flex-direction: column;
 			}
 	}
-	.div-grid-3 {
-		.col-xs-6 {
-			padding-right: 0;
-			width: 80vw;
-			.row {
-				 width: 75vw;
-			}
-		}
-	}
+
 }
 
 @media (max-width: 420px) {
+	
 	.div-grid-3 {
 		.col-xs-6 {
 			padding-left: 0;
-			width: 90vw;
 		}
 	.btn-full-right {
 		span {
@@ -919,11 +949,9 @@ form {
 	.div-grid-3 {
 		.col-xs-6 {
 			padding-right: 0;
-			width: 75vw;
-			.row {
-				width: 70vw;
-		 	}
 		}
 
 	}
 }
+
+

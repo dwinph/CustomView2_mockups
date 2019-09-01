@@ -34,7 +34,8 @@
         </div>
         <% x = x + 1; end %>
 
-        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %><%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right" %>
+        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %>
+        <%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right", "data-disable-with": "Next" %>
         </div>
         
 		</div>
