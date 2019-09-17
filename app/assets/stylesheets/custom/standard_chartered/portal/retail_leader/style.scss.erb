@@ -759,7 +759,25 @@ form {
       background: $highlight;
       color: #ffffff;
     }
-  }
+	}
+	&.radio-neutral {
+		width: 10%;
+		min-width: 100px;
+		text-align: center;
+		input[type="radio"] {
+			&+.card{
+				background: $color-regular;
+				color: #ffffff;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				margin-right: 3px;
+			}
+			&:checked + .card {
+				background: $btn-highlight;
+			}
+		}
+	}
 }
 
 .options{
