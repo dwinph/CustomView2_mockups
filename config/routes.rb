@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Add in Alphabetical order
   draw :sample_client
   draw :standard_chartered
-
+  draw :hs
 
   # You can have the root of your site routed with "root"
   #root 'welcome#index'
