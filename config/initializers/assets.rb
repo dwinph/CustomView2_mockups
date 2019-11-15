@@ -20,5 +20,5 @@ Rails.application.config.assets.precompile += %w( custom/standard_chartered/asse
 
 Rails.application.config.assets.precompile += %w( custom/standard_chartered/portal/retail_leader/style.css )
 
-Rails.application.config.assets.precompile += %w( custom/hs/infinity_framework/survey/app.js )
-Rails.application.config.assets.precompile += %w( custom/hs/infinity_framework/survey/style.css )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/infinity_framework_v1/survey/app.js )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/infinity_framework_v1/survey/style.css )

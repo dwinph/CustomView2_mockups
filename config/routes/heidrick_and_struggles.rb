@@ -1,0 +1,33 @@
+Rails.application.routes.draw do
+
+  get 'heidrick_and_struggles/infinity_framework_v1/survey' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#index"
+  get 'heidrick_and_struggles/infinity_framework_v1/page' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page"
+
+  get 'heidrick_and_struggles/infinity_framework_v1/page_1' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_1"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_2' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_2"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_3' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_3"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_4' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_4"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_5' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_5"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_6' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_6"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_7' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_7"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_8' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_8"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_9' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_9"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_10' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_10"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_11' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_11"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_12' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_12"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_13' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_13"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_14' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_14"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_15' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_15"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_16' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_16"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_17' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_17"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_18' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_18"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_19' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_19"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_20' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_20"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_21' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_21"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_22' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_22"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_23' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_23"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_24' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_24"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_25' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_25"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_26' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_26"
+  
+end
