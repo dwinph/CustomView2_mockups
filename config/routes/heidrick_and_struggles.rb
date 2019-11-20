@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'heidrick_and_struggles/infinity_framework_v1/survey' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#index"
-  get 'heidrick_and_struggles/infinity_framework_v1/page' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page"
-
   get 'heidrick_and_struggles/infinity_framework_v1/page_1' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_1"
   get 'heidrick_and_struggles/infinity_framework_v1/page_2' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_2"
   get 'heidrick_and_struggles/infinity_framework_v1/page_3' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_3"
@@ -29,5 +26,14 @@ Rails.application.routes.draw do
   get 'heidrick_and_struggles/infinity_framework_v1/page_24' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_24"
   get 'heidrick_and_struggles/infinity_framework_v1/page_25' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_25"
   get 'heidrick_and_struggles/infinity_framework_v1/page_26' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_26"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_27' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_27"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_28' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_28"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_29' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_29"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_30' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_30"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_31' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_31"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_32' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_32"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_33' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_33"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_34' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_34"
+  get 'heidrick_and_struggles/infinity_framework_v1/page_35' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_35"
   
 end

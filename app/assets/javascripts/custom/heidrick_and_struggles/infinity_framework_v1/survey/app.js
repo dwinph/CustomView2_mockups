@@ -1,6 +1,7 @@
 $(document).ready(function() {
-   $(function() {
-
-  })
+		if($( "#sortable" )){
+		    $( "#sortable" ).sortable();
+		    $( "#sortable" ).disableSelection();
+		}
 });
 
