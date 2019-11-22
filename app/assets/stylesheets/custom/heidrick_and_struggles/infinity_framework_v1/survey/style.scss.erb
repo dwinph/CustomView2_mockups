@@ -50,7 +50,24 @@ startColorstr='$bglt', endColorstr='$highlight6', GradientType=0);
 .inl {
    display: inline-block;
    vertical-align: middle;
+   label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   }
 }
+
+.piv-ee {
+  .inl {
+    li{
+      label {
+        min-height: 8vh;
+      }
+    }
+  }
+}
+
 
 a {
    text-decoration: none;

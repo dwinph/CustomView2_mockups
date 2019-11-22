@@ -35,5 +35,7 @@ Rails.application.routes.draw do
   get 'heidrick_and_struggles/infinity_framework_v1/page_33' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_33"
   get 'heidrick_and_struggles/infinity_framework_v1/page_34' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_34"
   get 'heidrick_and_struggles/infinity_framework_v1/page_35' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_35"
+
+  get 'heidrick_and_struggles/leadership_accelerator' => "custom/heidrick_and_struggles/leadership_accelerator/portal#index"
   
 end

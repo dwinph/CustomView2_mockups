@@ -23,3 +23,6 @@ Rails.application.config.assets.precompile += %w( custom/standard_chartered/port
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/infinity_framework_v1/survey/jquery.ui.touch-punch.min.js )
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/infinity_framework_v1/survey/app.js )
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/infinity_framework_v1/survey/style.css )
+
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/leadership_accelerator/portal/app.js )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/leadership_accelerator/portal/style.css )
