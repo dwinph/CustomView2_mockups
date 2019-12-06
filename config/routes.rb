@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   draw :sample_client
   draw :standard_chartered
   draw :heidrick_and_struggles
+  draw :talent_accelerator
+  
 
   # You can have the root of your site routed with "root"
   #root 'welcome#index'

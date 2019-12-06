@@ -1,0 +1,22 @@
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_dashboard" %>
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_goal" %>
+<div id="maincont">
+	<div class="container">
+    <div class="row dash">
+      <p><strong>First, please rate yourself using the scale below, on how successful you have been in reaching your goal.</strong></p>
+      <p class="s-highlight">Insert goal intention</p>
+			<h4 class="ttl">What progress/change have you made in the last 60 days?</h4>
+			<div class="choices">
+				<input type="radio" name="opt" id="o1"><label for="o1">3 =  Considerable progress or improvement/exceeded expectation</label><br>
+				<input type="radio" name="opt" id="o2"><label for="o2">2 = Some progress or improvement/met expectation</label><br>
+        <input type="radio" name="opt" id="o3"><label for="o3">1 = No progress or improvement/fell short of expectation</label><br />
+        <input type="radio" name="opt" id="o4"><label for="o4">0 = Not observered / unable to answer</label>
+			</div>
+			
+			<br class="clear"><br>
+			<div class="botcont">
+				<a href="page_<%= pg %>" class="btn1">Next</a>
+			</div>
+		</div>
+	</div>
+</div>
