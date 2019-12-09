@@ -667,48 +667,11 @@ input[type="radio"] {
 	text-align: left;
 	margin: 0 auto;
 }
-
-.card-single
-{
-	min-height: 100px;
-	width: 80%;
-	margin: 0 auto;
-	text-align: left;
-	padding: 20px 0 40px 0;
-	
-	.gcont
-	{
-		background: white;
-		box-shadow: 0px 0px 5px rgba(0,0,0,0.2);border-radius: 5px;
-		padding: 20px;
-		
-	}
-		
-#bar-horzontal {
-  max-width: 600px;
-  border-bottom: 1px solid $light;
-  border-left: 1px solid $light;
-  background: white;
-}
-#bar-horzontal div {
-  color: #fff;
-  padding: 10px 0 10px 5px;
-  box-sizing: border-box;
-  &.bar1, &.bar3{
-  	background: $accent1;
-  }
-  &.bar2, &.bar4{
-  	background: $accent2;
-  }
-}
-
-	
-}
 .feedback-c
 {
 	background: white;
 	padding: 40px 0;
-	width: 100vw;
+	width: 100%;
 	left: 0;
 	position: absolute;
 	.feedback-intro{
@@ -716,12 +679,100 @@ input[type="radio"] {
 		margin: 0 auto !important
 	}
 	.botcont {
-
-
 		text-align: center
 	}
-	
 }
+.card-single
+{
+	min-height: 100px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 20px 0 40px 0;
+	.gcont
+	{
+		background: white;
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.2);border-radius: 5px;
+		padding: 20px;
+	}	
+	.graph-key{
+		border-right: 1px solid $light4;
+		padding-right: 20px;
+	}
+	.graph-key, .graph-legend {
+		p{
+			font-size: 12px !important;
+			line-height: 1.25em !important;
+			text-align: left !important;
+			&.gr-legend{
+				text-align: right !important;
+				position: relative;
+				padding-right: 45px;
+				&:after{
+					content: "";
+					height: 15px;
+					width: 15px;
+					display: inline-block;
+					border: 1px solid $light4;
+					margin-left: 10px;
+					position: absolute;
+					top: 0;
+					right: 20px;
+				}
+				&#gr-legend-1{
+					&:after{
+						background: $accent2;
+					}
+				}
+				&#gr-legend-2{
+					&:after{
+						background: $accent1;
+					}
+				}
+			}
+		}
+	}
+}
+//tooltip
+.arrow_box {
+  position: relative;
+  background: $accent1;
+  border: none;
+}
+.arrow_box:after, .arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border: none;
+  margin-top: -10px;
+}
+.arrow_box:before {
+  border: none;
+  border-width: 13px;
+  margin-top: -13px;
+}
+
+#chart .apexcharts-tooltip {
+  color: white;
+  transform: translateX(10px) translateY(10px);
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+#chart .apexcharts-tooltip span {
+  padding: 5px 10px;
+  display: inline-block;
+}
+//end tooltip
+
 @media(max-width: 1199px){
 	*{transition: 0.5s}
 	.range input {
@@ -780,7 +831,17 @@ input[type="radio"] {
 }
 
 @media(max-width: 768px){
-
+.graph-key{
+	border-right: none !important;
+	border-bottom: 1px solid $light4;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+}
+.gr-legend{
+	&:after{
+		
+	}
+}
 .feedback-intro
 {
 	width: 89%;
@@ -908,9 +969,12 @@ input[type="radio"] {
 }
 
 @media(max-width: 568px){
-	.feedback-intro
+.card-single {
+	width: 100% !important;
+}
+.feedback-intro
 {
-	width: 95%;
+	width: 75% !important;
 	text-align: left;
 	margin: 0 auto;
 }
