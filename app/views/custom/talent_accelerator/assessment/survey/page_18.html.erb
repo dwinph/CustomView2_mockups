@@ -1,27 +1,32 @@
 <%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_dashboard" %>
-<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_generic", locals: {cont: "My Goal Mentors"} %>
+<div class="frm_mul">
+  <%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_generic", locals: {cont: "My Goal Mentors"} %>
+</div>
 <div id="maincont">
-	<div class="container">
-		<div class="row dash">
-      <p><strong>Next, review your list of feedback providers and make any needed changes.</strong></p>
+  <div class="container">
+    <div class="row dash">
+      <p>
+        <strong>Next, review your list of feedback providers and make any needed changes.</strong>
+      </p>
       <p>Invite as many colleagues (goal mentors) as you would like to provide feedback on your progress, improvement or whether you have met the expectation related to your goal.</p>
-      <p><em>As a reminder, the colleagues/goal mentors you invite for feedback should be individuofs you wont to be port of your support network, ore trusted advisors and con provide constructive and useful feedback to help you achieve your goal. Feedback will be requested from these people automatically on DATE.</em></p>
+      <p>
+        <em>As a reminder, the colleagues/goal mentors you invite for feedback should be individuofs you wont to be port of your support network, ore trusted advisors and con provide constructive and useful feedback to help you achieve your goal. Feedback will be requested from these people automatically on DATE.</em>
+      </p>
       <p>Once your colleogues/ goal mentors complete the same goal progress scale you completed above you will be notified and then you will be able to view the results in your Talent Accelerator dashboard.</p>
-                    <div class="inputs">
-														<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book_input" %>
-														</div>
-										<div class="outputs">
-													<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book" %>
-													</div>
-													<br class="clear">
-                            <hr />
-                            <p class="s_highlight">Insert Reward participant wrote here</p>
-                            <div class="botcont">
-                            <a href="page_17" class="prog fl">Prev</a>
-                            <a href="page_19" class="prog fr">Next</a>
-                            <br class="clear">
-                          </div>
-														</div>
-													</div>
-                    </div>
+      <div class="inputs"><%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book_input" %>
+      </div>
+      <div class="outputs"><%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book" %>
+      </div>
+      <br class="clear">
+        <hr />
+        <p class="s_highlight">Insert Reward participant wrote here</p>
+        <div class="botcont">
+          <a href="page_17" class="prog fl">Prev</a>
+          <a href="page_19" class="btn1 fr">Next</a>
+          <br class="clear">
+          </div>
+        </div>
+      </div>
+    </div>
+                    
     

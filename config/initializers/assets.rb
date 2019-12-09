@@ -27,8 +27,5 @@ Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/leadership_accelerator/portal/app.js )
 Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/leadership_accelerator/portal/style.css )
 
-Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/ion.rangeSlider.js )
 Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/app.js )
 Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/style.css )
-Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/ion.rangeSlider.css )
-Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/ion.rangeSlider.skinHTML5.css )
