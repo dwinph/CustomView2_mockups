@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //chart
   var options = {
       chart: {
           height: 300,
@@ -33,11 +34,7 @@ $(document).ready(function () {
           show: false,
       },
       tooltip: {
-        custom: function({series, seriesIndex, dataPointIndex, w}) {
-          return '<div class="arrow_box">' +
-            '<span>' + series[seriesIndex][dataPointIndex] + '</span>' +
-            '</div>'
-        }
+        enabled: false
       },
       series: [{
           name: $("#series_1").value,
@@ -57,4 +54,19 @@ $(document).ready(function () {
   if($(("#chart"))){
     chart.render();
   }
+  
+  //range
+  if($(".js-range-slider")){
+    $(".js-range-slider").ionRangeSlider({
+        skin: "round",
+        min: 1,
+        max: 10,
+        from: 1,
+        step: 1,            
+        grid: true,         
+        grid_num: 10,
+        grid_snap: true 
+    });
+  }
+  
 });

@@ -167,7 +167,7 @@ margin: 0 auto !important;
 		margin: 0 auto;
 		.row{padding:20px; 
 			&.welc{padding: 60px 0 20px 10px;
-				.sbar{text-align: left;max-width: 400px;width: 100%;
+				.sbar{text-align: left;max-width: 40%;width: 100%;
 					h2{margin: 0;padding: 0;font-size: 25px;font-weight: 700;}
 					ol{
 						&.steps{padding: 0;margin: 0;list-style: none;counter-reset: li;
@@ -229,8 +229,29 @@ margin: 0 auto !important;
 				ol{
 					&.dash{padding: 0;margin: 0;list-style: none;counter-reset: li;
 						li::before{counter-increment:li;content:counter(li);color:$white;font-size: 20px;border-radius: 50%;background: $accent1;width: 30px;height: 30px;display: inline-block;text-align: center;margin: 10px 10px 0 0;vertical-align: top;}
-						li{color:$black;font-size: 18px;margin: 20px 0 0;font-weight: 700;border-bottom: 1px solid $light2;padding:10px 0 30px;
-							span{width: 88%;margin: 10px 0 0;text-align: left;}
+						li{
+							color:$black;font-size: 18px;margin: 20px 0 0;font-weight: 700;border-bottom: 1px solid $light2;padding:10px 0 30px;
+							&:not(.range_i){
+								span{width: 88%;margin: 10px 0 0;text-align: left;}
+							}
+							&.range_i{
+								span.inl{width: 88%;margin: 10px 0 0;text-align: left;}
+								.range_set{
+									width: 90%;
+									margin: 0 auto;
+									.irs-single, .irs-from, .irs-to, .irs-max, .irs-min{
+										display: none;
+									}
+									.irs-handle{
+										background: $accent3;
+										border: none;
+									}
+									.irs-bar{
+										background: $light4;
+										border: none;
+									}
+								}
+							}
 						}
 						li:last-child{border: none;}
 						&.regtxt{
@@ -278,123 +299,8 @@ margin: 0 auto !important;
 					}
 				}
 
-			//range
-	.range {
-		width: 100% !important;
-		position: relative;
-		height: 5px;
-		
-	}
+	//range plugin
 	
-	@mixin rangeThumb {
-	width: 13px;
-	height: 13px;
-	
-	margin: -5px 0  0;
-	border-radius: 50%;
-	background: $accent3;
-	cursor: pointer;
-	border: 0 !important;
-}
-
-@mixin rangeTrack {
-	height: 2px;
-	cursor: pointer;
-	background: $light;
-}
-
-.range input {
-	width: 100%;
-	position: relative;
-	top: 2px;
-	
-	height: 25px; //IE
-	-webkit-height: 0;
-	-webkit-appearance: none;
-
-
-	// Thumb
-	&::-webkit-slider-thumb {
-		-webkit-appearance: none; // needed again for Chrome & Safari
-		@include rangeThumb;
-	}
-
-	&::-moz-range-thumb {
-		@include rangeThumb;
-	}
-
-	&::-ms-thumb {
-		@include rangeThumb;
-	}
-
-	// Track
-	&::-webkit-slider-runnable-track {
-		@include rangeTrack;
-	}
-
-	&::-moz-range-track {
-		@include rangeTrack;
-	}
-
-	&::-ms-track {
-		@include rangeTrack;
-	}
-
-	&:focus { // override outline/background on focus
-		background: none;
-		outline: none;
-	}
-
-	&::-ms-track {
-		width: 100%;
-		cursor: pointer;
-		background: $light4;
-		border-color: $light4;
-		color: $light4;
-	}
-}
-
-// Labels below slider
-.s_range-labels {
-	margin: 0 0 0 10px;
-	padding: 0;
-	list-style: none;
-	
-	li {
-		counter-reset: li;
-		position: relative;
-		float: left;
-		width: 10.9%;
-		text-align: left;
-		color: $light !important;
-		font-size: 10px !important;
-		cursor: pointer;
-		border: none !important;
-		&:last-child {
-			width: 0.5vw !important;
-			text-align: right;
-		}
-		&:before {
-			position: absolute;
-			top: -15px;
-			right: 0;
-			left: 0;
-			content: "" !important;
-			margin: 0 auto;
-			width: 4px !important;
-			height: 4px !important;
-			padding: 0 !important;
-			font-size: 2px;
-			background: $light !important;
-			border-radius: 50%;
-		}
-	}  
-	.selected::before {
-		background: $accent3;
-	}
-	
-}
-
 				.inputs{text-align: center;
 					input[type=text], select{width: 49%;padding: 5px;color:$light2;border:1px solid $light2;font-size: 15px;font-family: "Noto Sans KR";font-weight: 300;margin: 10px 0;}
 					select{ -webkit-appearance: none; -moz-appearance: none;appearance:none;background: url('arr.png') no-repeat right $white;}
@@ -733,45 +639,6 @@ input[type="radio"] {
 		}
 	}
 }
-//tooltip
-.arrow_box {
-  position: relative;
-  background: $accent1;
-  border: none;
-}
-.arrow_box:after, .arrow_box:before {
-  right: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.arrow_box:after {
-  border: none;
-  margin-top: -10px;
-}
-.arrow_box:before {
-  border: none;
-  border-width: 13px;
-  margin-top: -13px;
-}
-
-#chart .apexcharts-tooltip {
-  color: white;
-  transform: translateX(10px) translateY(10px);
-  overflow: visible !important;
-  white-space: normal !important;
-}
-
-#chart .apexcharts-tooltip span {
-  padding: 5px 10px;
-  display: inline-block;
-}
-//end tooltip
 
 @media(max-width: 1199px){
 	*{transition: 0.5s}
