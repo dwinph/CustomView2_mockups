@@ -3,4 +3,10 @@ class Custom::HeidrickAndStruggles::LeadershipAccelerator::PortalController < Ap
   def index
   end
 
+  def participant_nomination
+  end
+
+  def manager_nomination
+  end
+
 end
