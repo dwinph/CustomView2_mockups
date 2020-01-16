@@ -1,9 +1,10 @@
+
 set :application, 'mockups.assessmenthub.net'
 
 set :deploy_to, "/Users/cv2mockups/sites/mockups.assessmenthub.net"
 set :branch, 'staging'
 set :rvm_type, :user 
-set :rvm_ruby_version, 'ruby-2.3.8'
+set :rvm_ruby_version, 'ruby-2.4.9'
 
 # Delayed job settings
 # role :worker, "jobs1.coreix.elsrv.com"
