@@ -111,6 +111,12 @@ class Custom::HeidrickAndStruggles::InfinityFrameworkV1::SurveyController < Appl
   def page_35
   end
 
+  def voice_of_the_rising_leader_1
+  end
+
+  def voice_of_the_rising_leader_2
+  end
+
   
 
 end

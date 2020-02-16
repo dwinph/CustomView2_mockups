@@ -36,6 +36,9 @@ Rails.application.routes.draw do
   get 'heidrick_and_struggles/infinity_framework_v1/page_34' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_34"
   get 'heidrick_and_struggles/infinity_framework_v1/page_35' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#page_35"
 
+  get 'heidrick_and_struggles/infinity_framework_v1/voice_of_the_rising_leader_1' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#voice_of_the_rising_leader_1"
+  get 'heidrick_and_struggles/infinity_framework_v1/voice_of_the_rising_leader_2' => "custom/heidrick_and_struggles/infinity_framework_v1/survey#voice_of_the_rising_leader_2"
+
   get 'heidrick_and_struggles/leadership_accelerator' => "custom/heidrick_and_struggles/leadership_accelerator/portal#index"
   get 'heidrick_and_struggles/leadership_accelerator/participant_nomination' => "custom/heidrick_and_struggles/leadership_accelerator/portal#participant_nomination"
   get 'heidrick_and_struggles/leadership_accelerator/manager_nomination' => "custom/heidrick_and_struggles/leadership_accelerator/portal#manager_nomination"
