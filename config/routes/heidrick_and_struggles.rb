@@ -42,5 +42,29 @@ Rails.application.routes.draw do
   get 'heidrick_and_struggles/leadership_accelerator' => "custom/heidrick_and_struggles/leadership_accelerator/portal#index"
   get 'heidrick_and_struggles/leadership_accelerator/participant_nomination' => "custom/heidrick_and_struggles/leadership_accelerator/portal#participant_nomination"
   get 'heidrick_and_struggles/leadership_accelerator/manager_nomination' => "custom/heidrick_and_struggles/leadership_accelerator/portal#manager_nomination"
+
+  #Rising Leaders IFA
+  get 'heidrick_and_struggles/rising_leaders_ifa/pageprivacy' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#privacy"
+  get 'heidrick_and_struggles/rising_leaders_ifa/pagewelcome' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#welcome"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page1' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page1"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page2' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page2"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page3' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page3"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page4' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page4"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page5' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page5"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page6' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page6"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page7' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page7"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page8' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page8"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page9' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page9"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page10' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page10"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page11' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page11"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page12' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page12"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page13' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page13"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page14' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page14"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page15' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page15"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page16' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page16"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page17' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page17"
+  get 'heidrick_and_struggles/rising_leaders_ifa/page18' => "custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire#page18"
+  
+
   
 end

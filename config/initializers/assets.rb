@@ -29,3 +29,7 @@ Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/
 
 Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/app.js )
 Rails.application.config.assets.precompile += %w( custom/talent_accelerator/assessment/survey/style.css )
+
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/jquery.ui.touch-punch.min.js )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/app.js )
+Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/style.css )
