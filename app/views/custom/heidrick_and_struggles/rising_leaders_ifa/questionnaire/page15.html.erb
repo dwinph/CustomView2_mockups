@@ -1,5 +1,56 @@
 <%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/topcont_progress", locals: {progress: 94} %>        
-In progress...
+<div class="main container">
+	<div class="row">
+		<h1>Additional Questions</h1>
+		
+		<div class="qna">
+			<hr/>
+			<p>Taking everything into account. how would you describe your overall leadership impact?</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="value1">Item 1</option>
+				<option value="value2">Item 2</option>
+			</select>
+			<hr>
+			<p>During the  past five years, how many times have you been promoted?</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="value1">Item 1</option>
+				<option value="value2">Item 2</option>
+			</select>
+			<hr>
+			<p>During the  past five years, how many times has your role expanded in scope or complexity?</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="value1">Item 1</option>
+				<option value="value2">Item 2</option>
+			</select>
+			<hr>
+			<p>Others would describe me as creating an inclusing work environment?</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="value1">Item 1</option>
+				<option value="value2">Item 2</option>
+			</select>
+			<hr>
+			<p>Others would describe me as valuing diverse backgrounds, experiences and perspectives?</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="value1">Item 1</option>
+				<option value="value2">Item 2</option>
+			</select>
+			<p>To what extend do you feel your current responsibilities are preparing you to succeed in the future?</p>
+			<div class="rad">
+				<span><input type="radio" name="a2" id="ch1"/> <label for="ch1">Not at all</label></span>
+				<span><input type="radio" name="a2" id="ch2"/> <label for="ch2">To a little extent</label></span>
+				<span><input type="radio" name="a2" id="ch3"/> <label for="ch3">To a moderate extent</label></span>
+				<span><input type="radio" name="a2" id="ch4"/> <label for="ch4">To a great extent</label></span>
+				<span><input type="radio" name="a2" id="ch5"/> <label for="ch5">To a very great extent</label></span>
+				<span><input type="radio" name="a2" id="ch6"/> <label for="ch6">Cannot say</label></span>
+			</div>
+			<hr />
+
+		</div>
 
 		<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/direction", 
     locals: {txt:'Next', prev:'14', nxt:'16'} %>        
