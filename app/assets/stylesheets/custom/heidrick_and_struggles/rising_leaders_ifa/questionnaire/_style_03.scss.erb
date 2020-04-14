@@ -120,3 +120,23 @@ body {
         border: none;
     }
 }
+.radio-iterative {
+    counter-reset: my-sec-counter;
+    .radio-item span{
+             &:before{
+                counter-increment: my-sec-counter;
+                content: counter(my-sec-counter);
+                text-align: center;
+                padding-top: 4px;
+                display: block;
+                height: 22px;
+                width: 20px;
+                font-size: 12px;
+                position: absolute;
+                color: rgb(16,113,183);
+                z-index: 999;
+                color: #AAAAAA!important;
+                font-weight: bold;
+            }  
+    }
+}
