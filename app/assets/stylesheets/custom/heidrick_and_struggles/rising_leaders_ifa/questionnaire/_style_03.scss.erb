@@ -120,23 +120,23 @@ body {
         border: none;
     }
 }
-.radio-iterative {
-    counter-reset: my-sec-counter;
-    .radio-item span{
-             &:before{
-                counter-increment: my-sec-counter;
-                content: counter(my-sec-counter);
-                text-align: center;
-                padding-top: 4px;
-                display: block;
-                height: 22px;
-                width: 20px;
-                font-size: 12px;
-                position: absolute;
-                color: rgb(16,113,183);
-                z-index: 999;
-                color: #AAAAAA!important;
-                font-weight: bold;
-            }  
+.custom_rad_val{
+    text-align: center;
+    padding-top: 8px;
+    display: block;
+    height: 22px;
+    width: 20px;
+    font-size: 8px;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    color: rgb(16,113,183);
+    letter-spacing: 0.01em;
+    color: #444444;
+}
+.radio-item{
+    input, span:first-child{
+        z-index: 2;
+        position: relative;
     }
 }
