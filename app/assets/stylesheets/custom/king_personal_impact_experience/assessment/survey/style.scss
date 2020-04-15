@@ -62,7 +62,7 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	}
 	.flag{background: $orange;padding: 40px 20px 20px;max-width: 350px;text-align: left;border-radius: 0 0 15px 15px;
 		p{color:$white;font-size: 14px;}
-		h2{color:$white;font-size: 30px;font-weight: normal;}
+		h2{color:$white;font-size: 30px;font-weight: normal; margin-top: -20px !important;}
 		ol{margin: 0px;padding: 0px;color:$white;counter-reset: li;list-style-type: none;
 			li{position:relative;padding:4px 0 4px 23px;
 				&:before{content: counter(li);
@@ -83,9 +83,9 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	.flag__inst{
 		padding-top: 60px !important;
 	}
-	.boxes{display: flex;justify-content: space-between;margin: 0 0 -50px;align-items:center;
+	.boxes{display: flex;justify-content: space-between;margin: 0 0 -85px;align-items:center;
 		.pbox{align-items: center;padding: 10px;position: relative;border-radius: 15px;width: 20%;min-height: 320px;background: $pink;border-bottom:8px solid $darkpink;box-shadow:0px 5px 10px rgba(0,0,0,0.4);display: flex;justify-content: center;align-items:center;
-			.num{position: absolute;top:-10px;left: -10px;background: $mint;width: 35px;height: 35px;color:$white;font-size: 20px;font-weight: 500;border-radius: 50%;padding: 5px 0 0;border-bottom:3px solid $darkgreen;}
+			.num{position: absolute;top:-10px;left: -10px;background: $mint;width: 50px;height: 50px;color:$white;font-size: 24px;font-weight: 500;border-radius: 50%;padding: 8px 0 0;border-bottom:3px solid $darkgreen;}
 			dl{
 				dt{
 					color:$white;font-weight: 400;font-size: 34px;line-height: 36px;
@@ -115,6 +115,7 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	.dt__header--multi{
 		width: 70%;
 		margin: auto;
+		font-weight: 500 !important;
 	}
 	&.bn2{
 		.intro{max-width: 440px;padding:30px 0;
@@ -132,7 +133,16 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	}
 }
 
-#plat{background: $gray;min-height: 100px;}
+#plat{
+		background: $gray;
+		min-height: 150px;
+}
+.sub_p_80{
+	max-width: 80%;
+	text-align: center;
+
+	margin: 0 auto !important;
+}
 .maincont{background: $mint;padding: 30px 0;
 	.frm{position: relative;text-align: left;
 		.cnt{color:$white;border-radius: 50%;width: 35px;height: 35px;font-size: 20px;font-weight: 500;position: absolute;top:-5px;left: -10px;border:1px solid $white;text-align: center;padding: 4px 0 0;}
@@ -154,7 +164,7 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 					&:hover{color:$orange;background: $gray2;}
 				}
 			}
-			&.active, &:hover,&:focus{background: white;border:5px solid $orange;box-shadow: 0px 5px 5px rgba(0,0,0,0.4);border-radius:5px;
+			&.active,&:focus{background: white;border:5px solid $orange;box-shadow: 0px 5px 5px rgba(0,0,0,0.4);border-radius:5px;
 				h3{color:$orange;}
 				p{color:$gray2;}
 				.btncont{
@@ -164,6 +174,9 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 				}
 			}
 		}
+	}
+	.h1__90{
+		width: 90%;
 	}
 	.igv{margin: 40px 0 20px;
 		.thead{display: flex;justify-content: space-between;background: $darkgreen2;border-radius: 10px;padding:5px 20px;
@@ -332,11 +345,29 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 }
 
 @media(max-width: 768px){
+	.maincont .frm .rev{
+		padding-right: 50px !important;
+	}
+	.bottom{
+		.dlp{
+			.num{
+				left: 10px;
+				&+h3{
+					margin-left: 25px;
+					width: 90%;
+				}
+			}
+			p{
+				margin-left: 25px;
+				width: 90%;
+			}
+		}
+	}
 	#banner{
 		.intro{max-width: inherit;padding: 20px;
 			.subtext{max-width: inherit;display: none;
 				&.willshow{display: block;}
-				p{font-size: 20px;}
+				p{font-size: 20px; margin-left: -20px;}
 			}
 			h1{font-size: 30px;margin: 10px 0;}
 			&.pull-left{float: none !important;}
@@ -402,14 +433,38 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 			.smlbox{display: block;margin: 0px;}
 		}
 	}
-}
-
-@media(max-width: 580px){
 	#banner{
 		.boxes{
+			margin-bottom: -95vh;
 			.pbox{width: 80%;}
 		}
 	}
+	#plat{
+		min-height: 105vh;
+	}
+	.header-bi{
+		.pull-right{
+			float: left !important;
+			&:first-child{
+				float: right !important;
+			}
+		}
+	}
+	.h1__90{
+		font-weight: 500 !important;
+		font-size: 3.2em !important;
+		width: 90%;
+	}
+	.flag__inst{
+		h2{
+			margin-top: -35px !important;
+		}
+	}
+	
+}
+
+@media(max-width: 580px){
+	
 }
 
 @media(max-width: 555px){
