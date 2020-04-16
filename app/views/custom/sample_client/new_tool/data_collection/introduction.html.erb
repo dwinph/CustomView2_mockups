@@ -1,0 +1,66 @@
+<div class='container page page-border questionnaire margin-top'>
+  <div class='row'>
+
+
+    <div class='col-md-10 col-md-offset-1 margin-bottom-x2'>
+      <h1>Welcome to the Feedback Process</h1>
+      <hr>
+
+      <p>
+        Robert Gibson is undertaking a 360° feedback exercise and has asked for your participation in the process. He has nominated a number of colleagues to provide him with feedback on his effectiveness across a range of different activities and behaviours.
+      </p>
+
+      <p>
+        You are not being asked to appraise the individual's overall work performance; rather to indicate areas which may represent potential strengths or limitations and will help to focus his development planning.
+      </p>
+
+      <p>
+        The questionnaire should take no more than 15 minutes to complete, although there is no time limit.
+      </p>
+
+      <p>
+        Remember, you can log out at any time and return to the same page at a later time.
+      </p>
+
+      <p>
+        Your feedback is confidential and anonymous. An external consultancy will be processing the results and producing aggregate reports. Individual responses will not be identified, unless you are the individual's line manager, in which case your feedback will be displayed separately in the report.
+      </p>
+
+      <p>
+        Please note your data is secure and held in accordance with the provisions of the Data Protection Act.
+      </p>
+
+    </div>
+
+
+
+
+    <div class='col-md-10 col-md-offset-1'>
+
+      <h3>Confirmation of Privacy Policy</h3>
+
+      <p>
+        To accept our Privacy Policy and complete the online questionnaire please check the box.
+      </p>
+
+      <p>
+        <%= check_box(check_value = "1", unchecked_value= "0") %>
+        <strong>I agree for the information to be used in accordance with out Privacy Policy</strong>
+      </p>
+
+    	<div class="row text-right">
+        <div class="col-md-9 text-left">
+          <%= link_to "More details", sample_client_new_tool_privacy_policy_path %>
+        </div>
+
+        <div class="margin-top-x2 col-md-3 text right">
+          <%= link_to "Next", sample_client_new_tool_instructions_path, class:'btn btn-primary' %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class='container page page-border questionnaire margin-top'>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+      <!-- Page Heading -->
+
+      <h1>About You</h1>
+
+      <p>
+        Please respond to some quesitons about you. The following information is being gathered for database purposes and will not be included in the final report or shared with your company.
+      </p>
+
+
+
+      <!-- Question Loop -->
+
+      <% (1..6).each do |question_number| %>
+
+        <div>
+          <div>
+            <input type="hidden" name="demographic_question_15_asked" id="demographic_question_15_asked" value="true" />
+              I will probably look for a new job in the next year<br>
+              <select name="demographic_question_15_demographic_question_response_id" id="demographic_question_15_demographic_question_response_id"><option value=""> -- Select One -- </option><option value="250">Very unlikely</option>
+                <option value="251">Somewhat unlikely</option>
+                <option value="252">Somewhat likely</option>
+                <option value="253">Likely</option>
+                <option value="254">Very likely</option>
+              </select>
+            </input>
+          </div>
+        </div>
+        <hr>
+
+      <% end %>
+
+
+      <!-- Navigation Links -->
+
+      <div class="text-center margin-top-x2">
+        <%= link_to "Previous", envisia_team_trust_view_open_ended_questions_path, class:'btn btn-default' %>
+        &nbsp;
+        <%= link_to "Next", envisia_team_trust_view_thank_you_path, class:'btn btn-primary' %>
+      </div>
+
+      <div class="text-center margin-top row">
+        &nbsp;
+        <span>
+          Page 8 of 27
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<div class="container page  page-border questionnaire margin-top">
+   <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "75%", width: "75%" %>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="pull-right">
+            <%= image_tag "custom/heidrick_and_struggles/hs-logo.png", height:"100%", width:"100%" %>
+          </div>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-12 text-right'>
+          <%= link_to "Portal", "/hs/taq/portal" %>
+          &nbsp;|&nbsp;
+          <%= link_to "Logout", "/users/sign_out" %>
+        </div>
+      </div>
+
+      <div class="row margin-top-x2">
+
+        <div class="col-md-3 col-md-push-9 hidden-sm hidden-xs">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                &nbsp;
+              </h2>
+
+            </div>
+
+            <div class="panel-body text-center">
+              <%= image_tag "custom/heidrick_and_struggles/report_right_panel_graphic.png", height:"75%", width:"75%" %>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-md-9 col-md-pull-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                Team Accelerator: About You
+              </h2>
+
+            </div>
+
+            <div class="panel-body">
+
+              <p>
+                The following information is confidential and collected by Heidrick & Struggles for research purposes only. It will not be used in conjunction with any Executive Search engagements and will not be made available for consideration on an individually attributable basis.
+              </p>
+
+              <p>
+                Heidrick & Struggles takes great care to respect and maintain your privacy and to ensure that your personal data is secure. We strip your survey response of all information that could identify you personally and retain all data on secure, encrypted servers in accordance with applicable privacy laws.
+              </p>
+
+              <p>
+                You may choose not to complete the demographic questions; if this is the case please select “Prefer not to respond” for each question. This will not affect your participation for the rest of the questionnaire.
+              </p>
+
+            </div>
+
+
+
+            <div class="panel-body text-center">
+
+              <%= link_to "Back", heidrick_and_struggles_taq_standard_introduction_path, class:'btn btn-default' %>
+
+              &nbsp;
+
+              <%= link_to "Next", heidrick_and_struggles_taq_standard_about_you_questions_path, class:"btn btn-primary" %>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

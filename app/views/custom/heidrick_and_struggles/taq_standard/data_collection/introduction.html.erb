@@ -1,0 +1,93 @@
+<div class="container page  page-border questionnaire margin-top">
+   <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "75%", width: "75%" %>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="pull-right">
+            <%= image_tag "custom/heidrick_and_struggles/hs-logo.png", height:"100%", width:"100%" %>
+          </div>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-12 text-right'>
+          <%= link_to "Portal", "/hs/taq/portal" %>
+          &nbsp;|&nbsp;
+          <%= link_to "Logout", "/users/sign_out" %>
+        </div>
+      </div>
+
+      <div class="row margin-top-x2">
+
+        <div class="col-md-3 col-md-push-9 hidden-sm hidden-xs">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                &nbsp;
+              </h2>
+
+            </div>
+
+            <div class="panel-body text-center">
+              <%= image_tag "custom/heidrick_and_struggles/report_right_panel_graphic.png", height:"75%", width:"75%" %>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-md-9 col-md-pull-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                Team Accelerator
+              </h2>
+
+            </div>
+
+            <div class="panel-body">
+
+              <h4>
+                Welcome to the Team Accelerator Feedback Process
+              </h4>
+
+              <p>
+                The Team Accelerator looks at the elements required for high performing teams and enables you to provide feedback on Thoughtworks: the way in which it operates and the effectiveness with which it tackles a range of issues.
+              </p>
+
+              <p>
+                The questionnaire should take no more than 30 minutes to complete, although there is no time limit.
+              </p>
+
+              <p>
+                Your feedback is confidential and anonymous. Individual responses will not be identified. Throughout the process, additional help and guidance is provided in the information panel on the right.
+              </p>
+
+              <p>
+                Please note your data is secure and held in accordance with the provisions of the Data Protection Act.
+              </p>
+
+            </div>
+
+
+
+            <div class="panel-body text-center">
+
+              &nbsp;
+
+              <%= link_to "Next", heidrick_and_struggles_taq_standard_about_you_path, class:"btn btn-primary" %>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

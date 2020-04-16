@@ -1,0 +1,145 @@
+<div class="page page-border questionnaire margin-top">
+  <div class="container">
+
+    <div class="margin-bottom-x4">
+      PHOTOBUG LEADERS
+    </div>
+
+
+    <div class='main360-2 col-md-12'>
+
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Please select the most accurate response from the below options.
+          </p>
+        </div>
+
+        <div class='col-md-4 text-center margin-bottom'>
+          <div class="progressbar-row">
+            <div class="col-xs-8 progress-bar-left">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 6%">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4 progress-bar-right">
+              6% Complete
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-12">
+          <div class="factor-name text-left">
+              Purpose and direction
+          </div>
+        </div>
+
+        <!-- Question Loop -->
+
+        <% (1..7).each do |question_number| %>
+
+
+          <!-- Title -->
+
+
+          <div id="questions" class="col-md-12">
+            <div class="panel col-md-12">
+              <div class="panel-body">
+
+                <div class="bold">I establish clear direction and goals aligned to strategic purpose</div>
+
+
+
+
+                  <!-- Button Responses  -->
+
+
+
+
+                  <div class="btn-group btn-group-vertical btn-block col-md-12" data-toggle="buttons">
+
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      1. Very Rarely
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      2. Rarely
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      3. Sometimes
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      4. Often
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      5. Usually
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                      6. Almost Always
+                    </label>
+
+                    <label class="btn btn-default btn-wrap-text ">
+                      <input type="radio" value="1" />
+                     N/A Not observed
+                    </label>
+
+                      <!--%= button_to "1. Very Rarely", type="radio", class:'btn btn-default btn-block margin-bottom buttons' %-->
+
+                      <!--%= button_to "2. Rarely", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                      <!--%= button_to "3. Sometimes", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                      <!--%= button_to "4. Often", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                      <!--%= button_to "5. Usually", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                      <!--%= button_to "6. Almost Always", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                      <!--%= button_to "N/A Not observed", type="radio", class:'btn btn-default btn-block margin-bottom' %-->
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          <% end %>
+
+        <!-- Navigation buttons -->
+
+
+          <div class="col-md-12 margin-top-x3 margin-bottom-x2">
+            <div class="col-sm-2 margin-top">
+              <%= link_to "Back", cirrus_connected_leadership_scale_introduction_path, class:'btn btn-primary btn-block' %>
+            </div>
+            <div class="col-sm-2 col-sm-offset-8 text-right margin-top">
+              <%= link_to "Next", cirrus_connected_leadership_additional_comments_path, class:'btn btn-primary btn-block' %>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Footer -->
+
+<div class=" footer margin-top-x4">
+</div>

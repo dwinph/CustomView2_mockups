@@ -1,0 +1,94 @@
+<div class='container page page-border questionnaire margin-top'>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+
+
+      <!-- Page Heading -->
+
+
+
+      <h1>Emotional Awareness Assessment </h1>
+
+      <p>
+        Please choose the word best for describing what the person in the picture is feeling or thinking. You can only choose one word, even if others might seem to be applicable. Before selecting, read all 4 words. Work as rapidly as you can but you will not be timed.
+      </p>
+
+      <div class='col-md-12' style='padding-left:0;'>
+        <h3 class="questions-header">
+          <small>
+            &nbsp;
+          </small>
+        </h3>
+      </div>
+
+
+
+      <!-- Image  -->
+
+      <div class="row question">
+        <div class="col-md-8 col-md-offset-2 text-center">
+
+          <div class="img img-responsive img-thumbnail img-round">
+          <%= image_tag 'custom/envisia/envisia_team_trust_view/eyes.jpg', height: '100%', width: '100%' %>
+          </div>
+
+
+
+
+
+          <!-- Question input -->
+
+          <div class="question-responses margin-top-x2">
+            <div class="btn-group btn-group-justified" data-toggle="buttons">
+
+              <label class="btn btn-default ">
+                <input type="radio" name="question_93_scale_11" id="question_93_scale_11_1" value="1" />
+                Confident
+              </label>
+
+              <label class="btn btn-default ">
+                <input type="radio" name="question_93_scale_11" id="question_93_scale_11_2" value="2" />
+                Happy
+              </label>
+
+              <label class="btn btn-default ">
+                <input type="radio" name="question_93_scale_11" id="question_93_scale_11_3" value="3" />
+                Relaxed
+              </label>
+
+              <label class="btn btn-default active">
+                <input type="radio" name="question_93_scale_11" id="question_93_scale_11_4" value="4" checked="checked" />
+                Satisfied
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- Navigation button -->
+
+
+
+      <div class='col-md-4 col-md-offset-4 margin-top-x2 text-center'>
+        &nbsp;
+        <%= link_to "Previous", envisia_team_trust_view_emotional_awareness_introduction_path, class:'btn btn-default' %>
+        &nbsp;
+        <%= link_to "Next", envisia_team_trust_view_team_survey_introduction_path, class:'btn btn-primary' %>
+
+        <div class='row text-center margin-top'>
+          &nbsp;
+          <span>
+            Page 3 of 27
+          </span>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>

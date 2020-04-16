@@ -1,0 +1,97 @@
+<div class='container page page-border questionnaire margin-top'>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+
+      <h1>Additional Questions for Robert Gibson</h1>
+      <hr>
+
+      <p>
+        Please answer the following question, using the rating scale, where 1 = Extremely defensive, 2 = Defensive, 3 = In between, 4 = Responsive, 5 = Extremely responsive and 0 = Cannot say
+      </p>
+
+
+      <!-- Question Loop -->
+
+      <% (1..1).each do |question_number| %>
+        <div class="question row margin-top-x2">
+          <div class="col-md-10 text-left">
+            <div class='row'>
+
+              <div class='col-md-1'>
+              </div>
+
+              <div class="col-md-12 text-left">
+                How likely is that he will address the identified development priorities from this exercise?
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class='row'>
+            <div class='col-md-10 radio-left'>
+                <div class="btn-group" data-toggle="buttons" style='margin-left:13px;'>
+                  <% (1..5).each do |scale_number| %>
+                    <button id="highlight" type="button" class="btn btn-default">
+                      <input type="radio" name="question_<%= question_number %>_scale_1" id="question_<%= question_number %>_scale_1_<%= scale_number %>" value="<%= scale_number %>"><%= scale_number %>
+                    </button>
+
+                  <% end %>
+
+                  <button style='margin-left:5px;' class="btn btn-default" >
+                    <input type="radio" name="" id="question" value="0"> 0
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+
+      <div class='col-md-10 col-md-offset-1 margin-top-x2 margin-bottom-x2'>
+        <div class='margin-top row'>
+          <div class='col-md-9 text-left'>
+            <div class='btn-group btn-progress'>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/1">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/2">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/3">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/4">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/5">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/6">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/7">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/8">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/9">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/10">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/11">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/12">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/13">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/14">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/15">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/16">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/17">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/18">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/19">&nbsp;</a>
+              <a class="btn btn-primary btn-md" href="/am/aqa/RP6NFS5DycelTI4YsdcOon1vxFO2tTHPgIkFUtlerCwQqBsihSDh3_qkhA/20">&nbsp;</a>
+              <a disabled="disabled" class="btn btn-default btn-md" href="">&nbsp;</a>
+              <a disabled="disabled" class="btn btn-default btn-md" href="">&nbsp;</a>
+              <a disabled="disabled" class="btn btn-default btn-md" href="">&nbsp;</a>
+            </div>
+          </div>
+
+          <div class='col-md-3 text-right'>
+            <%= link_to "Back", sample_client_new_tool_additional_comments_path, class:'btn btn-default' %>
+            &nbsp;
+            <%= link_to "Next", sample_client_new_tool_thank_you_confirmation_path, class:'btn btn-primary' %>
+          </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>

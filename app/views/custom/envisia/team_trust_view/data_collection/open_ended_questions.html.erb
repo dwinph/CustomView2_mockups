@@ -1,0 +1,67 @@
+<div class='container page page-border questionnaire margin-top'>
+  <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+
+
+      <!-- Page header -->
+
+
+      <h1>Open Ended Questions</h1>
+
+      <p>
+        Please note: Your voluntary responses will be visible to other members of the team in the individual reeport but you <u>will not</u> be identified as the author of the comment.
+      </p>
+
+      <h2>
+        <small>
+        Please answer the following question about each team member:
+        </small>
+      </h2>
+
+
+      <!-- Question Loop -->
+
+
+      <% (1..5).each do |question_number| %>
+
+      <div class='margin-top-x2 col-md-12 form-group'>
+        <div class='row'>
+
+
+          <div class='col-md-12'>
+            <label>
+                What can <strong>Martin Phillips</strong> do to enhance trust with you?
+            </label><br/>
+            <textarea class="form-control margin-top" style="height: 120px;" name="open_ended" id="open_ended"></textarea>
+          </div>
+
+          <div class='oeq_hr col-md-12 margin-top-x2'>
+            <hr>
+          </div>
+
+        </div>
+      </div>
+      <% end %>
+
+
+      <!-- Navigation buttons -->
+
+      <div class='col-md-4 col-md-offset-4 margin-top-x2 text-center'>
+        &nbsp;
+        <%= link_to "Previous", envisia_team_trust_view_team_survey_questionnaire_path, class:'btn btn-default' %>
+        &nbsp;
+        <%= link_to "Next", envisia_team_trust_view_about_you_path, class:'btn btn-primary' %>
+
+        <div class='row text-center margin-top'>
+          &nbsp;
+          <span>
+            Page 6 of 27
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

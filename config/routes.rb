@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,6 +9,9 @@ Rails.application.routes.draw do
   # NOTE: Editing the corresponding route files requires server restart to take effect
   # Add in Alphabetical order
   draw :sample_client
+  draw :envisia
+  draw :heidrick_and_struggles
+  draw :cirrus
   draw :standard_chartered
   draw :heidrick_and_struggles
   draw :talent_accelerator
