@@ -1,0 +1,332 @@
+
+@import "reporting_dashboard/distribution_chart";
+
+$accelerating: #5fad56;
+$advancing: #9fc773;
+$steady: #b2b2b2;
+$lagging: #807f7f;
+$derailing: #5f5f5f;
+
+.badge {
+  font-size: inherit;
+  line-height: 1.42857143;
+}
+
+.badge-legend {
+  font-size: inherit;
+  line-height: 1em;
+}
+
+.dist-chart-wrapper {
+  margin: 3px 0px;
+  .distribution-chart-container-large {
+    height: 22px;
+  }
+  .distribution-chart-container-large .breakout-large {
+    height: 22px;
+  }
+
+}
+
+.level_keys {
+  font-size:1.3em; 
+  color:grey;
+  width:20px;
+  text-align: center;
+}
+.outerWrap {
+position: relative;
+z-index: 0;
+width: inherit;
+height:25px;
+}
+
+.drag-factor {
+  background-color: #fff;
+  border:1px solid #777777;
+  color: #777777;
+}
+
+.layer {
+position: absolute;
+z-index: 1;
+width: 100%;
+}
+
+
+.individual {
+  color:#000;
+}
+
+.organization {
+  color:#fff;
+}
+
+.breakout2 {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+  }
+
+.label-head {
+  font-size: smaller;
+  font-weight: bold;
+  text-align: center;
+}
+
+.question-level {
+  font-size: small;
+  padding: 0!important;
+  margin:0 0 2px 0;
+}
+
+
+
+.question-level td {
+  vertical-align: middle;
+}
+
+.borderless tr td {
+    border: none !important;
+    padding: 0px !important;
+}
+
+.hide-bottom {
+    border-bottom-style: hidden;
+    padding:0px !important;
+}
+
+.rot-neg-90 {
+  /* rotate -90 deg, not sure if a negative number is supported so I used 270 */
+  -moz-transform: rotate(270deg);
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  /* IE support too convoluted for the time I've got on my hands... */
+}
+
+.g-10{
+  width: 6%;
+  float:left;
+}
+.acc, .agreement-response-5, .agreement_organization-response-5, .agreement_individual-response-5, .agreement_constraints-response-5 {
+  background: $accelerating;
+  background-color: $accelerating!important;
+  color: #fff!important;
+}
+.badge .acc {
+  border: 1px solid $accelerating;
+}
+.table-acc-head {
+  border: 3px solid $accelerating;
+  border-bottom: 1px solid $accelerating;
+  margin:0px!important;
+  padding-right:1px;
+  width: 100%;
+  font-size: 12px;
+}
+.table-acc-body {
+  border: 3px solid $accelerating;
+  border-top: none;
+  margin:0px;padding-right:1px;
+  font-size: 11px;
+}
+
+.adv, .agreement-response-4, .agreement_organization-response-4, .agreement_individual-response-4, .agreement_constraints-response-4 {
+  background: $advancing;
+  background-color: $advancing!important;
+  color: #fff!important;
+}
+.badge .adv {
+  border:1px solid $advancing;
+}
+.table-adv-head {
+  border: 3px solid $advancing;
+  border-bottom: 1px solid $advancing;
+  margin:0px!important;
+  padding-right:1px;
+  width: 100%;
+  font-size: 12px;
+}
+.table-adv-body {
+  border: 3px solid $advancing;
+  border-top: none;
+  margin:0px;padding-right:1px;
+  font-size: 11px;
+}
+.ste, .agreement-response-3, .agreement_organization-response-4, .agreement_individual-response-4, .agreement_constraints-response-4 {
+  background: $steady;
+  background-color: $steady!important;
+  color: #fff!important;
+}
+.badge .ste {
+  border:1px solid $steady;
+}
+.table-ste-head {
+  border: 3px solid $steady;
+  border-bottom: 1px solid $steady;
+  margin:0px!important;
+  padding-right:1px;
+  width: 100%;
+  font-size: 12px;
+}
+.table-ste-body {
+  border: 3px solid $steady;
+  border-top: none;
+  margin:0px;padding-right:1px;
+  font-size: 11px;
+}
+small {
+  font-size: 11px;
+}
+
+.lag, .agreement-response-2, .agreement_organization-response-2, .agreement_individual-response-2, .agreement_constraints-response-2 {
+  background: $lagging;
+  background-color: $lagging!important;
+  color: #fff!important;
+}
+.badge .lag {
+  border: 1px solid $lagging;
+}
+.table-lag-head {
+  border: 3px solid $lagging;
+  border-bottom: 1px solid $lagging;
+  margin:0px!important;
+  padding-right:1px;
+  width: 100%;
+  font-size: 12px;
+}
+.table-lag-body {
+  border: 3px solid $lagging;
+  border-top: none;
+  margin:0px;padding-right:1px;
+  font-size: 11px;
+}
+
+.der, .agreement-response-1, .agreement_organization-response-1, .agreement_individual-response-1, .agreement_constraints-response-1 {
+  background: $derailing;
+  background-color: $derailing!important;
+  color: #fff!important;
+}
+.badge .der{
+  border: 1px solid $derailing;
+}
+.table-der-head {
+  border: 3px solid $derailing;
+  border-bottom: 1px solid $derailing;
+  margin:0px!important;
+  padding-right:1px;
+  width: 100%;
+  font-size: 12px;
+}
+.table-der-body {
+  border: 3px solid $derailing;
+  border-top: none;
+  margin:0px;padding-right:1px;
+  font-size: 11px;
+}
+
+
+$bar-5: #5fad56;
+$bar-4: #9fc773;
+$bar-3: #b2b2b2;
+$bar-2: #807f7f;
+$bar-1: #5f5f5f;
+
+//$bar-2: lighten($bar-1, 10%);
+//$bar-3: lighten($bar-2, 10%);
+//$bar-5: lighten($bar-7, 20%);
+//$bar-6: lighten($bar-7, 10%);
+$bar--128: #999;
+
+
+.distribution-chart-key,
+.dist-chart-wrapper .distribution-chart-container {
+
+  .agreement-response-1, .agreement_organization-response-1, .agreement_individual-response-1, .agreement_constraints-response-1 {
+    background: $bar-1;
+  }
+  .agreement-response-2, .agreement_organization-response-2, .agreement_individual-response-2, .agreement_constraints-response-2 {
+    background: $bar-2;
+  }
+
+  .agreement-response-3, .agreement_organization-response-3, .agreement_individual-response-3, .agreement_constraints-response-3 {
+    background: $bar-3;
+  }
+
+  .agreement-response-4, .agreement_organization-response-4, .agreement_individual-response-4, .agreement_constraints-response-4 {
+    background: $bar-4;
+  }
+
+  .agreement-response-5, .agreement_organization-response-5, .agreement_individual-response-5, .agreement_constraints-response-5 {
+    background: $bar-5;
+  }
+
+  .agreement-response--128, .agreement_organization-response--128, .agreement_individual-response--128, .agreement_constraints-response--128 {
+    background: $bar--128;
+  }
+
+}
+
+.distribution-chart-key,
+.dist-chart-wrapper .distribution-chart-container-large {
+
+  .agreement-response-1, .agreement_organization-response-1, .agreement_individual-response-1, .agreement_constraints-response-1 {
+    background: linear-gradient(90deg, $bar-1 50%, $bar-2);
+  }
+  .agreement-response-2, .agreement_organization-response-2, .agreement_individual-response-2, .agreement_constraints-response-2 {
+    background: linear-gradient(90deg, $bar-2 10%, $bar-3);
+  }
+
+  .agreement-response-3, .agreement_organization-response-3, .agreement_individual-response-3, .agreement_constraints-response-3 {
+    background: linear-gradient(90deg, $bar-3 10%, $bar-4);
+  }
+
+  .agreement-response-4, .agreement_organization-response-4, .agreement_individual-response-4, .agreement_constraints-response-4 {
+    background: linear-gradient(90deg, $bar-4 10%, $bar-5);
+  }
+
+  .agreement-response-5, .agreement_organization-response-5, .agreement_individual-response-5, .agreement_constraints-response-5 {
+    background: $bar-5;
+  }
+
+  .agreement-response--128, .agreement_organization-response--128, .agreement_individual-response--128, .agreement_constraints-response--128 {
+    background: $bar--128;
+  }
+}
+.table-analytics table {
+  color: #333!important;
+  margin:0px;
+  padding-right:10px;
+  table-layout: fixed;
+}
+.table-analytics td {
+  color: #333!important;
+  white-space: normal!important;
+  vertical-align: middle!important;
+  word-break: keep-all;
+word-wrap:break-word;white-space: normal !important; word-wrap: break-word;
+
+}
+.table-analytics-3 > thead > tr > th,
+.table-analytics-3 > thead > tr > td,
+.table-analytics-3 > tbody > tr > th,
+.table-analytics-3 > tbody > tr > td,
+.table-analytics-3 > tfoot > tr > th,
+.table-analytics-3 > tfoot > tr > td {
+  padding: 4px!important;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.checkbox-label {
+  font-size:1vw;
+}
+
+.panel-filters {
+  padding:3px;
+} 

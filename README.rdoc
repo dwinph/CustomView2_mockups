@@ -27,4 +27,4 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-http://localhost:3000/custom/sample_client/new_tool/data_collection/introduction
+http://localhost:3000/custom/sample_client/new_tool/data_collection_controller/introduction
