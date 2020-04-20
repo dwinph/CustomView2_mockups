@@ -327,6 +327,11 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	width: 90%;
 }
 
+.dt--single{
+	width: 100% !important;
+	
+}
+
 @media(max-width: 1024px){
 	.dt__header--multi{
 		&.dt--single{
@@ -476,7 +481,7 @@ header{background: $white;box-shadow: 0px 0px 20px rgba(29,29,29,0.3);padding: 2
 	}
 	.h1__90{
 		font-weight: 500 !important;
-		font-size: 3.2em !important;
+		font-size: 2.2em !important;
 		width: 90%;
 	}
 	.flag__inst{
