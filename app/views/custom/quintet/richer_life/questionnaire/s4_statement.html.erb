@@ -1,0 +1,42 @@
+<div class="container-fluid main-container stmt">
+
+  <div class="py-5">
+    <div class="text-center">
+      <h1>SEEING LIFE AS:</h1>
+      </p>
+    </div>
+
+    <div class="p-5">
+
+      <div class="d-flex range-container">
+        <div class="p-2">
+          <h3 class="range-left">a marathon and not a sprint to maintain overall well-being for a long time</h3>
+        </div>
+
+        <div class="range p-2">
+          <div class="box-wrapper">
+            <div class="line"></div>
+            <div class="box active">
+            </div>
+            <div class="box-reverse">
+            </div>
+
+            <input type="range" min="1" max="100" value="30" class="slider" id="range">
+          </div>
+        </div>
+
+        <div class="p-2">
+          <h3 class="pTop range-right">making your mark on the world to a commitment to excellence</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-5 hidden-xs"></div>
+
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 4, left:'s3_statement', right:'s5_statement'} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 4, left:'s3_statement', right:'s5_statement'} %>

@@ -1,0 +1,23 @@
+<div class="visible-xs hidden-lg hidden-md hidden-sm">
+<div class="p-5 p-sm-2 d-flex justify-content-between">
+  <div class="pt-4">
+    <div class="p-1 nextPrev ">
+      <div class="buttonNext-bg">
+          <a href="<%=left%>"><button class="buttonNext"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button></a>
+      </div>
+    </div>
+  </div>
+  
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/ol_mobile", locals: {active: active} %>
+
+  
+    <div class="pt-4" style="display:<%= right != ''?'':'none' %>">
+      <div class="p-1 nextPrev">
+        <div class="buttonNext-bg">
+            <a href="<%=right%>"><button class="buttonNext"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></a>
+        </div>
+      </div>
+    </div>
+  
+</div>
+</div>

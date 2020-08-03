@@ -36,3 +36,8 @@ Rails.application.config.assets.precompile += %w( custom/heidrick_and_struggles/
 
 Rails.application.config.assets.precompile += %w( custom/king_personal_impact_experience/assessment/survey/app.js )
 Rails.application.config.assets.precompile += %w( custom/king_personal_impact_experience/assessment/survey/style.css )
+
+Rails.application.config.assets.precompile += %w( custom/quintet/richer_life/questionnaire/app.js )
+Rails.application.config.assets.precompile += %w( custom/quintet/richer_life/questionnaire/range.css )
+Rails.application.config.assets.precompile += %w( custom/quintet/richer_life/questionnaire/helper-classes.css )
+Rails.application.config.assets.precompile += %w( custom/quintet/richer_life/questionnaire/style.css )
