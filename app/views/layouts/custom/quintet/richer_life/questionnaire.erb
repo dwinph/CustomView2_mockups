@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+				<title><%= content_for?(:title) ? yield(:title) : "Quintet Richer Life: Private Bank" %>
+				</title>
+				<meta name="description" content="<%= content_for?(:description) ? yield(:description) : "" %>">
+        <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", media: "all", "data-turbolinks-track" => true %>
+        <%= stylesheet_link_tag "custom/quintet/richer_life/questionnaire/range", media: "all", "data-turbolinks-track" => true %>
+        <%= stylesheet_link_tag "custom/quintet/richer_life/questionnaire/helper-classes", media: "all", "data-turbolinks-track" => true %>
+				<%= stylesheet_link_tag "custom/quintet/richer_life/questionnaire/style", media: "all", "data-turbolinks-track" => true %>
+				<%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons", media: "all", "data-turbolinks-track" => true %><%= csrf_meta_tags %>
+					<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+					<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+					<!--[if lt IE 9]>
+					<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+					<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+					<![endif]-->
+				</head>
+        <body>
+        
+            <div class="container-fluid">
+              <div class="d-flex  p-3 logo-container">
+                  <%= image_tag 'custom/quintet/richer_life/questionnaire/logo.jpg', class: 'img-responsive logo' %>
+              </div>
+            </div>
+            
+            <%= yield %>	
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+          <%= javascript_include_tag "custom/quintet/richer_life/questionnaire/app.js", "data-turbolinks-track" => true %>		
+
+        </body>
+        </html>

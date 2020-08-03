@@ -1,0 +1,18 @@
+Rails.application.routes.draw do
+  get 'quintet/richer_life' => "custom/quintet/richer_life/questionnaire#index"
+  get 'quintet/richer_life/bio_details' => "custom/quintet/richer_life/questionnaire#bio_details"
+  get 'quintet/richer_life/data_policy' => "custom/quintet/richer_life/questionnaire#data_policy"
+  get 'quintet/richer_life/introduction' => "custom/quintet/richer_life/questionnaire#introduction"
+  get 'quintet/richer_life/login' => "custom/quintet/richer_life/questionnaire#login"
+  get 'quintet/richer_life/logout' => "custom/quintet/richer_life/questionnaire#logout"
+  get 'quintet/richer_life/barometer' => "custom/quintet/richer_life/questionnaire#barometer"
+  get 'quintet/richer_life/s1_statement' => "custom/quintet/richer_life/questionnaire#s1_statement"
+  get 'quintet/richer_life/s2_statement' => "custom/quintet/richer_life/questionnaire#s2_statement"
+  get 'quintet/richer_life/s3_statement' => "custom/quintet/richer_life/questionnaire#s3_statement"
+  get 'quintet/richer_life/s4_statement' => "custom/quintet/richer_life/questionnaire#s4_statement"
+  get 'quintet/richer_life/s5_statement' => "custom/quintet/richer_life/questionnaire#s5_statement"
+  get 'quintet/richer_life/s6_quotations' => "custom/quintet/richer_life/questionnaire#s6_quotations"
+  get 'quintet/richer_life/s7_books' => "custom/quintet/richer_life/questionnaire#s7_books"
+  get 'quintet/richer_life/s8_headlines' => "custom/quintet/richer_life/questionnaire#s8_headlines"
+  get 'quintet/richer_life/submit' => "custom/quintet/richer_life/questionnaire#submit"
+end

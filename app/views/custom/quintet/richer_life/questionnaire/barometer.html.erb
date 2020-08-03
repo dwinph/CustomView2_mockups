@@ -1,0 +1,74 @@
+<div class="container-fluid main-container px-0">
+        <div class="baro">
+            <div class="row p-5">
+                <h1>RICHER LIFE BAROMETER</h1>
+                <div class="col-lg-8 col-md-7 col-sm-8">
+                    <p>
+                    This questionnaire looks at what is important to you in life. Although we all have many goals in life, the format of this questionnaire encourages you to prioritise what is more important to you as an individual.
+                    <br/><br/>You will be presented with a series of pairs as shown below</p>
+                </div>
+            </div>
+
+            <div class="row px-5">
+                <div class="col-lg-7 col-md-9 col-sm-12 col-xs-12">
+
+                    <div class="p-5">
+
+                        <div class="d-flex range-container">
+                            <div class="p-2">
+                                <h3 class="range-left">work hard to achieve a position of importance and influence in life</h3>
+                            </div>
+
+                            <div class="range p-2">
+                                <div class="box-wrapper">
+                                    <div class="line"></div>
+                                    <div class="box active">
+                                    </div>
+                                    <div class="box-reverse">
+                                    </div>
+                                    
+                                    <input type="range" min="1" max="100" value="30" class="slider" id="range">
+                                </div>
+                            </div>
+
+                            <div class="p-2">
+                                <h3 class="pTop range-right">do my "financial homework" before making any major life decisions</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-5">
+                <div class="col-lg-8 col-md-7 col-sm-8">
+                <p>For each pair use the slider to indicate which option better reflects you.</p>
+                </div>
+            </div>
+
+            <div class="px-5 pb-5 hidden-lg hidden-md visible-sm visible-xs">
+                <div class="d-flex justify-content-between">
+                        <div class="p-2 nextPrev">
+                            <div class="buttonNext-bg">
+                                <button class="buttonNext">
+                                    <a href="bio_details"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-2 nextPrev">
+                            <div class="buttonNext-bg">
+                                <button class="buttonNext">
+                                    <a href="s1_statement"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="p-5"></div>
+
+        </div>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_regular", locals: {left:'bio_details', right:'s1_statement'} %>

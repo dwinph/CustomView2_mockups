@@ -1,0 +1,43 @@
+<div class="container-fluid main-container stmt">
+
+  <div class="py-5">
+    <div class="text-center">
+      <h1>QUOTATIONS:</h1>
+      <p>For each pairing of quotations, use the slider to indicate the “quote” that you think represents relatively more insight for you personally.
+        <br />Note it is the overall pattern from your choices that will be important, not specific selections.</p>
+    </div>
+
+    <div class="p-5">
+
+      <div class="d-flex range-container">
+        <div class="p-2">
+          <h3 class="range-left">“the will to win and the desire to succeed are the keys to excellence”</h3>
+        </div>
+
+        <div class="range p-2">
+          <div class="box-wrapper">
+            <div class="line"></div>
+            <div class="box">
+            </div>
+            <div class="box-reverse active">
+            </div>
+
+            <input type="range" min="1" max="100" value="75" class="slider" id="range">
+          </div>
+        </div>
+
+        <div class="p-2">
+          <h3 class="pTop range-right">“better to be a ‘has been’ than to be a ‘never was’”</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-5 hidden-xs"></div>
+
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 6, left:'s5_statement', right:'s7_books'} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 6, left:'s5_statement', right:'s7_books'} %>
