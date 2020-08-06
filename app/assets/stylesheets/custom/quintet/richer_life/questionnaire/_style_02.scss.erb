@@ -1,3 +1,11 @@
+#pleaserotate-graphic{
+  fill: #fff;
+}
+
+#pleaserotate-backdrop {
+    color: #fff;
+    background-color: #555;
+}
 .nextPrev {
   &:hover{
     width: auto;
@@ -74,11 +82,22 @@
 
 .img-container{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
 }
 .img-range-left, .img-range-right, .img-range-p.p-2{
   max-width:50%;
+}
+.pint{
+  text-align: center;
+}
+.pint-mobile{
+  display: none;
+}
+.img-range-p{
+  .slider-p{
+    margin: 30px auto 0 auto;
+  }
 }
 .button5.submit{
   font-size: 10px;
@@ -91,6 +110,40 @@
 button{
   text-align: center !important;
   padding: 0;
+}
+.policy{
+  min-height: 650px;
+  .polp{
+    width: 83%;
+  }
+}
+@media (max-width: 1024px){
+  .pint-mobile{
+    display: block;
+  }
+  .pint{
+    display:none;
+  }
+  .img-range-left, .img-range-right{
+    z-index:999;
+  }
+  
+}
+@media (max-width: 1112px) and (orientation: landscape) {
+  .baro{
+    background-size: 30%;
+    .baro_p{
+      width: 75%;
+    }
+    h3{
+      &.range-left, &.range-right{
+        margin:0 -20px 0 -40px;
+      }
+      &.range-right{
+        margin-left: -20px;
+      }
+    }
+  }
 }
 @media (min-width: 813px) {
 .biographical-form{
@@ -161,6 +214,10 @@ button{
   }
   .range-left, .range-right{
     font-size: 16px !important;
+  }
+  .slider-p{
+    margin-left: -22px !important;
+    margin-top: 0 !important;
   }
 
   .biographical-form{
