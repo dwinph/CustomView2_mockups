@@ -19,8 +19,14 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 400px;
-  background:#00686d;
+  /*width: 400px;
+  background:#00686d;*/
+  width: 440px;
+  padding-left: 20px;
+  
+  background-image: linear-gradient(90deg, #008a94 2.38%, #00686d 2.38%, #00686d 50%, #008a94 50%, #008a94 52.38%, #00686d 52.38%, #00686d 100%);
+background-size: 840.00px 840.00px;
+
 }
 
 .range .slider {
@@ -31,7 +37,7 @@
   left: 0;
   top: 90px;
   width: 100%;
-  outline: red;
+  outline:transparent;
   border: none;
 }
 
@@ -68,6 +74,7 @@
 .range .line {
   position: relative;
   border-top: 2px solid #000;
+  margin-left: 20px;
   z-index:100;
   top: 74px;
   left: 0px;
@@ -82,10 +89,6 @@
   height: 150px;
   position: relative;
 }
-
-/* IE range */
-
-/* end IE range */
 
 .box:after {
   content: ' ';
