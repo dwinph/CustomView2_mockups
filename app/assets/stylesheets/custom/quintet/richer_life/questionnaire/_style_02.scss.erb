@@ -23,6 +23,10 @@
     }
   }
 }
+.lbbtn{
+  background: rgb(127,190, 219);
+  line-height: 1em;
+}
 .intro, .policy, .baro{
 
   h3 {
@@ -33,7 +37,7 @@
   }
 
   .col-lg-7.col-md-7{
-    width: 70%;
+    width: 60%;
   }
 }
 .link-2{
@@ -49,15 +53,63 @@
     &.range-left, &.range-right{
       font-size: 18px;
     }
+    &.range-left{
+      margin-left: 10px;
+    }
   }
   h1{
     margin-bottom: 40px;
   }
   .row.p-5{
-
     padding-bottom:0 !important;
+    .col-lg-8{
+      p{
+        width: 80%;
+      }
+    }
   }  
 }
+h3{
+    &.range-left, &.range-right{
+      font-weight: 100;
+  }
+}
+.bookcontainer{
+  position: relative;
+  p{
+    
+    position: absolute;
+    left: 5%;
+    height: 52%;
+    margin-top: 22%;
+    width: 92%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-family: myriad;
+    color: black;
+    line-height: 1.2em;
+    font-size: 1.4em;
+    font-size: 1vw;
+  }
+  &:first-child{
+    p{
+      font-size: 1.6em;
+    }
+  }
+}
+.row.p-5{
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+  }  
+  .bio .row{
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
 .stmt {
   h1{
     margin-bottom: 40px;
@@ -151,6 +203,7 @@ button{
         justify-content: flex-end;
     }
 }
+
 }
 @media (max-width: 812px) and (orientation: portrait) {
 .range-left, .range-right{
@@ -206,6 +259,14 @@ button{
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
+  .bookcontainer{
+    height: 80%;
+  &:first-child{
+    p{
+      font-size: 0.5em;
+    }
+  }
+}
   .img-range-left{
     margin-right: 20px;
   }
