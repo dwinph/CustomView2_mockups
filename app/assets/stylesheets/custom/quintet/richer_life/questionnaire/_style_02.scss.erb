@@ -49,6 +49,10 @@
 }
 
 .baro{
+  .range-container{
+    -webkit-box-pack: none;
+    justify-content: left;
+  }
   h3{
     &.range-left, &.range-right{
       font-size: 18px;
@@ -169,6 +173,20 @@ button{
     width: 83%;
   }
 }
+@media (min-width: 1200px)  {
+  .baro{
+    .range-container{
+      h3{
+      &.range-left, &.range-right{
+        padding: 0;
+      }
+      &.range-left{
+        margin-left: 0;
+      }
+    }
+  }
+  }
+  }
 @media (max-width: 1024px){
   .pint-mobile{
     display: block;
