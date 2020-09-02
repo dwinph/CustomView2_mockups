@@ -90,21 +90,19 @@ h3{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 0 6%;
-    
+    padding: 0 6%;    
     text-align: center;
     text-transform: uppercase;
     font-family: myriad;
     color: black;
     line-height: 1.2em;
     font-size: 1.4em;
-    font-size: 1vw;
   }
-  &:first-child{
-    p{
-      font-size: 1.6em;
-    }
+  .p-extended{
+      font-size: 1.15em;
   }
+
+  
 }
 .row.p-5{
     padding-left: 7rem !important;
@@ -283,15 +281,23 @@ button{
     }
   }
 }
-
+@media (max-width: 900px){
+  .bookcontainer{
+    height: 80%;
+  
+    p,.p-extended{
+      font-size: 0.9em;
+    }
+}
+}
 @media (max-width: 812px) and (orientation: landscape) {
   .bookcontainer{
     height: 80%;
-  &:first-child{
-    p{
+  
+    p,.p-extended{
       font-size: 0.5em;
     }
-  }
+  
 }
   .img-range-left{
     margin-right: 20px;
