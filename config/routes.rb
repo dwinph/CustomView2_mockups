@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   draw :talent_accelerator
   draw :king_personal_impact_experience
   draw :quintet
+  draw :coaching
   
 
   # You can have the root of your site routed with "root"

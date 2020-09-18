@@ -1,0 +1,373 @@
+$primary: #002b66;
+$text-color: #676a6c;
+
+
+$manager: #ef0000;
+$peer: #8ad74e;
+$team: #e52b86;
+$others: #f1c859;
+$average: #309ce8;
+
+.border-left{
+  border-left:1px solid #e7eaec;
+}
+.border-right{
+  border-right:1px solid #e7eaec;
+}
+
+.projects-body{
+  background-color: #fff;
+}
+
+.project{
+  .head{
+    background-color: #d8edf5;
+    padding:20px
+  }
+}
+
+.tool-name{
+  background-color: #1d3e73;
+  padding: 0 20px;
+  color: #fff;
+
+  .select-option{
+    padding-top:15px;
+
+    .btn-reports{
+      color:#fff;
+      background-color: transparent;
+      border:1px solid #fff;
+    }
+    .btn-reports:hover{
+      color:#fff
+    }
+
+    ul{
+      li{
+        color:#000
+      }
+    }
+  }
+}
+
+.nav{
+  background-color: #f3f3f3;
+}
+
+.nav-tabs{
+  border:0px;
+  
+  li{
+    a{
+      text-align: center;
+      &:hover{
+        background: none;
+        border-color: transparent;
+      }
+    }
+  }
+  li.active{
+    border-top: 3px solid red;
+    border-bottom:0px;
+    border-left:0px;
+    border-right:0px;
+
+    a{
+      color:red;
+      border-bottom:0px;
+      border-left:0px;
+      border-right:0px;
+      &:hover{
+        border-color: transparent;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        background: none;
+      }
+    }
+  }
+
+}
+
+.contents{
+  background-color: #f3f3f3;
+  padding:15px;
+
+  .filter-round{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border: 5px solid $primary;
+    display: flex;
+    flex-direction: column;
+    padding-top:15px;
+
+    h2{
+      text-align: center;
+      font-weight: 600
+    }
+    small{
+      text-align: center;
+      font-weight: bold
+    }
+  }
+}
+
+/*  SIDEBAR */
+.sidebar-accordion{
+  .form-group{
+    margin-bottom: 0px;
+  }
+  .addon-to{
+    background-color: #fff;
+  }
+  .form-calendar{
+    border:1px solid #676a6c;
+  }
+  .check{
+    display: flex;
+    align-items: center;
+
+    p{
+      margin:0px
+    }
+  }
+  .check-accordion{
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+}
+.input-daterange{
+  .input-group-addon{
+    background-color: #fff;
+  }
+}
+.update{
+  background-color: $primary;
+  border-radius: 5px;
+  padding:10px;
+  color:#fff;
+  text-align: right;
+  width: 100%;
+}
+.update:hover{
+  color:#fff;
+}
+
+.filter{
+  border:2px solid $primary;
+  border-radius: 5px;
+  padding:8px;
+  text-align: right;
+  width: 100%;
+  color: $primary;
+  background-color: #fff;
+}
+.filter-img{
+  margin-left:10px;
+  width:20px;
+}
+
+.custom{
+  height: 30px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border: 1px solid #e5e6e7;
+  margin-right: 10px;;
+
+  span{
+    margin:10px 0 0 10px;
+  }
+}
+
+.form-calendar{
+  border-right:0px;
+}
+.addon-to{
+  border:0px
+}
+.addon-calendar{
+  border-left:0px;
+}
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
+  margin-left:0px
+}
+.modal-footer{
+  text-align: left;
+  border-top:1px solid #676a6c;
+}
+.modal-footer-label{
+  border:1px solid $primary;
+  padding: 10px;
+
+  label{
+    font-weight: normal;
+    margin-left: 12px;
+    font-size:16px
+  }
+  input{
+    border:0px;
+  }
+  input::placeholder{
+    color:$primary;
+    font-size:18px
+  }
+}
+.apply-filter{
+  background-color: #31c6c7;
+  color: #fff;
+  width:200px
+}
+
+.panel-default{
+  .modal-panel{
+    background-color: #fff;
+    border: 1px solid $primary;
+    color:$primary;
+
+    a{
+      color:$primary
+    }
+  }
+}
+.modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+a[aria-expanded=true] .glyphicon-plus{
+  display: none;
+}
+a[aria-expanded=false] .glyphicon-minus {
+  display: none;
+}
+
+@mixin circle($size) {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - #{$size/2});
+  top: calc(50% - #{$size/2});
+  width: $size;
+  height: $size;
+}
+
+$size: 150px;
+.progress-pie-chart {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  position: relative;
+  &.gt-50 {
+    background-color: $primary;
+    border:2px solid #f3f3f3;
+  }
+}
+.ppc-progress {
+  @include circle($size);
+  clip: rect(0, $size, $size, #{$size/2});
+  .ppc-progress-fill {
+    @include circle($size);
+    clip: rect(0, #{$size/2}, $size, 0);
+    background: #f3f3f3;
+    transform: rotate(60deg);
+  }
+  .gt-50 & {
+    clip: rect(0, #{$size/2}, $size, 0);
+    .ppc-progress-fill {
+      clip: rect(0, $size, $size, #{$size/2});
+      background: #FFFFFF;
+    }
+  }
+}
+.ppc-percents {
+  @include circle(#{$size/1.15});
+  background: #FFFFFF;
+  text-align: center;
+  display: table;
+  span {
+    display: block;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: $text-color;
+  }
+}
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+
+  h2{
+    margin-top:10px;
+    font-weight: 600;
+  }
+}
+
+/*    BEHAVIOR PAGE   */
+.table-wrapper{
+  background-color: #fff;
+  padding:20px;
+  border: 1px solid #000;
+
+  h3{
+    font-weight: normal;
+  }
+}
+.rated{
+  thead{
+    tr{
+      th{
+        background-color: #309ce8;
+        color:#fff;
+        border-left:1px solid #fff;
+        font-weight: normal;
+      }
+    }
+  }
+}
+table{
+  
+  thead{
+    tr{
+      .th1{
+        font-size: 16px;
+        background-color: #fff;
+        font-weight: normal;
+        border-top:0px;
+      }
+      .th2, .th3, .th4, .th5, .th6, .th7{
+        color:#fff;
+        font-weight: normal;
+      }
+      .th2{
+        background-color: $primary;
+      }
+      .th3{
+        background-color: #ef0000;
+      }
+      .th4{
+        background-color: #8ad74e;
+      }
+      .th5{
+        background-color: #e52b86;
+      }
+      .th6{
+        background-color: #f1c859;
+      }
+      .th7{
+        background-color: #309ce8;
+      }
+    }
+  }
+}
+input[type="checkbox"]:focus{
+  outline:0;
+}
+.btn{
+    &:focus{
+      color: white;
+    }
+}
