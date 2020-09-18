@@ -1,44 +1,24 @@
 window.onload = function () {
-  charty('chartContainer', ' Number of Respondents', 'Count', [
-      { label: "50", y: 500, indexLabel: "Average", color: '#309ce8' },
-      { label: "150", y: 250, indexLabel: "Others", color: '#f1c859' },
-      { label: "70", y: 100, indexLabel: "Team Member", color: '#e52b86' },
-      { label: "100", y: 70, indexLabel: "Peer", color: '#8ad74e' },
-      { label: "250", y: 150, indexLabel: "Manager", color: '#ef0000' },
-      { label: "500", y: 50, indexLabel: "Self", color: '#002b66' }
-  ]);
-  charty('chartContainer2', 'Average Respondent Time to Complete', 'Minutes', [
-      { label: "33.67.24", y: 30, indexLabel: "Average", color: '#309ce8' },
-      { label: "25.45.88", y: 10, indexLabel: "Others", color: '#f1c859' },
-      { label: "10.34.56", y: 20, indexLabel: "Team Member", color: '#e52b86' },
-      { label: "50.11.12", y: 50, indexLabel: "Peer", color: '#8ad74e' },
-      { label: "11.12.34", y: 17, indexLabel: "Manager", color: '#ef0000' },
-      { label: "00.15.42", y: 40, indexLabel: "Self", color: '#002b66' }
-  ]);
-  charty('chartContainer3', ' Creates and Maintains Impact and Partnerships', 'Average Score', [
-      { label: "3.50 (n=500)", y: 5, indexLabel: "Average", color: '#309ce8' },
-      { label: "3.50 (n=500)", y: 2, indexLabel: "Others", color: '#f1c859' },
-      { label: "3.50 (n=500)", y: 1, indexLabel: "Team Member", color: '#e52b86' },
-      { label: "3.50 (n=500)", y: 4, indexLabel: "Peer", color: '#8ad74e' },
-      { label: "3.50 (n=500)", y: 5, indexLabel: "Manager", color: '#ef0000' },
-      { label: "3.50 (n=500)", y: 6, indexLabel: "Self", color: '#002b66' }
-  ]);
-  charty('chartContainer4', 'Innovates and Takes Risk', 'Average Score', [
-      { label: "3.50 (n=500)", y: 3, indexLabel: "Average", color: '#309ce8' },
-      { label: "3.50 (n=500)", y: 2, indexLabel: "Others", color: '#f1c859' },
-      { label: "3.50 (n=500)", y: 5, indexLabel: "Team Member", color: '#e52b86' },
-      { label: "3.50 (n=500)", y: 4, indexLabel: "Peer", color: '#8ad74e' },
-      { label: "3.50 (n=500)", y: 3, indexLabel: "Manager", color: '#ef0000' },
-      { label: "3.50 (n=500)", y: 5, indexLabel: "Self", color: '#002b66' }
-  ]);
-  charty('chartContainer5','Manages Complexity and Change', 'Average Score', [
-      { label: "3.50 (n=500)", y: 3, indexLabel: "Average", color: '#309ce8' },
-      { label: "3.50 (n=500)", y: 2, indexLabel: "Others", color: '#f1c859' },
-      { label: "3.50 (n=500)", y: 2, indexLabel: "Team Member", color: '#e52b86' },
-      { label: "3.50 (n=500)", y: 4, indexLabel: "Peer", color: '#8ad74e' },
-      { label: "3.50 (n=500)", y: 3, indexLabel: "Manager", color: '#ef0000' },
-      { label: "3.50 (n=500)", y: 5, indexLabel: "Self", color: '#002b66' }
-  ]);
+  
+  charty('chartContainer', $('#chartContainer').data("chartname"), $('#chartContainer').data("chartvar"), 
+      eval($('#chartContainer').data("chartdetails"))
+  );
+
+  charty('chartContainer2', $('#chartContainer2').data("chartname"), $('#chartContainer2').data("chartvar"), 
+      eval($('#chartContainer2').data("chartdetails"))
+  );
+
+  charty('chartContainer3', $('#chartContainer3').data("chartname"), $('#chartContainer3').data("chartvar"), 
+      eval($('#chartContainer3').data("chartdetails"))
+  );
+
+  charty('chartContainer4', $('#chartContainer4').data("chartname"), $('#chartContainer4').data("chartvar"), 
+  eval($('#chartContainer4').data("chartdetails"))
+);
+  
+  charty('chartContainer5', $('#chartContainer5').data("chartname"), $('#chartContainer5').data("chartvar"), 
+      eval($('#chartContainer5').data("chartdetails"))
+  );
 
   function charty (container, title, axisTitle, data) {
       if (! $('#'+container).length) {
@@ -75,7 +55,7 @@ window.onload = function () {
               type: "bar",
               axisYType: "primary",
               yValueFormatString: "#,###.##",
-              indexLabel: "{y}",
+              label: "{y}",
               dataPoints: data,
               indexLabelFontColor: "#888888",
           }]
