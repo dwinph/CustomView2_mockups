@@ -13,7 +13,8 @@ set :rvm_ruby_version, 'ruby-2.4.9'
 
 
 
-server  "staging1.coreix.elsrv.com", user: "cv2mockups", roles: [ 'web', 'app', 'db' ]
+# server  "staging1.coreix.elsrv.com", user: "cv2mockups", roles: [ 'web', 'app', 'db' ]
+server  "web6.coreix.elsrv.com", user: "cv2mockups", roles: [ 'web', 'app', 'db' ]
 
 set :linked_dirs, %w{tmp log public/uploads}
 
