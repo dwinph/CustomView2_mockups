@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Complete Your Assessment" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "CustomView2" %>">
+
+    <%= stylesheet_link_tag "custom/envisia/team_trust_view", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "custom/envisia/team_trust_view/data_collection", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+
+    <!-- improves HTML5 support in older version of Internet Explorer -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+      <%= javascript_include_tag 'respond', "data-turbolinks-track" => true %>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <%= image_tag 'custom/envisia/envisia_team_trust_view/NTV_logo.jpg', class: 'img-responsive', style: 'max-height: 213px; margin: 15px auto' %>
+      </div>
+    </header>
+    <main role="main">
+
+      <%= render 'layouts/messages' %>
+      <div class="container page  <%= yield_or_default(:page_border, "page-border") %> questionnaire margin-top">
+        <%= yield %>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1 text-center margin-bottom-x4">
+          <small>
+            &copy;<%= Date.today.year %> Envisia Learning, Inc.
+          </small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

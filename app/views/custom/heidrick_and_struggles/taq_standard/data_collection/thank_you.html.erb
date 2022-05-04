@@ -1,0 +1,86 @@
+<div class="container page  page-border questionnaire margin-top">
+   <div class='row'>
+    <div class='col-md-10 col-md-offset-1'>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <%= image_tag 'custom/heidrick_and_struggles/taq-logo.png', height: "100%", width: "100%:" %>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="pull-right">
+            <%= image_tag "custom/heidrick_and_struggles/hs-logo.png", height:"100%", width:"100%" %>
+          </div>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-12 text-right'>
+          <%= link_to "Portal", "/hs/taq/portal" %>
+          &nbsp;|&nbsp;
+          <%= link_to "Logout", "/users/sign_out" %>
+        </div>
+      </div>
+
+      <div class="row margin-top-x2">
+
+        <div class="col-md-3 col-md-push-9 hidden-sm hidden-xs">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <h2 class="panel-title">
+                &nbsp;
+              </h2>
+
+            </div>
+
+            <div class="panel-body text-center">
+              <%= image_tag "custom/heidrick_and_struggles/report_right_panel_graphic.png", height:"75%", width:"75%" %>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-md-9 col-md-pull-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+            </div>
+
+            <div class="panel-body">
+
+              <h4>You have reached the last page of this questionnaire</h4>
+
+              <p>
+                Please now click on <strong>Submit</strong> to record your responses
+              </p>
+
+              <p>
+                Should you wish to review any of your responses before submitting then please use the <strong>Back</strong> button.
+              </p>
+
+              <p>
+                Thank you for completing the questionnaire.
+              </p>
+
+            </div>
+
+
+
+            <div class="panel-body text-center">
+
+              <%= link_to "Back", heidrick_and_struggles_taq_standard_organizational_context_questionnaire_path, class:"btn btn-default" %>
+
+              &nbsp;
+
+              <%= link_to "Submit", "", class:"btn btn-primary" %>
+
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
