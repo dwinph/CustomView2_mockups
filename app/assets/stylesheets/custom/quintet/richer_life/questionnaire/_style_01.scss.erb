@@ -1,0 +1,427 @@
+$primary-color: #008a94;
+$textbox-bg: #00666b;
+$button-bg: #000;
+$range1: #8cc7ea;
+$range2: #5e9697;
+$range3: #01839d;
+$range4: #f8da3f;
+$range5: #f28626;
+$range6: #df3916;
+$range7: #9c2737;
+$range8: #7a818c;
+$inactive: #CCD4DE;
+/*
+@font-face {
+    font-family: 'HelveticaThin';
+    src: url('fonts/HelveticaThin.woff2') format('woff2'),
+    url('fonts/HelveticaThin.woff') format('woff'),
+    url('fonts/HelveticaThin.ttf)') format('truetype');
+}
+@font-face {
+    font-family: 'HelveticaLight';
+    src: url('fonts/HelveticaLight.woff2') format('woff2'),
+    url('fonts/HelveticaLight.woff') format('woff'),
+    url('fonts/HelveticaLight.ttf)') format('truetype');
+}*/
+@font-face {
+    font-family: 'chalet';
+    src: url('fonts/chalet-london-nineteen-sixty.ttf') format('TrueType');
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('fonts/avenir-book.otf') format('OpenType');
+}
+@font-face {
+    font-family: 'myriad';
+    src: url('fonts/myriad-pro-semibold.otf') format('OpenType');
+}
+
+%button-bg{
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%button-bg-active{
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    border:2px solid #ffffff;
+}
+
+/*      FONTS   */
+h1{
+    font-family: chalet;
+    font-size: 35px;
+}
+h3, h4{
+    font-family: avenir;
+    font-size: 18px;
+}
+.link{
+    color: #83edff
+}
+p{
+    font-family: avenir;
+    font-size: 18px;
+    line-height: 23px;
+}
+button, a, input{
+    font-family: avenir;
+}
+
+body{
+    color: #ffffff;
+}
+.row{
+    margin-right: 0px;
+}
+.main-container{
+    background-color: $primary-color;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.solid-background{
+    background-color: $primary-color;
+}
+.logo{
+    width: 200px;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+button a, button a:hover{
+    color:#ffffff
+}
+.buttonNext-bg{
+    @extend %button-bg;
+    background-color: $button-bg;
+}
+.buttonNext{
+    @extend %button;
+    background-color: $button-bg;
+    
+    a{
+        span{
+            top:3px
+        }
+    }
+}
+.nextPrev:hover{
+    transform: scale(1.1);
+    border-radius: 50px;
+    background-color: #8f8f8f;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button1-bg-active{
+    @extend %button-bg-active;
+    background-color: #c6e3f5;
+    .button1,.button1-bg{
+        background-color: $range1;
+    }
+}
+.button1-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button1{
+    @extend %button;
+    background-color: $inactive;
+}
+.button2-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button2{
+    @extend %button;
+    background-color: $inactive;
+}
+.button2-bg-active{
+    @extend %button-bg-active;
+    background-color: #7fb6b3;
+    .button2, .button2-bg{
+        background-color: $range2;
+    }
+}
+.button3-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button3{
+    @extend %button;
+    background-color: $inactive;
+}
+.button3-bg-active{
+    @extend %button-bg-active;
+    background-color: #7fc1cd;
+    .button3, .button3-bg{
+        background-color: $range3;
+    }
+}
+.button4-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button4{
+    @extend %button;
+    background-color: $inactive;
+}
+.button4-bg-active{
+    @extend %button-bg-active;
+    background-color: #faed9f;
+    .button4{
+        background-color: $range4;
+    }
+}
+.button5-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button5{
+    @extend %button;
+    background-color: $inactive;
+}
+.button5-bg-active{
+    @extend %button-bg-active;
+    background-color: #f8c494;
+    .button5-bg, .button5{
+        background-color: $range5;
+    }
+}
+.button6-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button6{
+    @extend %button;
+    background-color: $inactive;
+}
+.button6-bg-active{
+    @extend %button-bg-active;
+    background-color: #ee9d8a;
+    .button6, .button6-bg{
+        background-color: $range6;
+    }
+}
+.button7-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button7{
+    @extend %button;
+    background-color: $inactive;
+}
+.button7-bg-active{
+    @extend %button-bg-active;
+    background-color: #cf939c;
+    .button7, .button7-bg{
+        background-color: $range7;
+    }
+}
+.button8-bg{
+    @extend %button-bg;
+    background-color: $inactive;
+}
+.button8{
+    @extend %button;
+    background-color: $inactive;
+}
+.button8-bg-active{
+    @extend %button-bg-active;
+    background-color: #bdc0c5;
+    .button8, .button8-bg{
+        background-color: $range8;
+    }
+}
+
+.submit{
+    font-size: 12px;
+    padding: 2px;
+    font-weight: bolder;
+}
+
+.intro, .baro, .policy, .bio{
+    background: none
+}
+
+.sign-in{
+    .input-group{
+        .form-control{
+            width: 400px;
+        }
+        ::placeholder {
+            color: $primary-color;
+            opacity: 1; /* Firefox */
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color:  $primary-color;
+          }
+          
+          ::-ms-input-placeholder { /* Microsoft Edge */
+           color:  $primary-color;
+          }
+    }
+    input.form-control{
+        border:0px;
+        background-color: $textbox-bg;
+    }
+}
+
+.agree{
+    input[type="checkbox"]{
+        -webkit-appearance: initial;
+        appearance: initial;
+        background: $textbox-bg;
+        width: 20px;
+        padding:10px;
+        height: 20px;
+        border: none;
+        position: relative;
+        font-weight: bolder;
+        
+    }
+    input[type="checkbox"]:checked {
+        background: $textbox-bg;
+    }
+    input[type="checkbox"]:checked:after {
+        content: 'X';
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        font-weight: 400;
+    }
+}
+
+.biographical-form{
+    form{
+        display: flex;
+        /*justify-content: flex-end;*/
+    }
+    .form-group{
+        label{
+            margin-right: 1rem;
+            font-size: 14px;
+            font-weight: 200;
+            font-family: avenir;
+        }
+        .form-control{
+            border:1px solid #000;
+            width: 220px;
+        }
+    }
+    select{
+        width: 268px;
+        padding: 5px;
+        font-size: 14px;
+        height: 30px;
+        background: url(select.jpg) no-repeat right #fff;
+        -webkit-appearance: none;
+        font-family: avenir;
+        border-radius: 0px;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    
+}
+
+.book{
+    width: 200px;
+}
+.hyphenate {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+  }
+
+
+
+@media (max-width: 576px) {
+    .flex-sm-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+    }
+    .small-h1{
+        font-size: 32px;
+      }
+      .p-sm-2 {
+        padding: 0.5rem !important;
+      }
+  }
+  @media (min-width: 576px) {
+    h1{
+        letter-spacing: 9px;
+    }
+    .bg-image{
+        background: url(bg1.jpg) no-repeat right $primary-color;
+        background-size: contain;
+        background-position-x: 100%;
+    }
+    .intro{
+        background: url(intro.png) no-repeat $primary-color;
+        background-size: 35%;
+        background-position: right bottom;
+    }
+    .bio{
+        background: url(bio.png) no-repeat $primary-color;
+        background-size: 40%;
+        background-position: right bottom;
+    }
+    .baro{
+        background: url(baro.png) no-repeat $primary-color;
+        background-size: 40%;
+        background-position: right bottom;
+    }
+    .policy{
+        background: url(policy.png) no-repeat $primary-color;
+        background-size: 40%;
+        background-position: right bottom;
+    }
+  }
+  @media (max-width: 610px) {
+    .flex-610px-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+    }
+  }
+  @media (min-width: 768px){
+    .biographical-form{
+        .form-group{
+            .form-control{
+                width: 300px;
+            }
+        }
+    }
+    
+  }
+
+  

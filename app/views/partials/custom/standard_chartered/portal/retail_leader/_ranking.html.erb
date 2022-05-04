@@ -1,0 +1,110 @@
+<div class="row"><%= form_tag(url: "/search", method: "get") do %>
+	<div class="container-fluid">
+		<div class="pad1">
+			<div class="column-fluid">
+				<h1>Sally’s actions and behaviours</h1><%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 63} %>
+			</div>
+    <h2>Tell us how effective they are in the following activities</h2>
+    
+        <div class="form-group radio-group">
+            <label>Scanning the horizon, seeing future possibilities and challenges to develop priorities and strategy</label>
+            <div class="effective-range">
+            <div class="effective"><h2>Not <br/> Effective</h2></div>
+            <div class="numbers">
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91">
+                        <div class="card">1</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91">
+                        <div class="card">2</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91" checked>
+                        <div class="card">3</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91">
+                        <div class="card">4</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91">
+                        <div class="card">5</div>
+                    </label>
+                </div>
+            </div>
+            <div class="effective"><h2>Very <br/> Effective</h2></div>
+        </div>
+        
+        </div>
+
+        <div class="form-group radio-group">
+            <label>Scanning the horizon, seeing future possibilities and challenges to develop priorities and strategy</label>
+            <div class="effective-range">
+            <div class="effective"><h2>Not <br/> Effective</h2></div>
+            <div class="numbers">
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91b">
+                        <div class="card">1</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91b">
+                        <div class="card">2</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91b" checked>
+                        <div class="card">3</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91b">
+                        <div class="card">4</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio91b">
+                        <div class="card">5</div>
+                    </label>
+                </div>
+            </div>
+            <div class="effective"><h2>Very <br/> Effective</h2></div>
+        </div>
+        
+        </div>
+      
+      	<h2>
+          Tell us more about their actions and behaviours as a leader
+      	</h2>
+      	
+      	<div class="form-group txt-group">
+				  <label for="comment">What are their key strengths to continue to build on?</label>
+					  <textarea class="form-control" rows="10" id="comment"></textarea>
+				</div>
+				<div class="form-group txt-group">
+				  <label for="comment">What do they need to do to develop in their leadership role?</label>
+					  <textarea class="form-control" rows="10" id="comment"></textarea>
+				</div>
+        
+
+        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %><%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right" %>
+        </div>
+        
+		</div>
+	</div><% end %>
+</div>

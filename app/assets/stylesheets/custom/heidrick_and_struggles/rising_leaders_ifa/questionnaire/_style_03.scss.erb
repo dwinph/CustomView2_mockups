@@ -1,0 +1,210 @@
+body {
+	text-align: left;
+}
+
+.topcont {
+	&.inner{
+	.progbar{
+		height: 5px;
+		margin-top: 25px;
+}
+}
+}
+.qna{
+	h2{
+		font-size: 18px !important;
+		font-weight: 600;
+	}
+}
+
+/* radio */
+
+.rad {
+  display: flex;
+  justify-content: space-between;
+  
+  input[type=radio] {
+    &:checked+label {
+      &:after {
+				display: none !important;
+			}
+			&:before{
+			content: '';
+			background: $blue;
+			height: 20px !important;
+			width: 20px !important;
+			display: inline-block !important;
+			box-sizing: border-box !important;
+			border: 2px solid white !important;
+			box-shadow: 0 0 0 1px $blue !important;
+			}
+    }
+	}
+}
+
+
+/* checkbox */
+.control {
+
+    display: block;
+    position: relative;
+    padding-left: 31px;
+    margin-bottom: 6px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 2px solid #276aa5;
+    border-radius: 2px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #276aa5;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: ffffff;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 9px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox {
+	span{
+		font-weight: 300 !important;
+	}
+}
+
+.rmenu{
+    button{
+        transition: none;
+        background: none;
+        border: none;
+    }
+}
+.custom_rad_val{
+    text-align: center;
+    padding-top: 8px;
+    display: block;
+    height: 22px;
+    width: 20px;
+    font-size: 8px;
+    position: absolute;
+    top:-3px;
+    z-index: 1;
+    color: rgb(16,113,183);
+    letter-spacing: 0.01em;
+    color: #444444;
+}
+.radio-item{
+    display: flex;
+    align-content: flex-start;
+    input, span:first-child{
+        position: relative;
+        z-index: 2;
+    }
+    label{
+        z-index: 3;
+        position: relative;
+        display: flex !important;
+        align-content: flex-start;
+        span{
+            
+        }
+    }
+}
+.resp_3box{
+    .pbox {
+        width: 20%;
+        padding: 0 !important;
+        &+.rad{
+            .radio-item{
+                label{
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+.gcont{
+    .rad{
+        .radio-item{
+            label{
+                display: block !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px) {
+.resp_3box{
+    .pbox {
+        width: 35%;
+    }
+}
+}
+@media screen and (max-width:550px) {
+    .resp_3box{
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        .pbox {
+            width: 40%;
+            &.ra{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    
+    .tth{
+        .parag.ra{
+            &+.glyphicon-chevron-right{
+                float: right;
+                display: block !important;
+                width: 80% !important;
+                text-align: right; 
+            }
+        }
+    }
+}

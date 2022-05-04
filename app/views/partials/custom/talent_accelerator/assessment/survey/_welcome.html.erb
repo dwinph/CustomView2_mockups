@@ -1,0 +1,11 @@
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_home" %>
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_profile", locals: {person: nm} %>
+<div id="maincont">
+	<div class="container">
+		<div class="row">
+			<p><%= simple_format(cont) %></p>
+			<p><a href="page_<%= pg %>">Link Here</a></p>
+			<p class=""><%= thank_msg %></p>
+		</div>
+	</div>
+</div>

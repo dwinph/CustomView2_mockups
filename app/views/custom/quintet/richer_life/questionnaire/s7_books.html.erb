@@ -1,0 +1,51 @@
+<div class="container-fluid main-container stmt">
+
+  <div class="py-5">
+    <div class="text-center">
+      <h1 class="small-h1">BOOK RECOMMENDATIONS</h1>
+      <p>You will be presented with a series of screens in which two book titles will appear. Use the slider
+        to indicate which book you would recommend to others. <br />Don’t worry if you haven’t read the book;
+        just choose the one you would most likely read and recommend to others.</p>
+      <p class="pint-mobile">Don’t over think the task.
+        It will be the overall pattern from all your responses that is important, not any specific selections.</p>
+    </div>
+
+    <div class="p-5">
+
+      <div class="d-flex range-container img-container">
+        <div class="p-2 img-range-left bookcontainer">
+          <p class="p-extended">Unshakable resilience: Build unbreakable strength, will, and hope to live well in times of uncertainty.</p>
+          <%= image_tag 'custom/quintet/richer_life/questionnaire/book1.jpg', class: 'img-responsive book' %>
+        </div>
+
+        <div class="range p-2 img-range-p">
+        <p class="pint">Don’t over think the task.
+        It will be the overall pattern from all your responses that is important, not any specific selections.</p>
+
+          <div class="box-wrapper left-range slider-p">
+            <div class="line"></div>
+            <div class="box ">
+            </div>
+            <div class="box-reverse">
+            </div>
+
+            <input type="range" min="1" max="100" value="50" class="slider" id="range">
+          </div>
+        </div>
+
+        <div class="p-2 img-range-right bookcontainer">
+          <p class="p-extended">Have more fun: How to be remarkable, stop feeling stuck, and start enjoying life</p>
+          <%= image_tag 'custom/quintet/richer_life/questionnaire/book1.jpg', class: 'img-responsive book pTop' %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-5 hidden-xs"></div>
+
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 7, left:'s6_quotations', right:'s8_headlines'} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 7, left:'s6_quotations', right:'s8_headlines'} %>

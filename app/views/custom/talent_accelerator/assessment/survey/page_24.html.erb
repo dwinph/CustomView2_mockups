@@ -1,0 +1,79 @@
+<%
+series_1 = "Others";
+series_2 = "Self";
+series_1_data = "2, 4, 6, 1";
+series_2_data = "5, 1, 3, 2";
+categories = 'A, B, C, D';
+%>
+<input type="hidden" id="series_1" value="<%= series_1 %>" />
+<input type="hidden" id="series_2" value="<%= series_2 %>" />
+<input type="hidden" id="series_1_data" value="<%= series_1_data %>" />
+<input type="hidden" id="series_2_data" value="<%= series_2_data %>" />
+<input type="hidden" id="series_categories" value="<%= categories %>" />
+
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_dashboard" %>
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_dashboard_feedback" %>
+<div id="maincont" class="lightgray">
+	<div class="container">
+		<div class="row dash">
+			<div class="card-single">
+				<div class="gcont">
+					<h4>Insert Goal Intention</h4>
+					<div class="col-md-6">
+						<div id="chart"></div>
+					</div>
+					<div class="col-md-6">
+						<div class="col-md-8">
+							<div class="graph-key">
+								<h4>Key</h4>
+								<p class="gr-key">A = Not Observed/Unable to Answer</p>
+								<p class="gr-key">B = No Progress or Improvement / Self Fell Short of Expectation</p>
+								<p class="gr-key">C = Some Progress or Improvement / Met Expectation</p>
+								<p class="gr-key">D = Considerable Progress or Improvement / Exceeded Expectation</p>
+							</div>
+						</div>
+						<div class="col-md-4 graph-legend">
+							<p class="gr-legend" id="gr-legend-1"><%= series_1 %></p>
+							<p class="gr-legend" id="gr-legend-2"><%= series_2 %></p>
+						</div>
+					</div>
+					<br class="clear">
+					</div>
+				</div>
+				<div class="feedback-c">
+					<div class="feedback-intro">
+						<h2>Goal Feedback Reflection</h2>
+						<p class="p-lead">Based on the feedback from your colleagues/goal mentors, ask yourself these questions to continue with your successful habit and behavior change efforts:</p>
+						<ol class="dash">
+							<li>
+								<span class="inl">How does the feedback from others compare with your own self-assessment?
+									<br>
+										<textarea placeholder='Enter your answer here'></textarea>
+									</span>
+								</li>
+								<li>
+									<span class="inl">What ore your reactions/observations to this feedback from others?
+										<br>
+											<textarea placeholder='Enter your answer here.'></textarea>
+										</span>
+									</li>
+									<li>
+										<span class="inl">Based on the feedback, what commitments to action are you going to take?
+											<br>
+												<textarea placeholder='Enter your answer here.'></textarea>
+											</span>
+										</li>
+									</ol>
+									<p class="b-right">
+										<input type="button" class="btn-outline btn" value="Save">
+										</p>
+										<br class="clear">
+											<br>
+												<div class="botcont">
+													<a href="page_1" class="btn1">Dashboard</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>

@@ -1,0 +1,37 @@
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_welcome" %><%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_welcome", locals: {person: "Janet"} %>
+<div id="maincont">
+	<div class="container">
+		<div class="row welc">
+			<div class="sbar fl">
+				<h2>TalentAccelerator Steps</h2>
+				<ol class="steps">
+					<li>
+						<span class="inl">Create a Goal, Practice Plan, and Invite Colleagues to Provide Feedback on Goal Progress in 90 days</span>
+					</li>
+					<li>
+						<span class="inl">Review Goal Progress Feedback from Colleagues</span>
+					</li>
+					<li>
+						<span class="inl">Select a New Goal and repeat steps 1-3</span>
+					</li>
+				</ol>
+			</div>
+			<div class="video fr">
+				<div  class="embed-responsive-21by9">
+					<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
+			controls preload="auto" 
+			poster='/assets/custom/talent_accelerator/assessment/survey/preview.jpg'
+			data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+						<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+						<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+					</video>
+				</div>
+				<button class="btnview">View Video Script and References</button>
+			</div>
+			<br class="clear">
+				<div class="btmwelc">
+					<a href="page_4" class="pbtn">Next</a>
+				</div>
+			</div>
+		</div>
+	</div>

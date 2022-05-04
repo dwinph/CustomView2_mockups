@@ -1,0 +1,165 @@
+<div class="container-fluid main-container px-0">
+        <div class="bio">
+            <div class="row">
+                <div class="col-lg-7 p-5">
+                    <h1>BIOGRAPHICAL DETAILS</h1>
+                    <h4 class="pt-3">To help us in our analysis please complete the biographical details</h4>
+                    
+                    <div class="row pt-3">
+                        <div class="col-lg-10 col-md-8 col-sm-8">
+                            <div class="biographical-form">
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">Age:</label>
+                                    <select class="form-control">
+                                        <option>56 or over</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">Gender:</label>
+                                    <select class="form-control">
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">Employment Status:</label>
+                                    <select class="form-control">
+                                        <option>Owner Director</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">Occupational Group:</label>
+                                    <select class="form-control">
+                                        <option>Other</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">Country of Residence:</label>
+                                    <select class="form-control">
+                                        <option>Barbados</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <p class="p-4">How would you describe your satisfaction with:</p>
+
+                        <div class="biographical-form">
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">life overall:</label>
+                                    <select class="form-control">
+                                        <option>Satisfied</option>
+                                        <option>Very Satisfied</option>
+                                        <option>In Between</option>
+                                        <option>Not Satisfied</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">your work:</label>
+                                    <select class="form-control">
+                                        <option>Satisfied</option>
+                                        <option>Very Satisfied</option>
+                                        <option>In Between</option>
+                                        <option>Not Satisfied</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">your social life:</label>
+                                    <select class="form-control">
+                                        <option>Satisfied</option>
+                                        <option>Very Satisfied</option>
+                                        <option>In Between</option>
+                                        <option>Not Satisfied</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">your physical well-being:</label>
+                                    <select class="form-control">
+                                        <option>Satisfied</option>
+                                        <option>Very Satisfied</option>
+                                        <option>In Between</option>
+                                        <option>Not Satisfied</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                            <form class="">
+                                <div class="form-group d-flex align-items-baseline">
+                                    <label for="age">your financial status:</label>
+                                    <select class="form-control">
+                                        <option>Satisfied</option>
+                                        <option>Very Satisfied</option>
+                                        <option>In Between</option>
+                                        <option>Not Satisfied</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="px-5 pb-5 hidden-lg hidden-md visible-sm visible-xs">
+                <div class="d-flex justify-content-between">
+                    <div class="px-3 nextPrev">
+                        <div class="buttonNext-bg">
+                            <button class="buttonNext">
+                                <a href="data_policy"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="nextPrev">
+                        <div class="buttonNext-bg">
+                            <button class="buttonNext">
+                                <a href="barometer"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_regular", locals: {left:'introduction', right:'barometer'} %>
+

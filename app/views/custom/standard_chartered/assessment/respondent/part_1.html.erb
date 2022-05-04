@@ -1,7 +1,7 @@
 <div class="container-fluid">      
     <%= render :partial => "partials/custom/standard_chartered/assessment/respondent/step_wizard", locals: {active: 1} %>        
 
-    <form role="form" action="" method="post">
+    <form role="form" action="/standard_chartered/assessment/respondent/part/2" method="get">
         <div class="container">
             <div class="row setup-content" id="step-1">
                 <div class="col-12">
@@ -225,7 +225,7 @@
                         </div>
                     </div>
 
-                    <button class="btn next-btn btn-lg pull-right" type="button" >
+                    <button class="btn next-btn btn-lg pull-right" type="submit" data-disable-with="Part two" >
                         <p class="btn-text">Part two</p>
                         <%= image_tag 'custom/standard_chartered/assessment/survey/button-arrow.png', 'class':'arrow' %></button>
                     

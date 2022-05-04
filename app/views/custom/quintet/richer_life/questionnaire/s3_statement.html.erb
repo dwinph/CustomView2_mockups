@@ -1,0 +1,43 @@
+<div class="container-fluid main-container stmt">
+
+  <div class="py-5">
+    <div class="text-center">
+      <h1>FEELING MY BEST WHEN I:</h1>
+      </p>
+    </div>
+
+    <div class="p-5">
+
+      <div class="d-flex range-container">
+        <div class="p-2">
+          <h3 class="range-left">can switch off and relax with my family</h3>
+        </div>
+
+        <div class="range p-2">
+          <div class="box-wrapper">
+            <div class="line"></div>
+            <div class="box ">
+            </div>
+            <div class="box-reverse">
+            </div>
+
+            <input type="range" min="1" max="100" value="50"  class="slider" id="range">
+
+          </div>
+        </div>
+
+        <div class="p-2">
+          <h3 class="pTop range-right">am regarded as success by others</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-5 hidden-xs"></div>
+
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 3, left:'s2_statement', right:'s4_statement'} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 3, left:'s2_statement', right:'s4_statement'} %> 

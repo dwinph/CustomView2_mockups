@@ -1,0 +1,335 @@
+<div class="d-flex justify-content-center">
+  <div class="progress-pie-chart" data-percent="80">
+    <div class="ppc-progress">
+      <div class="ppc-progress-fill"></div>
+    </div>
+    <div class="ppc-percents">
+      <div class="pcc-percents-wrapper">
+        <h2>500/500</h2>
+        <small>FILTERED PARTICIPANTS</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pt-2">
+  <button type="button" class="btn update" data-toggle="modal" data-target="#myModal">
+  Update Filter
+    <%= image_tag 'custom/coaching/dashboard/tool/filter.png', class: 'filter-img' %>
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Update Report Filters</h3>
+      </div>
+      <div class="modal-body">
+
+        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading1">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Date Range</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="dropdown">
+                      <select id="sel_date_range" class="sel_date_range-sidebar custom">
+                        <option>Custom</option>
+                        <option>All Dates</option>
+                        <option>Last Week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last Year</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group" id="data_5">
+                    <div class="input-daterange input-group" id="datepicker">
+                      <input type="text" class="input-sm form-control" name="start" value="05/14/2014" /><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                      <span class="input-group-addon">to</span>
+                      <input type="text" class="input-sm form-control" name="end" value="05/22/2014" /><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading2">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Project Group</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox1" type="checkbox">
+                    <label for="checkbox1">Projet Name: Group 1</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox2" type="checkbox">
+                    <label for="checkbox2">Project Name: Group 2</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Gender</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse2">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox3" type="checkbox">
+                    <label for="checkbox3">Male</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox4" type="checkbox">
+                    <label for="checkbox4">Female</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox5" type="checkbox">
+                    <label for="checkbox5">Non-binary</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox6" type="checkbox">
+                    <label for="checkbox6">Prefer not to respond</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading4">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Department</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox11" type="checkbox">
+                    <label for="checkbox11">Male</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox12" type="checkbox">
+                    <label for="checkbox12">Female</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox13" type="checkbox">
+                    <label for="checkbox13">Non-binary</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox14" type="checkbox">
+                    <label for="checkbox14">Prefer not to respond</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading5">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Job Level</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox111" type="checkbox">
+                    <label for="checkbox111">multiselectable</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox122" type="checkbox">
+                    <label for="checkbox122">Female</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox133" type="checkbox">
+                    <label for="checkbox133">Non-binary</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox144" type="checkbox">
+                    <label for="checkbox144">Prefer not to respond</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading6">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Location</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse2">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox145" type="checkbox">
+                    <label for="checkbox145">multiselectable</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox1455" type="checkbox">
+                    <label for="checkbox1455">Female</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox14555" type="checkbox">
+                    <label for="checkbox14555">Non-binary</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox145555" type="checkbox">
+                    <label for="checkbox145555">Prefer not to respond</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading modal-panel" role="tab" id="heading7">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="panel-title">Region</p>
+                </div>
+                <div>
+                  <a role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse2">
+                    <i class="collapsible-item glyphicon glyphicon-plus"></i>
+                    <i class="collapsible-item glyphicon glyphicon-minus"></i></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body">
+                <div> <a href="">Select All </a> | <a href=""> None</a></div>
+
+                <div>
+                  <div class="checkbox">
+                    <input id="checkbox167" type="checkbox">
+                    <label for="checkbox167">multiselectable</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox1677" type="checkbox">
+                    <label for="checkbox1677">Female</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox16777" type="checkbox">
+                    <label for="checkbox16777">Non-binary</label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="checkbox167777" type="checkbox">
+                    <label for="checkbox167777">Prefer not to respond</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="form-group modal-footer-label"><label>Report Filter Name</label>
+          <input type="text" placeholder="Filter Name Displayed Here" class="form-control">
+        </div>
+        <button type="button" class="btn apply-filter">Apply Filter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="pt-2">
+
+
+  <%= render :partial => "partials/custom/coaching/dashboard/tool/sidebar_accordion" %>
+
+
+
+</div>

@@ -1,0 +1,43 @@
+<div class="row"><%= form_tag(url: "/search", method: "get") do %>
+	<div class="container-fluid">
+		<div class="pad1">
+			<div class="column-fluid">
+				<h1>Sally's experience</h1><%= render :partial => "partials/custom/standard_chartered/portal/retail_leader/progress_bar", locals: {p: 63} %>
+			</div>
+		<h2>
+          Reflect on your key career experiences to date. Choose one answer that best represents the depth and breadth of experience you have had
+      	</h2>
+
+        <% x = 1; while x <= 5 %>
+        <div class="form-group radio-group">
+            <label class="txt-highlight"><%= x %>. Sally’s experience of driving and managing business performance</label>
+            <div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Ad qui consequat consectetur fugiat nisi fugiat culpa incididunt velit adipisicing.</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1">
+                            <div class="card">Nulla eu dolore veniam anim aute et aute occaecat.</div>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio1" checked>
+                            <div class="card"> Advanced Sunt officia ipsum irure mollit esse veniam.</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <% x = x + 1; end %>
+
+        <div class="row dir-btns"><%= link_to "< Back", "", target:'blank', class:'btn btn-directional pull-left' %>
+        <%= submit_tag "Next >", data: { confirm: "Send" }, class: "btn btn-directional btn-right pull-right", "data-disable-with": "Next" %>
+        </div>
+        
+		</div>
+	</div><% end %>
+</div>

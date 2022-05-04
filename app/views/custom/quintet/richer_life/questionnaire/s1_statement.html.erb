@@ -1,0 +1,41 @@
+<div class="container-fluid main-container stmt">
+
+  <div class="py-5">
+    <div class="text-center">
+      <h1>COMMITTING TIME TO:</h1>
+    </div>
+
+    <div class="p-5">
+
+      <div class="d-flex range-container">
+        <div class="p-2">
+          <h3 class="range-left">work hard to achieve a position of importance and influence in life</h3>
+        </div>
+
+        <div class="range p-2">
+          <div class="box-wrapper">
+            <div class="line"></div>
+            <div class="box ">
+            </div>
+            <div class="box-reverse">
+            </div>
+
+            <input type="range" min="1" max="100" value="50" class="slider" id="range">
+          </div>
+        </div>
+
+        <div class="p-2">
+          <h3 class="pTop range-right">do my "financial homework" before making any major life decisions</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="p-5 hidden-xs"></div>
+
+  <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 1, left:'barometer', right:'s2_statement'} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 1, left:'barometer', right:'s2_statement'} %>

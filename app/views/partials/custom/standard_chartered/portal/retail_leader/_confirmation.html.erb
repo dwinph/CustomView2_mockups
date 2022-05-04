@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="pad1">
+      <h3>Thank you for completing the insight questionnaire. You can now review and print your answers. When you are ready press ‘complete’ to submit your answers.</h3>
+    </div>
+    
+    <div class="dir-btns">
+	    <div class="row pull-left">
+          <a href="index.php" class="btn btn-directional">< Back</a>
+          <%= button_tag "Review", data: { confirm: "Send" }, class: "btn btn-neutral" %>
+          <%= submit_tag "Complete", data: { confirm: "Send" }, class: "btn btn-neutral", "data-disable-with": "Complete" %>
+			</div>
+		</div>
+		
+  </div>
+  
+  <div class="col-sm-6">
+  	<div class="pad1 hr-left">
+    <p class="p-highlight">The insights you provided will be combined into a final report for the leader. This report will be shared with them. Unless you are their line manager your responses will be completely anonymous.</p>
+    <p class="p-highlight">Please refer to the portal to find out about the leaders’ journey. You can also access your questionnaires there.</p>
+    </div>
+  </div>  
+</div>

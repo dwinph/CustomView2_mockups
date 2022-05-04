@@ -1,0 +1,33 @@
+<div class="container-fluid main-container stmt">
+
+    <div class="py-5">
+        <div class="text-center">
+            <h1>RICHER LIFE BAROMETER</h1>
+            <p>Congratulations, you have now completed your <br/>Richer Life Barometer questionnaire.
+                <br/><br/>Please press DOWNLOAD below to receive your report by email.
+            </p>
+        </div>
+
+        <div class="p-4">
+          <form action="logout">
+            <div class="d-flex justify-content-center">
+                <div class="button5-bg">
+                    <button class="button5 submit lbbtn">DOWN<br/>LOAD</button>
+                </div>
+            </div>
+          </form>
+
+            <div class="text-center pt-3">
+                <p>DOWNLOAD</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="p-5 hidden-xs"></div>
+
+    <%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_mobile", locals: {active: 0, left:'s8_headlines', right:''} %>
+
+</div>
+
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_desktop", locals: {active: 0, left:'s8_headlines', right:''} %>

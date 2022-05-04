@@ -1,0 +1,63 @@
+<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/topcont" %>        
+<div class="main container">
+	<div class="row">
+		<h1>About You</h1>
+		<p>You may choose not to complete the demographic questions; if this is the case please  'Prefer not to respond' for each question. This will not affect your participation ofr the rest of the questionaire.</p>
+		
+		<div class="qna">
+			<hr/>
+			<p>Company</p>
+			<input type="text" placeholder="Company Name" />
+			<hr/>
+			<p>Gender</p>
+			<select class="ddown">
+				<option value="">&mdash; Select One &mdash;</option>
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+			<hr>
+			<p>Age</p>
+			<select>
+				<option value="">&mdash; Select One &mdash;</option>
+				<? for($i=18;$i<=79;$i++){
+					echo "<option value=$i>$i</option>";
+				}?>
+			</select>
+			<hr>
+			<p>Which industry sector best describes the organization you work in?</p>
+			<select>
+				<option value="">&mdash; Select One &mdash;</option>
+				<option value="1">Industry 1</option>
+				<option value="2">Industry 2</option>
+				<option value="3">Industry 3</option>
+			</select>
+			<hr>
+			<p>Would you describe your current level?</p>
+			<select>
+				<option value="">&mdash; Select One &mdash;</option>
+				<option value="1">Rank and File</option>
+				<option value="2">Manager</option>
+				<option value="3">CEO</option>
+			</select>
+			<hr>
+			<p>Which of the following functional areas most certainly describes your job?</p>
+			<select>
+				<option value="">&mdash; Select One &mdash;</option>
+				<option value="1">Desc 1</option>
+				<option value="2">Desc 2</option>
+			</select>
+			<hr>
+			<p>How large is the team you manage?</p>
+			<select>
+				<option value="">&mdash; Select One &mdash;</option>
+				<option value="1">Small</option>
+				<option value="2">Medium</option>
+				<option value="3">Large</option>
+			</select>
+			<hr>
+		</div>
+
+		<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/direction", 
+    locals: {txt:'Next', prev:'5', nxt:'7'} %>        
+	</div>
+</div>

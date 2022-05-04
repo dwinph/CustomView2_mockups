@@ -1,0 +1,21 @@
+<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/topcont_progress", locals: {progress: 21} %>        
+<div class="main container">
+	<div class="row">
+		<h1>Leadership Capabilities and Agility & Potential</h1>
+		<p>Which  of the statements is more true of you? Click and drag with your mouse, or if using a tablet, hold and drag with your finger, the statements into rank order from more true at the top to less true at the bottom.</p>
+		<div class="qna">
+			<h2>I am a leader who...</h2>
+			<hr/>
+			<div class="qna">
+				<ul id="sortable">
+					<li><span class="material-icons">unfold_more</span> <span class="cont">promotes use of robust data analytics in developing new digital initiatives</span></li>
+					<li><span class="material-icons">unfold_more</span> <span class="cont">evokes a strong sense of ownership in others for delivering results</span></li>
+					<li><span class="material-icons">unfold_more</span> <span class="cont">asks questions to create clarity for others and self</span></li>
+				</ul>
+			</div>
+			<hr/>
+		</div>
+		<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/direction", 
+    locals: {txt:'Next', prev:'10', nxt:'12'} %>        
+	</div>
+</div>

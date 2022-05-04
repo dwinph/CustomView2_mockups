@@ -1,0 +1,30 @@
+<div class="contents">
+
+  <div class="row">
+    <div class="col-lg-9">
+      <h1>Summary</h1>
+      <p>How many respondents completed for each rater type and average respondent time to complete</p>
+
+      <div class="pt-2"></div>
+
+      <div class="table-wrapper">
+        <div class="chart-wrapper">
+          <div id="chartContainer" class="chart_summary" data-chartname="Number of Respondents" data-chartvar='Count'
+          data-chartdetails="[{ indexLabel: '50', y: 500, label: 'Average', color: '#309ce8' },{ indexLabel: '150', y: 250, label: 'Others', color: '#f1c859' },{ indexLabel: '70', y: 100, label: 'Team Member', color: '#e52b86' },{ indexLabel: '100', y: 70, label: 'Peer', color: '#8ad74e' },{ indexLabel: '250', y: 150, label: 'Manager', color: '#ef0000' },{ indexLabel: '500', y: 50, label: 'Self', color: '#002b66' }]"></div>
+        </div>
+
+        <hr>
+
+        <div class="chart-wrapper">
+          <div id="chartContainer2" class="chart_summary" data-chartname="Average Respondent Time to Complete" data-chartvar='Minutes' data-chartdetails="[{ indexLabel: '33.67.24', y: 30, label: 'Average', color: '#309ce8' },{ indexLabel: '25.45.88', y: 10, label: 'Others', color: '#f1c859' },{ indexLabel: '10.34.56', y: 20, label: 'Team Member', color: '#e52b86' },{ indexLabel: '50.11.12', y: 50, label: 'Peer', color: '#8ad74e' },{ indexLabel: '11.12.34', y: 17, label: 'Manager', color: '#ef0000' },{ indexLabel: '00.15.42', y: 40, label: 'Self', color: '#002b66' }]"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <%= render :partial => "partials/custom/coaching/dashboard/tool/sidebar" %>
+    </div>
+
+  </div>
+
+</div>

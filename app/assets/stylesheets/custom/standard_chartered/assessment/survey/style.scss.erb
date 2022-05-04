@@ -3,6 +3,7 @@ $secondary: #062047;
 $tertiary: #0094d5;
 $success: #27a135;
 $disabled: #364655;
+$highlight: #70BA65;
 $bg-dark: #d2d2d2;
 $bg-light: #edeeee;
 
@@ -16,11 +17,12 @@ $bg-light: #edeeee;
 	-ms-transform: rotate(-90deg);
 	/* Opera */
 	-o-transform: rotate(-90deg);
+	
 }
 
 body{
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+	 font-weight: 300;
 }
 
 h1{
@@ -92,9 +94,9 @@ padding:30px 0;
 }
 .border{
 	border-bottom: 10px solid transparent;
-	-webkit-border-image: url(../images/border.jpg) 30 round; /* Safari 3.1-5 */
-	-o-border-image: url(../images/border.jpg) 30 round; /* Opera 11-12.1 */
-	border-image: url(../images/border.jpg) 30 round;
+	-webkit-border-image: url(../survey/border.jpg) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(../survey/border.jpg) 30 round; /* Opera 11-12.1 */
+	border-image: url(../survey/border.jpg) 30 round;
 }
 
 //			LANDING
@@ -104,7 +106,7 @@ padding:30px 0;
 	display: flex;
 	align-items: center;
 	position: relative;
-	background: $tertiary url(../images/globe.png) no-repeat bottom right;
+	background: $tertiary url(../survey/globe.png) no-repeat bottom right;
 
 	.info{
 		background: #ffffff;
@@ -247,6 +249,43 @@ h3{
 	}
 }
 
+//			RANGE SLIDER
+span.irs-min, span.irs-max{
+	display: none !important;
+}
+span.irs-single{
+	display: none !important;
+}
+span.irs-bar, span.irs-bar-edge, span.irs-line-mid, span.irs-line-left, span.irs-line-right, span.irs-line{
+	background:$bg-dark;
+	border: none;
+	height:3px;
+	border-radius: 0;
+}
+.irs-slider.single{
+	background:$success;
+	height: 18px;
+	width: 18px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 0px 0px 10px rgba(112,186,101,0.3);  
+	margin-top:3px;
+}
+.slide-p1{
+	height: 60px;
+	margin-top:40px;
+	div.col-md-3{
+		text-align: center;
+		padding-top:15px;
+		height: 60px;
+		border: 3px solid $bg-dark;
+	}
+	.mid-opt{
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
 //			STEPWIZARD
 .step{
 	padding:30px 15px;
@@ -323,6 +362,7 @@ h3{
 }
 
 //			PART ONE
+
 .behaviors, .choices{
 	padding: 20px 0;
 }
@@ -348,6 +388,27 @@ h3{
 .choices{
 	.input-group{
 		width: 100%
+	}
+}
+
+.clear-toggle{
+	width: 100%;
+	margin: 0 auto;
+	div{
+		padding:2px;
+	}
+	label{
+		border:1px solid $bg-light;
+		border-radius: 0;
+		width: 100%;
+		padding: 1em;
+		input[type="radio"]{
+			display: none;
+		}
+	}
+	label.active{
+		background:$highlight;
+		color: #ffffff;
 	}
 }
 
@@ -399,11 +460,12 @@ h3{
 //					PART TWO AND THREE
 input[type="radio"]{
 	-webkit-appearance: none;
-  width: 12px;
-	height: 12px;
   border-radius: 50%;
   outline: none;
-	border: 2px solid #ffffff;
+	border: 3px solid #ffffff;
+	background:#cccccc;
+	height: 14px;
+	width: 14px;
 	&:before{
 		content: '';
     display: block;
@@ -415,7 +477,7 @@ input[type="radio"]{
 				
 	&:checked, &:checked:before{
 		border-color:#ffffff;
-		background:#ffffff;
+		background:#333333;
 	}
 }
 #step-2, #step-3{
@@ -472,9 +534,13 @@ input[type="radio"]{
 	.head{
 		display: flex;
 
+		.f-child{
+			width: 100% ;
+			background: $bg-light;
+		}
 		.delivery-wrapper{
 			display: flex;
-
+			
 			.delivery{
 				background: $success;
 				padding:10px;
@@ -505,13 +571,16 @@ input[type="radio"]{
 		.p-italic{
 			font-style: italic;
 			padding:10px;
-			background: $bg-light;
-			border: 1px solid $bg-dark;
-			display: block;
+			display: flex;
 			margin-block-start: 0em;
 			margin-block-end: 0em;
 			margin-inline-start: 0px;
 			margin-inline-end: 0px;
+			min-height:59%;
+			width:90%;
+			z-index:999;
+			overflow: hidden;
+			overflow-wrap: break-word;
 		}
 
 		.question-options{
@@ -525,7 +594,8 @@ input[type="radio"]{
 				background: $bg-light;
 				border: 1px solid $bg-dark;
 				font-weight: bold;
-				color: $secondary
+				color: $secondary;
+				transform: rotate(180deg);
 			}
 		}
 	}
@@ -563,7 +633,7 @@ input[type="radio"]{
 			justify-content: flex-end;
 
 			.input-group{
-				padding:15px 19px;
+				padding:14px 18px;
 				border: 1px solid $bg-dark;
 				display: flex;
 				color: #fff;
@@ -645,6 +715,25 @@ input[type="radio"]{
 		}
 	}
 }
+@media (max-width: 990px) {
+	div.left-opt, div.right-opt{
+		width: 20%;
+		float: left;
+		font-size: 0.8em;
+		line-height:1.2em;
+	}
+	span.left-opt{
+		padding-top: 30px !important;
+	}
+	span.right-opt{
+		float: right;
+		padding-top: 10px !important;
+	}
+	.mid-opt{
+		width: 60%;
+		float: left;
+	}
+}
 
 @media (min-width: 576px){
 	.option{ text-align: center !important}
@@ -670,6 +759,7 @@ input[type="radio"]{
 			}
 		}
 	}
+	
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -703,5 +793,54 @@ input[type="radio"]{
 			bottom: 0;
 			right: 0;
 		}
+	}
+}
+
+/* IE 11 f*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	input[type="radio"]{
+		height: auto;
+		width: auto;
+	}
+	.next-btn{
+		.btn-text{
+			max-height: 1em;
+		}
+	}
+	.ribbon{
+		.ribbon-text{
+				width: 100%;
+				left: 0;
+				overflow: hidden; 
+			lead{
+				margin: 0 auto;
+				width: 30%;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+	.parts-content{
+		.pc {
+			&:before{
+				top: -40px;	
+			}
+			&:after{
+				top: 110px;	
+			}
+		}
+	}
+	.question-options{
+			&>div{				
+				writing-mode: tb-rl;
+			}
+		}
+		.inquiry-options{
+			.input-group{
+				padding:14px 25px !important;
+			}
+		}
+		.f-child{
+			width: 77.3% !important;			
 	}
 }

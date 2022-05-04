@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.11'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -81,7 +81,7 @@ gem 'simple_form'
 gem 'validates_email_format_of'
 #gem 'bootstrap-datepicker-rails'
 gem 'momentjs-rails', '~> 2.9',  git: 'https://github.com/derekprior/momentjs-rails.git'
-gem 'datetimepicker-rails', git: 'https://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
+gem 'datetimepicker-rails', git: 'https://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master' #, submodules: true
 
 
 #Excel Frameworks

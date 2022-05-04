@@ -1,0 +1,46 @@
+<div class="container-fluid main-container px-0">
+
+    <div class="policy">
+        <div class="row p-5">
+            <h1>DATA PROCESSING POLICY</h1>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+                <h3>Introduction</h3>
+                <p class="polp">We will be processing the data given in the questionnaire you complete. We will retain and
+                        store copies of your data to perform statistical analyses. By completion of the questionnaire, 
+                        you consent to our use of any personal information for the sole purpose of processing your results.
+                        <br/><br/>We are committed to treating your data with absolute due care and in accordance with all applicable data protection regulations. All data collected and stored complies with the General Data Protection Regulations, the EU Data Protection Directive (95/46/EC) and Reg. (UE) n. 2016/679. Envisia Learning Ltd is registered with the
+                        Information Commissioner’s Office (Registration Number ZA070450) and holds ISO 27001 certification.
+                </p>
+                <h3 class="pt-3">&nbsp;</h3>
+                
+                <div class="agree d-flex">
+                    <input type="checkbox" checked="checked">
+                    <p class="pl-3 pt-2 h-color">Accept
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-5 pb-5 hidden-lg hidden-md visible-sm visible-xs">
+            <div class="d-flex justify-content-between">
+                <div class="p-2  nextPrev">
+                    <div class="buttonNext-bg">
+                        <button class="buttonNext">
+                            <a href="introduction"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-2 nextPrev">
+                    <div class="buttonNext-bg">
+                        <button class="buttonNext">
+                            <a href="bio_details"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<%= render :partial => "partials/custom/quintet/richer_life/questionnaire/direction_regular", locals: {left:'introduction', right:'bio_details'} %>

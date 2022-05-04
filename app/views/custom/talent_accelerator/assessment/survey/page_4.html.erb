@@ -1,0 +1,68 @@
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/header_dashboard" %>
+<%= render :partial => "partials/custom/talent_accelerator/assessment/survey/banner_dashboard" %>
+<div id="maincont">
+	<div class="container">
+		<div class="row dash">
+			<ol class="dash">
+				<li>
+					<span class="inl">Define your goal intention						
+						<br>
+							<p>(What are you trying to achieve? What is the key result of setting your goal?)</p>
+							<p class="dk">
+								<i>(Note: This is the goal that will appear when you ask your colleagues for progress and feedback at a later date so it should focus on only one thing and be both observable and measurable).</i>
+							</p>
+							<textarea placeholder='Enter your Goal Intention here (example "to become a more effective active listener" or "to become a more motivating and entertaining public speaker).'></textarea>
+						</span>
+					</li>
+					<li class="range_i">
+						<span class="inl">Define your commitment/readiness to change
+							
+							<br>
+								<p>Using the slider, set your level of commitment/readiness to change with respect to your Goal Intention using the 1 to 10 scale below:</p>
+							</span>
+							<div class="range_set">
+								<input type="text" class="js-range-slider range" name="range_slider" value="1" />
+							</div>
+						</li>
+						<li>
+							<span class="inl">Define your goal practice plan
+								<br>
+									<p>(What are you trying to achieve? What is the key result of setting your goal?)</p>
+									<p class="dk">
+										<i>(Note: Describe opportunities or situations that will help you to “trigger” (the “if” or the “when”) the practice of an existing or new behaviour. Using practice plans have been shown to be 25 to 30 times more effective for successfully succeeding in the accomplishment of our goal).</i>
+									</p>
+									<textarea placeholder='Enter your Goal Practice Plan here (example "When hold my weekly team meetings then I will solicit ideas from others and summarise when I hear from my staff before sharing my o2wn point of view" or "If catch myself wasting time on facebook then I immediately close it and get back to what I was doing" or "If its 10pm then turn off all of my electronics and reflect on one thing am grateful for in my life")'></textarea>
+								</span>
+							</li>
+							<li>
+								<span class="inl">Define your goal reward
+									<br>
+										<p class="dk">
+											<i>(Note: Research suggests that we are most motivated by uncertain rewards and by avoiding rewards that are negative, rather than, positive).</i>
+										</p>
+										<textarea placeholder='Enter what you might do to penalize yourself for not accomplishing your goal or ho2 you might reward and celebrate your goal success here.'></textarea>
+									</span>
+								</li>
+								<li>
+									<span class="inl">Define your goal reward
+
+										<br>
+											<p class="dk">Invite as many colleagues (goal mentors) to provide feedback on your progress, improvement or whether you have met the expectation related to your goal.</p>
+											<p class="dk">The colleagues/goal mentors you invite for feedback should be individuals you want to be part of your support network, are trusted advisors can provide constructive and useful feedback to help you achieve your goal.</p>
+											<p class="dk">At a minimum, please include your direct supervisor and as many other direct reports or colleagues you wish to invite. You may invite as many colleagues/goal mentors as you wish using the form below.</p>
+											<p class="dk">Once your colleagues/goal mentors complete the request to provide feedback (which they will recieve in 90 days) you will be notified and will be able to view the results in your TalentAccelerator&reg; dashboard.</p>
+											<div class="inputs"><%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book_input" %>
+											</div>
+										</span>
+									</li>
+								</ol>
+								<div class="outputs"><%= render :partial => "partials/custom/talent_accelerator/assessment/survey/address_book" %>
+								</div>
+								<br class="clear">
+									<br>
+										<div class="botcont">
+											<a href="page_5" class="btn1">Save</a>
+										</div>
+									</div>
+								</div>
+							</div>

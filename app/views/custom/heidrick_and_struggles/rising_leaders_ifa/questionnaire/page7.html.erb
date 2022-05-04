@@ -1,0 +1,21 @@
+<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/topcont_progress", locals: {progress: 10} %>        
+<div class="main container">
+	<div class="row">
+		<h1>Pivotal Experience and Expertise</h1>
+		<p>Please select both the Role and Industry to which you aspire toward. If you do not have a preference for Industry, please select 'General'.</p>
+		
+		<div class="qna">
+			<hr/>
+			<p>I aaspire to be a senior leader in the following role and industry:</p>
+			<select>
+				<option value="">-- Select One --</option>
+				<option value="General">General</option>
+				<option value="Industry 1">Industry 1</option>
+			</select>
+			<hr>
+		</div>
+
+		<%= render :partial => "partials/custom/heidrick_and_struggles/rising_leaders_ifa/questionnaire/direction", 
+    locals: {txt:'Next', prev:'6', nxt:'8'} %>        
+	</div>
+</div>
