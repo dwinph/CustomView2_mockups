@@ -81,7 +81,7 @@ gem 'simple_form'
 gem 'validates_email_format_of'
 #gem 'bootstrap-datepicker-rails'
 gem 'momentjs-rails', '~> 2.9',  git: 'https://github.com/derekprior/momentjs-rails.git'
-gem 'datetimepicker-rails', git: 'https://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master', submodules: true
+gem 'datetimepicker-rails', git: 'https://github.com/zpaulovics/datetimepicker-rails.git', branch: 'master' #, submodules: true
 
 
 #Excel Frameworks
