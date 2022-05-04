@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 # set :application, 'my_app_name'
-set :repo_url, "git-chromaticconcepts@pl1.projectlocker.com:CustomView2_mockups.git"
+set :repo_url, "git@github.com:envisialearning/CustomView2_mockups.git"
 set :deploy_via, :remote_cache
 
 set :linked_files , %w{config/database.yml config/application.yml}
